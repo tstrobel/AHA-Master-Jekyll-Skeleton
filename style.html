@@ -1,0 +1,292 @@
+---
+layout: page
+title: Style Guide
+activelink: Style Guides
+---
+<style>
+    .section-banner {
+        background: url('img/recordplayer.jpg');
+        height: 200px;
+        background-position: center top;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+</style>
+<div class="section section-banner">
+    <div class="container">
+        <div class="spacer"></div>
+        <h1 class="montsserat-heading text-uppercase text-primary">Style Guides</h1>
+        <h4 class="montsserat-heading text-uppercase text-gray-dark">ECC eCard Project Fall 2016</h4>
+        <div class="spacer"></div>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+<!--Container with sidebar-->
+<div class="section">
+    <div class="container">
+        <!--Sidebar-->
+        <div id="sidebar" class="col-sm-2">
+            <h4 class="montsserat-heading">Style Guide</h4>
+            <ul class="list-unstyled">
+                <li>Colors</li>
+                <li>Typography</li>
+                <li>Headings</li>
+                <li>Links</li>
+                <li>Buttons</li>
+                <li>Forms</li>
+                    <ul>
+                        <li>Input Text</li>
+                        <li>Dropdowns</li>
+                    </ul>
+                <li>Tables</li>
+                <li>Alerts</li>
+                <li>UX Functions</li>
+                    <ul>
+                        <li>Show/Hide</li>
+                    </ul>
+
+
+            </ul>
+        </div>
+        <!--Main-->
+        <div id="main" class="col-sm-10">
+                <h2 class="montsserat-heading">Colors</h2>
+                <h4 class="montsserat-heading">Primary Color Palette</h4>
+            <div class="row">
+                <!--Color Card-->
+                <div class="col-sm-3">
+                <div class="color-card  no-padding  ">
+                    <span class="color-preview" style="background-color: #a60008;">
+
+                    </span>
+                    <div class="card-content">
+                        <h5 class="montsserat-heading">ECC Crimson</h5>
+                        <p>HEX: #A60008</p>
+                    </div>
+
+                </div>
+                </div>
+            </div><!-- end row -->
+
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            
+            <h4 class="montsserat-heading">Shades of Gray</h4>
+
+            <div class="row">
+            <!--Color Card-->
+            <div class="col-sm-3">
+                <div class="color-card">
+                        <span class="color-preview" style="background-color: #444;">
+
+                        </span>
+                    <div class="card-content">
+                        <h5 class="montsserat-heading">Dark Gray</h5>
+                        <p>HEX: #444444</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Color Card-->
+                <div class="col-sm-3">
+                    <div class="color-card ">
+                            <span class="color-preview" style="background-color: #898989;">
+
+                            </span>
+                        <div class="card-content">
+                            <h5 class="montsserat-heading">Gray</h5>
+                            <p>HEX: #898989</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            <!--Color Card-->
+                <div class="col-sm-3">
+                    <div class="color-card  ">
+                            <span class="color-preview" style="background-color: #CCC;">
+
+                            </span>
+                        <div class="card-content">
+                            <h5 class="montsserat-heading">Silver</h5>
+                            <p>HEX: #CCCCCC</p>
+                        </div>
+
+                    </div>
+                </div>
+            <!--Color Card-->
+                <div class="col-sm-3">
+                    <div class="color-card">
+                            <span class="color-preview" style="background-color: #f8f8f8;">
+                            </span>
+                        <div class="card-content">
+                            <h5 class="montsserat-heading">Light Gray</h5>
+                            <p>HEX: #F8F8F8</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- end row -->
+
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+
+            <h2 class="montsserat-heading">Typography</h2>
+            <h4 class="montsserat-heading">Helvetica Neue</h4>
+
+
+            {% highlight css linenos %}
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighlight %}
+
+            <div class="row">
+            <div class="col-sm-2 text-gray-dark">
+                    <span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 72px;line-height: 72px;">
+                        Aa
+                    </span>
+
+            </div>
+
+            <div class="col-sm-6 text-gray">
+                A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+                <br>
+                a b c d e f g h i j k l m n o p q r s t u v w x y z
+                <br>
+                1 2 3 4 5 6 7 8 9 0 ( , . ; : ? ! $ & * )
+            </div>
+                <div class="col-sm-4 text-gray">
+                    Font Weight: Normal
+                </div>
+
+        </div>
+
+            <!--Bold-->
+
+            <div class="row">
+                <div class="col-sm-2 text-gray-dark text-bold">
+                    <span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 72px;line-height: 72px;">
+                        Aa
+                    </span>
+
+                </div>
+
+                <div class="col-sm-6 text-gray text-bold">
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+                    <br>
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z
+                    <br>
+                    1 2 3 4 5 6 7 8 9 0 ( , . ; : ? ! $ & * )
+                </div>
+                <div class="col-sm-4 text-gray text-bold">
+                    Font Weight: Bold
+                </div>
+
+
+
+            </div><!-- end row -->
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="spacer"></div>
+                    <h4 class="montsserat-heading">Paragraph <span class="text-gray-dark" style="font-size: 16px;font-weight: 200;">Font size: 14px</span></h4>
+                    <p>
+                        <span class="text-bold">Lorem</span> ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque debitis facilis, illo laudantium maxime nam natus numquam, odio odit officiis omnis provident quidem quo repudiandae, similique vel velit vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur commodi corporis dolorum eius minus mollitia <span class="text-bold"> I am bold</span> reprehenderit sed temporibus voluptatem! Expedita ipsam libero non nulla recusandae? Minus nam omnis voluptatem.
+                    </p>
+                </div>
+
+
+
+                
+                <div class="col-sm-12">
+                    <div class="spacer"></div>
+
+                <h4 class="montsserat-heading">Bold</h4>
+                {% highlight html linenos %}
+<span class="text-bold"> BOLD </span>                {% endhighlight %}
+                </div><!-- end col-sm-12 -->
+
+
+                <div class="col-sm-12">
+                    <div class="spacer"></div>
+                    <h4 class="montsserat-heading">Italic</h4>
+                    <span class="required">* Headings cannot have italics</span>
+                    <p class="text-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ipsum modi nulla reiciendis sit? Consectetur consequatur eligendi in ipsa natus perferendis veniam. Architecto aut debitis quam quibusdam. Ab, id voluptatum?</p>
+                    {% highlight html linenos %}
+<span class="text-italic"> Italic </span>{% endhighlight %}
+                </div>
+
+            </div><!-- end row -->
+
+            <!--Headings-->
+            <div class="">
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <h2 class="montsserat-heading">Headings</h2>
+                <h4 class="montsserat-heading">Normal</h4>
+                <h2 class="heading">Normal Heading</h2>
+                <h4 class="montsserat-heading">With Line</h4>
+                <h2 class="heading heading-line">Special Heading With Line</h2>
+
+            </div><!-- end row -->
+
+            <!--Buttons-->
+            <div>
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <h2 class="montsserat-heading">Buttons</h2>
+                <h4 class="montsserat-heading">Primary</h4>
+                <a href="#" class="btn btn-primary" role="button"> Login </a>
+                {% highlight html linenos %}
+<a href="#" class="btn btn-primary" role="button"> Login </a>{% endhighlight %}
+
+                <h4 class="montsserat-heading">Secondary</h4>
+                <a href="#" class="btn btn-secondary"> Secondary Button </a>
+                {% highlight html linenos %}
+<a href="#" class="btn btn-secondary"> Secondary Button </a>{% endhighlight %}
+            </div>
+
+
+
+            <!--Links-->
+            <div>
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <h2 class="montsserat-heading">Links</h2>
+            </div>
+            <!--Forms-->
+            <div>
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <h2 class="montsserat-heading">Forms</h2>
+                <h4 class="montsserat-heading">Input Text</h4>
+                <h4 class="montsserat-heading">Dropdowns</h4>
+            </div>
+
+            <!--Tables-->
+            <div>
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <h2 class="montsserat-heading">Tables</h2>
+            </div>
+
+            <!--Alerts-->
+            <div>
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <h2 class="montsserat-heading">Alerts</h2>
+
+                <div class="alert alert-danger alert-dismissible" role="alert">Error! Please provide a valid email address</div>
+                <div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Notification: Update is available</div>
+
+            </div>
+
+        </div><!-- #main -->
+    </div><!-- end container -->
+</div><!-- end section -->
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+

@@ -1,38 +1,25 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
+<!--Footer-->
+<script>
+  // This is for the content in the yellow region
+  var footer_info_Object = [
+    {'header':{'content':'Password/Login Help'},
+      'body':{'content':'(888) 242-2453 (Inside U.S.) or (214) 570-5935 (Outside U.S.)'}
+    },
+    {'header':{'content':'Membership & Subscription'},
+      'body':{'content':'(800) 787-8984 (Inside U.S.) or (301) 223-2307 (Outside U.S.)'}
+    }/*,
+     {'header':{'content':'Membership & Subscriptions FAQ&#39;s <i class="fa fa-chevron-right"></i>','link':'#'},
+     'body':{'content':'Site Map <i class="fa fa-chevron-right"></i>','link': '#'}
+     },
+     {'header':{'content':'<span class="">Need any help? Talk to a live agent now</span>','link':'#'},
+     'body':{'content':'<img src="https://donatenow.heart.org/images/livechat.jpg" width="29" class="chat" alt="Chat link">','link': '#'}
+     }*/
+  ];
+  // Set to show AHA dual logo
+  var showDualLogo = false;
+  // Set to true if need to inject Twitter Bootstrap
+  var ahaFooterLoadBootstrap = false;
+  // Set to false to override private policy banner
+  var showAHAPrivacyPolicyBanner = false;
+</script>
+<script id="footerScriptTag" src="//static.heart.org/ahaanywhere/responsive/js/aha-footer-external-responsive.v2.js" data-site-contact="true" type="text/javascript"></script>

@@ -7,7 +7,8 @@
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$sub-base-font-family: 'Montserrat', sans-serif;
+$base-font-size:   14px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -15,6 +16,7 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
+$text-primary: #a60008;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
@@ -22,9 +24,197 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+$gray-dark : #444444;
+$gray: #898989;
+$silver: #CCCCCC;
+$gray-light: #F8F8F8;
+
+$text-required: #a60008;
+
+//Custom Project Theme
+* {
+  transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+}
+
+body {
+  font:400 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.spacer {display: block;height: $spacing-unit;margin: 0;}
+
+//Headings
+h1,h2,h3,h4 {}
+.heading {
+  margin-bottom: 0px;
+  text-align: left;
+  padding: 0px 0 12px 0;
+  margin-top: 0;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+}
+
+
+
+
+
+
+.text-shadow {
+  text-shadow: 1px 1px 0px #555;
+}
+
+//Colors
+.text-primary {
+  color:$text-primary;
+}
+.text-gray-dark {color:$gray-dark}
+.text-gray {color: $gray}
+.text-silver {color: $silver}
+.text-gray-light {color: $gray-light}
+
+//Navigation Bar
+#main-navigation {
+  border-bottom: 1px solid #EAEAEA;
+  background-color: #F7F7F7;
+}
+
+nav#main-navigation.navbar-default .navbar-nav > li.active > a,
+nav#main-navigation.navbar-default .navbar-nav > li > a:hover
+{
+  color: #FFF !important;
+  background-color: #000 !important;
+}
+
+nav#main-navigation.navbar-default .navbar-nav > li > a {
+
+}
+nav#main-navigation .menu > li > a {
+  //transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  position: relative;
+  text-decoration: none;
+  font-weight: 400;
+  color: #000;
+  //font-size: 0.9em;
+  padding: 15px;
+  line-height: 20px;
+  position: relative;
+  display: block;
+}
+
+nav#main-navigation .menu > li {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
+  transition: padding 0.5s ease-in-out 0s;
+  animation-fill-mode: both;
+}
+
+//Helper Classes
+.no-padding {
+  padding: 0 !important;
+}
+.text-bold {
+  font-weight: 700;
+}
+.text-italic {
+  font-style: italic;
+}
+
+.required {
+  color: $text-required;
+}
+
+//End Custom
+
+//For Style Guide Not Part of Project
+.montsserat-heading {
+  font-family: $sub-base-font-family;
+  font-style: normal;
+  font-weight: 700;
+}
+
+//Color Card
+.color-card {
+  background: #FFF;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+  //width: 185px;
+  margin: 10px;
+  padding-bottom: 5px;
+  text-align: left;
+  box-sizing: border-box;
+  //display: inline-block;
+}
+
+.color-card .color-preview {
+  height: 80px;
+  width: 100%;
+  border-radius: 0;
+  display: block;
+  margin-top: 10px;
+}
+
+.color-card p {
+
+  letter-spacing: 0.5px;
+  //font-size: 0.75em;
+
+
+}
+
+.card-content {
+  padding: 5px;
+}
+
+//Alert
+//Dismissable
+.alert button.close span {
+  line-height: 14px;
+  vertical-align: top;
+}
+
+//Buttons
+
+.btn{
+
+  color: #FFF;
+  padding: 14px 16px;
+  margin: 0 10px 20px 0;
+  font-weight: bold;
+  overflow: hidden;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 2px;
+  vertical-align: middle;
+  border:0;
+  font-size: 12px;
+}
+
+  //Primary
+  .btn-primary {
+
+    background-color: $text-primary;
+  }
+
+
+
+  .btn-primary:hover {
+    background-color: #5d5d5d;
+    color: #FFF;
+
+  }
+
+
+.btn-secondary {
+   background-color: $gray-dark;
+
+    &:hover{
+      background-color: #333;
+      color: #fff;
+    }
+ }
 // Width of the content area
 $content-width:    800px;
-
 $on-palm:          600px;
 $on-laptop:        800px;
 
@@ -42,6 +232,19 @@ $on-laptop:        800px;
         @content;
     }
 }
+
+
+//Media Queries
+@media (max-width: 480px) {
+  .spacer {height: $spacing-unit/2;margin:0;}
+  .h1-heading {
+    font-size: 30px;
+  }
+} /*// Landscape phones and down*/
+@media (max-width: 767px) { } /*// Landscape phone to portrait tablet*/
+@media (min-width: 768px) and (max-width: 979px) { } /* // Portrait tablet to landscape and desktop*/
+@media (min-width: 1200px) { }
+
 
 
 
