@@ -859,8 +859,9 @@ width: 99%;
     text-transform: uppercase;
 }
 
-#top-header li.donate a {
-    color: #fff;
+#top-header li.donate a.donate-button {
+    color: #fff !important;
+    text-decoration: none !important;
 }
 
 #top-header a:hover {

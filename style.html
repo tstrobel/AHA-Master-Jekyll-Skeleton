@@ -38,6 +38,9 @@ activelink: Style Guides
                 <li>Forms</li>
                     <ul>
                         <li>Input Text</li>
+
+
+
                         <li>Dropdowns</li>
                     </ul>
                 <li>Tables</li>
@@ -45,7 +48,9 @@ activelink: Style Guides
                 <li>UX Functions</li>
                     <ul>
                         <li>Show/Hide</li>
+                        <li>Calendar</li>
                     </ul>
+
 
 
             </ul>
@@ -138,7 +143,7 @@ activelink: Style Guides
             <h4 class="montsserat-heading">Helvetica Neue</h4>
 
 
-            {% highlight css linenos %}
+            {% highlight css %}
 font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighlight %}
 
             <div class="row">
@@ -203,7 +208,7 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
                     <div class="spacer"></div>
 
                 <h4 class="montsserat-heading">Bold</h4>
-                {% highlight html linenos %}
+                {% highlight html  %}
 <span class="text-bold"> BOLD </span>                {% endhighlight %}
                 </div><!-- end col-sm-12 -->
 
@@ -213,7 +218,7 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
                     <h4 class="montsserat-heading">Italic</h4>
                     <span class="required">* Headings cannot have italics</span>
                     <p class="text-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ipsum modi nulla reiciendis sit? Consectetur consequatur eligendi in ipsa natus perferendis veniam. Architecto aut debitis quam quibusdam. Ab, id voluptatum?</p>
-                    {% highlight html linenos %}
+                    {% highlight html  %}
 <span class="text-italic"> Italic </span>{% endhighlight %}
                 </div>
 
@@ -225,11 +230,75 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
                 <div class="spacer"></div>
                 <h2 class="montsserat-heading">Headings</h2>
                 <h4 class="montsserat-heading">Normal</h4>
-                <h2 class="heading">Normal Heading</h2>
+
+                {% highlight html  %}
+<h2 class="heading"> Normal Heading </h2>{% endhighlight %}
+                <h1 class="heading">H1</h1>
+                <h2 class="heading">H2</h2>
+                <h3 class="heading">H3</h3>
+                <h4 class="heading">H4</h4>
+                <h5 class="heading">H5</h5>
+                <div class="spacer"></div>
                 <h4 class="montsserat-heading">With Line</h4>
-                <h2 class="heading heading-line">Special Heading With Line</h2>
+                <h2 class="heading heading-line"><span> Special Heading With Line </span></h2>
+                {% highlight html  %}
+<h2 class="heading heading-line"><span> Special Heading With Line </span></h2>{% endhighlight %}
 
             </div><!-- end row -->
+
+            <div class="row">
+                <h2 class="montsserat-heading">Menu</h2>
+                <h4 class="montsserat-heading">Dropdown</h4>
+                    <div>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle btn-primary" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Dropdown
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>
+                                    <div class="col-sm-12">
+
+                                        <h4 class="heading" style="margin-top: 10px;">eCards Inventory Overview</h4></div>
+                                    <div class="col-sm-6">
+                                        <ul class="nav nav-pills nav-stacked">
+
+                                            <li role="presentation" class=" text-bold">ACLS EP<span class="pull-right">195</span></li>
+                                            <li role="presentation" class="text-bold">ACLS Provider <span class="pull-right">1829</span></li>
+                                            <li role="presentation" class="text-bold">BLS Provider <span class="pull-right">195</span></li>
+                                            <li role="presentation" class="text-bold">Heartsaver CPR AED <span class="pull-right">195</span></li>
+                                            <li role="presentation" class="text-bold">Heartsaver First Aid <span class="pull-right">195</span></li>
+                                            <li role="presentation" class="text-bold">Heartsaver First Aid CPR AED <span class="pull-right">195</span></li>
+                                            <li role="presentation" class="text-bold">PALS<span class="pull-right">195</span></li>
+                                            <li role="presentation" class="text-bold">PEARS<span class="pull-right">195</span></li>
+
+
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6" style="border-left:1px solid #ccc;">
+                                        <ul class="nav nav-pills nav-stacked">
+
+                                            <li role="presentation" class=""><a href="#">View & Manage Inventory</a></li>
+                                            <li role="presentation" class=""><a href="#">Assign eCards to Instructors</a></li>
+                                            <li role="presentation" class=""><a href="#">Assign eCards to Students</a></li>
+                                            <li role="presentation" class=""><a href="#">View Emailed eCards</a></li>
+                                            <li role="presentation" class=""><a href="#">Search eCards</a></li>
+                                            <li role="presentation" class=""><a href="#">eCard Status</a></li>
+                                            <li role="presentation" class=""><a href="#">Reclaim eCards</a></li>
+                                            <li role="presentation" class=""><a href="#">Reports</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="spacer"></div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+            </div><!-- end row -->
+
+
 
             <!--Buttons-->
             <div>
@@ -238,12 +307,12 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
                 <h2 class="montsserat-heading">Buttons</h2>
                 <h4 class="montsserat-heading">Primary</h4>
                 <a href="#" class="btn btn-primary" role="button"> Login </a>
-                {% highlight html linenos %}
+                {% highlight html  %}
 <a href="#" class="btn btn-primary" role="button"> Login </a>{% endhighlight %}
 
                 <h4 class="montsserat-heading">Secondary</h4>
                 <a href="#" class="btn btn-secondary"> Secondary Button </a>
-                {% highlight html linenos %}
+                {% highlight html  %}
 <a href="#" class="btn btn-secondary"> Secondary Button </a>{% endhighlight %}
             </div>
 
@@ -254,6 +323,10 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
                 <div class="spacer"></div>
                 <div class="spacer"></div>
                 <h2 class="montsserat-heading">Links</h2>
+                <a href="#"> This is a link </a>
+        <div class="spacer"></div>
+{% highlight html  %}
+<a href="#"> Your link here </a>{% endhighlight %}
             </div>
             <!--Forms-->
             <div>
@@ -261,7 +334,134 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
                 <div class="spacer"></div>
                 <h2 class="montsserat-heading">Forms</h2>
                 <h4 class="montsserat-heading">Input Text</h4>
+
+                <div>
+                    <div class="form-group">
+                        <label class="control-label" for="tsName">Label <span class="required">*</span></label>
+                        <input class="form-control" value="" name="" id="" maxlength="50" type="text" placeholder="Input text">
+                    </div> <!-- form-group -->
+
+{% highlight html %}
+<div class="form-group">
+    <label class="control-label" for="name">Label <span class="required">*</span></label>
+    <input class="form-control" value="" name="name" id="name" type="text" placeholder="Input text">
+</div>
+{% endhighlight %}
+
+
+                </div>
+
+                <div class="spacer"></div>
+                <h4 class="montsserat-heading">Radio</h4>
+
+                <!-- radio -->
+                <div class="row">
+                    <div class="col-sm-8 question text-bold">Do you speak a language other than English?</div>
+                    <div class="col-sm-4 answer">
+                        <label class="radio">
+                            <input type="radio" name="otherLang" id="" value="yes" data-toggle="radio">
+                            Yes
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="otherLang" id="" value="no" data-toggle="radio" checked>
+                            No
+                        </label>
+                    </div>
+                </div><!-- row -->
+
+                <div>
+
+                    <h5 class="montsserat-heading">HTML</h5>
+{% highlight html %}
+<div>
+    <label class="radio">
+        <input type="radio" name="otherLang" id="" value="yes" data-toggle="radio">
+        Yes
+    </label>
+    <label class="radio">
+        <input type="radio" name="otherLang" id="" value="no" data-toggle="radio" checked>
+        No
+    </label>
+</div>
+{% endhighlight %}
+                </div>
+
+                <h5 class="montsserat-heading">JS</h5>
+{% highlight js %}
+$('.radio').on('toggle',function(e) {
+var $el = $(e.target);
+var elname = e.target.name;
+console.log($el.val());
+console.log(elname);
+});
+{% endhighlight %}
+
+                <!-- end radio -->
+
+                <div class="spacer"></div>
+                <h4 class="montsserat-heading">Checkbox</h4>
+                <div>
+                    <label class="checkbox" for="emailsubscription">
+                        <input type="checkbox" value="yes" name="emailsubscription" id="emailsubscription" data-toggle="checkbox" />
+                        Would you like to receive email newsletter from American Heart Association?
+                    </label>
+
+                </div>
+
+                <h5 class="montsserat-heading">HTML</h5>
+{% highlight html %}
+<label class="checkbox" for="emailsubscription">
+    <input type="checkbox" value="yes" name="emailsubscription" id="emailsubscription" data-toggle="checkbox" />
+    Would you like to receive email newsletter from American Heart Association?
+</label>{% endhighlight %}
+
+                <h5 class="montsserat-heading">JS <span class="text-normal"> - To get the value and property checked (true/false)</span></h5>
+{% highlight js %}
+//Checkbox button value
+$('.checkbox').on('toggle',function(e) {
+var $el = $(e.target);
+var elname = e.target.name;
+console.log($el.val());
+console.log(elname);
+console.log($el.prop("checked"));
+});{% endhighlight %}
+
+
+                <div class="spacer"></div>
+
                 <h4 class="montsserat-heading">Dropdowns</h4>
+
+                <div>
+                    <label class="control-label" for="country">Country<span class="required"> * </span></label>
+                    <select id="country" title="Country" name="country" class="form-control chosen-select">
+                        <option value=""></option>
+                        <option value="USA">USA</option>
+                        <option value="VN">Vietnam</option>
+                        <option value="MEX">Mexico</option>
+                    </select>
+                    <div class="spacer"></div>
+                </div>
+<h5 class="montsserat-heading">HTML</h5>
+    {% highlight html %}<label class="control-label" for="country">Country<span class="required"> * </span></label>
+<select id="country" title="Country" name="country" class="form-control chosen-select">
+    <option value=""></option>
+    <option value="USA">USA</option>
+    <option value="VN">Vietnam</option>
+    <option value="MEX">Mexico</option>
+</select>{% endhighlight %}
+
+<h5 class="montsserat-heading">Get selected value</h5>
+                <div class="panel panel-default">
+                    <div id="" class="panel-body">
+                        Option value: <span id="chosen-output" class="text-bold text-primary">Not selected</span>
+                    </div>
+                </div>
+                <h5 class="montsserat-heading">JS</h5>
+{% highlight js %}
+jQuery('.chosen-select').on('change', function (evt, params) {
+var selectedValue = params.selected;
+alert(selectedValue);
+});{% endhighlight %}
             </div>
 
             <!--Tables-->
@@ -269,6 +469,559 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
                 <div class="spacer"></div>
                 <div class="spacer"></div>
                 <h2 class="montsserat-heading">Tables</h2>
+                <h4 class="montsserat-heading">Simple</h4>
+                <div class="table">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>eCard Code</th>
+                                <th>Course Date</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Course Modules</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1234567890</td>
+                                <td>08/20/2016</td>
+                                <td>Sara</td>
+                                <td>Lively</td>
+                                <td>s.lively@email.com</td>
+                                <td>(123) 567-9080</td>
+                                <td>Exam</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+    {% highlight html %}<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Column Heading</th>
+            <th>Column Heading</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Value 1</td>
+        <td>Value 2</td>
+    </tr>
+    </tbody>
+</table>{% endhighlight %}
+
+                </div>
+
+            <!--Datatable with Search & Pagination-->
+                <div class="spacer"></div>
+                <h4 class="montsserat-heading">Datatable with Search & Pagination</h4>
+
+                <!-- Example of dataTables -->
+                <div class="table">
+                <table id="example" class="dataTable display table table-bordered table-striped" width="100%" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Age</th>
+                        <th>Start date</th>
+                        <th>Salary</th>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Age</th>
+                        <th>Start date</th>
+                        <th>Salary</th>
+                    </tr>
+                    </tfoot>
+                    <tbody>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011/04/25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Garrett Winters</td>
+                        <td>Accountant</td>
+                        <td>Tokyo</td>
+                        <td>63</td>
+                        <td>2011/07/25</td>
+                        <td>$170,750</td>
+                    </tr>
+                    <tr>
+                        <td>Ashton Cox</td>
+                        <td>Junior Technical Author</td>
+                        <td>San Francisco</td>
+                        <td>66</td>
+                        <td>2009/01/12</td>
+                        <td>$86,000</td>
+                    </tr>
+                    <tr>
+                        <td>Cedric Kelly</td>
+                        <td>Senior Javascript Developer</td>
+                        <td>Edinburgh</td>
+                        <td>22</td>
+                        <td>2012/03/29</td>
+                        <td>$433,060</td>
+                    </tr>
+                    <tr>
+                        <td>Airi Satou</td>
+                        <td>Accountant</td>
+                        <td>Tokyo</td>
+                        <td>33</td>
+                        <td>2008/11/28</td>
+                        <td>$162,700</td>
+                    </tr>
+                    <tr>
+                        <td>Brielle Williamson</td>
+                        <td>Integration Specialist</td>
+                        <td>New York</td>
+                        <td>61</td>
+                        <td>2012/12/02</td>
+                        <td>$372,000</td>
+                    </tr>
+                    <tr>
+                        <td>Herrod Chandler</td>
+                        <td>Sales Assistant</td>
+                        <td>San Francisco</td>
+                        <td>59</td>
+                        <td>2012/08/06</td>
+                        <td>$137,500</td>
+                    </tr>
+                    <tr>
+                        <td>Rhona Davidson</td>
+                        <td>Integration Specialist</td>
+                        <td>Tokyo</td>
+                        <td>55</td>
+                        <td>2010/10/14</td>
+                        <td>$327,900</td>
+                    </tr>
+                    <tr>
+                        <td>Colleen Hurst</td>
+                        <td>Javascript Developer</td>
+                        <td>San Francisco</td>
+                        <td>39</td>
+                        <td>2009/09/15</td>
+                        <td>$205,500</td>
+                    </tr>
+                    <tr>
+                        <td>Sonya Frost</td>
+                        <td>Software Engineer</td>
+                        <td>Edinburgh</td>
+                        <td>23</td>
+                        <td>2008/12/13</td>
+                        <td>$103,600</td>
+                    </tr>
+                    <tr>
+                        <td>Jena Gaines</td>
+                        <td>Office Manager</td>
+                        <td>London</td>
+                        <td>30</td>
+                        <td>2008/12/19</td>
+                        <td>$90,560</td>
+                    </tr>
+                    <tr>
+                        <td>Quinn Flynn</td>
+                        <td>Support Lead</td>
+                        <td>Edinburgh</td>
+                        <td>22</td>
+                        <td>2013/03/03</td>
+                        <td>$342,000</td>
+                    </tr>
+                    <tr>
+                        <td>Charde Marshall</td>
+                        <td>Regional Director</td>
+                        <td>San Francisco</td>
+                        <td>36</td>
+                        <td>2008/10/16</td>
+                        <td>$470,600</td>
+                    </tr>
+                    <tr>
+                        <td>Haley Kennedy</td>
+                        <td>Senior Marketing Designer</td>
+                        <td>London</td>
+                        <td>43</td>
+                        <td>2012/12/18</td>
+                        <td>$313,500</td>
+                    </tr>
+                    <tr>
+                        <td>Tatyana Fitzpatrick</td>
+                        <td>Regional Director</td>
+                        <td>London</td>
+                        <td>19</td>
+                        <td>2010/03/17</td>
+                        <td>$385,750</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Silva</td>
+                        <td>Marketing Designer</td>
+                        <td>London</td>
+                        <td>66</td>
+                        <td>2012/11/27</td>
+                        <td>$198,500</td>
+                    </tr>
+                    <tr>
+                        <td>Paul Byrd</td>
+                        <td>Chief Financial Officer (CFO)</td>
+                        <td>New York</td>
+                        <td>64</td>
+                        <td>2010/06/09</td>
+                        <td>$725,000</td>
+                    </tr>
+                    <tr>
+                        <td>Gloria Little</td>
+                        <td>Systems Administrator</td>
+                        <td>New York</td>
+                        <td>59</td>
+                        <td>2009/04/10</td>
+                        <td>$237,500</td>
+                    </tr>
+                    <tr>
+                        <td>Bradley Greer</td>
+                        <td>Software Engineer</td>
+                        <td>London</td>
+                        <td>41</td>
+                        <td>2012/10/13</td>
+                        <td>$132,000</td>
+                    </tr>
+                    <tr>
+                        <td>Dai Rios</td>
+                        <td>Personnel Lead</td>
+                        <td>Edinburgh</td>
+                        <td>35</td>
+                        <td>2012/09/26</td>
+                        <td>$217,500</td>
+                    </tr>
+                    <tr>
+                        <td>Jenette Caldwell</td>
+                        <td>Development Lead</td>
+                        <td>New York</td>
+                        <td>30</td>
+                        <td>2011/09/03</td>
+                        <td>$345,000</td>
+                    </tr>
+                    <tr>
+                        <td>Yuri Berry</td>
+                        <td>Chief Marketing Officer (CMO)</td>
+                        <td>New York</td>
+                        <td>40</td>
+                        <td>2009/06/25</td>
+                        <td>$675,000</td>
+                    </tr>
+                    <tr>
+                        <td>Caesar Vance</td>
+                        <td>Pre-Sales Support</td>
+                        <td>New York</td>
+                        <td>21</td>
+                        <td>2011/12/12</td>
+                        <td>$106,450</td>
+                    </tr>
+                    <tr>
+                        <td>Doris Wilder</td>
+                        <td>Sales Assistant</td>
+                        <td>Sidney</td>
+                        <td>23</td>
+                        <td>2010/09/20</td>
+                        <td>$85,600</td>
+                    </tr>
+                    <tr>
+                        <td>Angelica Ramos</td>
+                        <td>Chief Executive Officer (CEO)</td>
+                        <td>London</td>
+                        <td>47</td>
+                        <td>2009/10/09</td>
+                        <td>$1,200,000</td>
+                    </tr>
+                    <tr>
+                        <td>Gavin Joyce</td>
+                        <td>Developer</td>
+                        <td>Edinburgh</td>
+                        <td>42</td>
+                        <td>2010/12/22</td>
+                        <td>$92,575</td>
+                    </tr>
+                    <tr>
+                        <td>Jennifer Chang</td>
+                        <td>Regional Director</td>
+                        <td>Singapore</td>
+                        <td>28</td>
+                        <td>2010/11/14</td>
+                        <td>$357,650</td>
+                    </tr>
+                    <tr>
+                        <td>Brenden Wagner</td>
+                        <td>Software Engineer</td>
+                        <td>San Francisco</td>
+                        <td>28</td>
+                        <td>2011/06/07</td>
+                        <td>$206,850</td>
+                    </tr>
+                    <tr>
+                        <td>Fiona Green</td>
+                        <td>Chief Operating Officer (COO)</td>
+                        <td>San Francisco</td>
+                        <td>48</td>
+                        <td>2010/03/11</td>
+                        <td>$850,000</td>
+                    </tr>
+                    <tr>
+                        <td>Shou Itou</td>
+                        <td>Regional Marketing</td>
+                        <td>Tokyo</td>
+                        <td>20</td>
+                        <td>2011/08/14</td>
+                        <td>$163,000</td>
+                    </tr>
+                    <tr>
+                        <td>Michelle House</td>
+                        <td>Integration Specialist</td>
+                        <td>Sidney</td>
+                        <td>37</td>
+                        <td>2011/06/02</td>
+                        <td>$95,400</td>
+                    </tr>
+                    <tr>
+                        <td>Suki Burks</td>
+                        <td>Developer</td>
+                        <td>London</td>
+                        <td>53</td>
+                        <td>2009/10/22</td>
+                        <td>$114,500</td>
+                    </tr>
+                    <tr>
+                        <td>Prescott Bartlett</td>
+                        <td>Technical Author</td>
+                        <td>London</td>
+                        <td>27</td>
+                        <td>2011/05/07</td>
+                        <td>$145,000</td>
+                    </tr>
+                    <tr>
+                        <td>Gavin Cortez</td>
+                        <td>Team Leader</td>
+                        <td>San Francisco</td>
+                        <td>22</td>
+                        <td>2008/10/26</td>
+                        <td>$235,500</td>
+                    </tr>
+                    <tr>
+                        <td>Martena Mccray</td>
+                        <td>Post-Sales support</td>
+                        <td>Edinburgh</td>
+                        <td>46</td>
+                        <td>2011/03/09</td>
+                        <td>$324,050</td>
+                    </tr>
+                    <tr>
+                        <td>Unity Butler</td>
+                        <td>Marketing Designer</td>
+                        <td>San Francisco</td>
+                        <td>47</td>
+                        <td>2009/12/09</td>
+                        <td>$85,675</td>
+                    </tr>
+                    <tr>
+                        <td>Howard Hatfield</td>
+                        <td>Office Manager</td>
+                        <td>San Francisco</td>
+                        <td>51</td>
+                        <td>2008/12/16</td>
+                        <td>$164,500</td>
+                    </tr>
+                    <tr>
+                        <td>Hope Fuentes</td>
+                        <td>Secretary</td>
+                        <td>San Francisco</td>
+                        <td>41</td>
+                        <td>2010/02/12</td>
+                        <td>$109,850</td>
+                    </tr>
+                    <tr>
+                        <td>Vivian Harrell</td>
+                        <td>Financial Controller</td>
+                        <td>San Francisco</td>
+                        <td>62</td>
+                        <td>2009/02/14</td>
+                        <td>$452,500</td>
+                    </tr>
+                    <tr>
+                        <td>Timothy Mooney</td>
+                        <td>Office Manager</td>
+                        <td>London</td>
+                        <td>37</td>
+                        <td>2008/12/11</td>
+                        <td>$136,200</td>
+                    </tr>
+                    <tr>
+                        <td>Jackson Bradshaw</td>
+                        <td>Director</td>
+                        <td>New York</td>
+                        <td>65</td>
+                        <td>2008/09/26</td>
+                        <td>$645,750</td>
+                    </tr>
+                    <tr>
+                        <td>Olivia Liang</td>
+                        <td>Support Engineer</td>
+                        <td>Singapore</td>
+                        <td>64</td>
+                        <td>2011/02/03</td>
+                        <td>$234,500</td>
+                    </tr>
+                    <tr>
+                        <td>Bruno Nash</td>
+                        <td>Software Engineer</td>
+                        <td>London</td>
+                        <td>38</td>
+                        <td>2011/05/03</td>
+                        <td>$163,500</td>
+                    </tr>
+                    <tr>
+                        <td>Sakura Yamamoto</td>
+                        <td>Support Engineer</td>
+                        <td>Tokyo</td>
+                        <td>37</td>
+                        <td>2009/08/19</td>
+                        <td>$139,575</td>
+                    </tr>
+                    <tr>
+                        <td>Thor Walton</td>
+                        <td>Developer</td>
+                        <td>New York</td>
+                        <td>61</td>
+                        <td>2013/08/11</td>
+                        <td>$98,540</td>
+                    </tr>
+                    <tr>
+                        <td>Finn Camacho</td>
+                        <td>Support Engineer</td>
+                        <td>San Francisco</td>
+                        <td>47</td>
+                        <td>2009/07/07</td>
+                        <td>$87,500</td>
+                    </tr>
+                    <tr>
+                        <td>Serge Baldwin</td>
+                        <td>Data Coordinator</td>
+                        <td>Singapore</td>
+                        <td>64</td>
+                        <td>2012/04/09</td>
+                        <td>$138,575</td>
+                    </tr>
+                    <tr>
+                        <td>Zenaida Frank</td>
+                        <td>Software Engineer</td>
+                        <td>New York</td>
+                        <td>63</td>
+                        <td>2010/01/04</td>
+                        <td>$125,250</td>
+                    </tr>
+                    <tr>
+                        <td>Zorita Serrano</td>
+                        <td>Software Engineer</td>
+                        <td>San Francisco</td>
+                        <td>56</td>
+                        <td>2012/06/01</td>
+                        <td>$115,000</td>
+                    </tr>
+                    <tr>
+                        <td>Jennifer Acosta</td>
+                        <td>Junior Javascript Developer</td>
+                        <td>Edinburgh</td>
+                        <td>43</td>
+                        <td>2013/02/01</td>
+                        <td>$75,650</td>
+                    </tr>
+                    <tr>
+                        <td>Cara Stevens</td>
+                        <td>Sales Assistant</td>
+                        <td>New York</td>
+                        <td>46</td>
+                        <td>2011/12/06</td>
+                        <td>$145,600</td>
+                    </tr>
+                    <tr>
+                        <td>Hermione Butler</td>
+                        <td>Regional Director</td>
+                        <td>London</td>
+                        <td>47</td>
+                        <td>2011/03/21</td>
+                        <td>$356,250</td>
+                    </tr>
+                    <tr>
+                        <td>Lael Greer</td>
+                        <td>Systems Administrator</td>
+                        <td>London</td>
+                        <td>21</td>
+                        <td>2009/02/27</td>
+                        <td>$103,500</td>
+                    </tr>
+                    <tr>
+                        <td>Jonas Alexander</td>
+                        <td>Developer</td>
+                        <td>San Francisco</td>
+                        <td>30</td>
+                        <td>2010/07/14</td>
+                        <td>$86,500</td>
+                    </tr>
+                    <tr>
+                        <td>Shad Decker</td>
+                        <td>Regional Director</td>
+                        <td>Edinburgh</td>
+                        <td>51</td>
+                        <td>2008/11/13</td>
+                        <td>$183,000</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Bruce</td>
+                        <td>Javascript Developer</td>
+                        <td>Singapore</td>
+                        <td>29</td>
+                        <td>2011/06/27</td>
+                        <td>$183,000</td>
+                    </tr>
+                    <tr>
+                        <td>Donna Snider</td>
+                        <td>Customer Support</td>
+                        <td>New York</td>
+                        <td>27</td>
+                        <td>2011/01/25</td>
+                        <td>$112,000</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div><!-- end div.table -->
+                <!-- End example of datatables -->
+
+                <h5 class="montsserat-heading">HTML</h5>
+{% highlight html %}
+<div class="table">
+<table id="example" class="dataTable display table table-bordered table-striped" width="100%" cellspacing="0">
+    <thead>
+        <tr>
+            <th>...</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>...</td>
+        </tr>
+    </tbody>
+    </table>
+</div>{% endhighlight %}
+
+
             </div>
 
             <!--Alerts-->
@@ -276,9 +1029,54 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
                 <div class="spacer"></div>
                 <div class="spacer"></div>
                 <h2 class="montsserat-heading">Alerts</h2>
-
+                <h4 class="montsserat-heading">Errors</h4>
                 <div class="alert alert-danger alert-dismissible" role="alert">Error! Please provide a valid email address</div>
-                <div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Notification: Update is available</div>
+                {% highlight html %}
+<div class="alert alert-danger alert-dismissible" role="alert"> Error! Please provide a valid email address </div>{% endhighlight %}
+
+                <div class="spacer"></div>
+                <h4 class="montsserat-heading">Notification</h4>
+                <div class="alert alert-success" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Notification: Update is available</div>
+                {% highlight html %}
+    <div class="alert alert-success" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>Notification: Update is available
+    </div>{% endhighlight %}
+
+            </div>
+
+            <!-- UX Functions -->
+            <div>
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <h2 class="montsserat-heading">UX Functions</h2>
+                <h4 class="montsserat-heading">Show/Hide (Expandable)</h4>
+
+                <div>
+                    <div class="spacer"></div>
+                    <div class="spacer"></div>
+                    <h4 class="montsserat-heading">Calendar - Datepicker</h4>
+                    <div class="form-group">
+                        <label for="birthdate">Birthday</label>
+                        <div class="input-group date">
+                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                            <input type="text" class="form-control datepicker" name="birthdate" id="birthdate" placeholder="Birthdate">
+                        </div>
+                    </div>
+
+{% highlight html %}
+<div class="form-group">
+    <label for="birthdate">Birthday</label>
+    <div class="input-group date">
+        <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+        <input type="text" class="form-control datepicker" name="birthdate" id="birthdate" placeholder="Birthdate">
+    </div>
+</div>                  {% endhighlight %}
+
+                </div>
+
+
 
             </div>
 

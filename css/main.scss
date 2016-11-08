@@ -33,14 +33,24 @@ $text-required: #a60008;
 
 //Custom Project Theme
 * {
-  transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  //transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
 }
 
 body {
   font:400 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.spacer {display: block;height: $spacing-unit;margin: 0;}
+a {
+  text-decoration: underline !important;
+  color: #000 !important;
+  &:hover{
+    color: $text-primary !important;
+    text-decoration: none;
+
+  }
+}
+
+.spacer {display: block;height: $spacing-unit;margin: 0;clear: both;}
 
 //Headings
 h1,h2,h3,h4 {}
@@ -53,9 +63,44 @@ h1,h2,h3,h4 {}
   text-overflow: ellipsis;
   white-space: normal;
   overflow: hidden;
+  text-align: left;
+  white-space: normal;
+  font-weight: bold;
 }
 
 
+
+.heading-line span {
+  display: inline-block;
+  position: relative;
+  color: $text-primary;
+}
+
+.heading.heading-line span::before {
+  border-color: #e4e4e4;
+  right: 100%;
+  margin-right: 15px;
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-top: 1px solid #e4e4e4;
+  top: 12px;
+  width: 1200px;
+  box-sizing: border-box;
+ }
+
+.heading.heading-line span::after {
+  border-color: #e4e4e4;
+  left: 100%;
+  margin-left: 15px;
+  top: 15px;
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-top: 1px solid #e4e4e4;
+  width: 1200px;
+  box-sizing: border-box;
+}
 
 
 
@@ -74,6 +119,10 @@ h1,h2,h3,h4 {}
 .text-gray-light {color: $gray-light}
 
 //Navigation Bar
+#top-header .menu > li > a {
+  text-decoration: none !important;
+}
+
 #main-navigation {
   border-bottom: 1px solid #EAEAEA;
   background-color: #F7F7F7;
@@ -92,7 +141,7 @@ nav#main-navigation.navbar-default .navbar-nav > li > a {
 nav#main-navigation .menu > li > a {
   //transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
   position: relative;
-  text-decoration: none;
+  text-decoration: none !important;
   font-weight: 400;
   color: #000;
   //font-size: 0.9em;
@@ -119,6 +168,10 @@ nav#main-navigation .menu > li {
 }
 .text-italic {
   font-style: italic;
+}
+
+.text-normal {
+  font-weight: 400 !important;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .required {
@@ -194,25 +247,118 @@ nav#main-navigation .menu > li {
   .btn-primary {
 
     background-color: $text-primary;
+    text-decoration: none !important;
+    color: #fff !important;
   }
 
 
 
   .btn-primary:hover {
     background-color: #5d5d5d;
-    color: #FFF;
+    color: #FFF !important;
 
   }
 
 
-.btn-secondary {
+a.btn-secondary {
    background-color: $gray-dark;
-
+   color:#FFF !important;
+  text-decoration: none !important;
     &:hover{
       background-color: #333;
       color: #fff;
     }
  }
+
+//Dropdown menu
+.btn.dropdown-toggle {
+  color: #000;
+  margin-bottom: 2px;
+}
+
+.btn-primary.active, .btn-primary:active, .open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  //background-color: #286090;
+  //border-color: #204d74;
+
+
+
+
+  margin-bottom: 2px;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary.focus:active, .btn-primary:active:focus, .btn-primary:active:hover, .open > .dropdown-toggle.btn-primary.focus, .open > .dropdown-toggle.btn-primary:focus, .open > .dropdown-toggle.btn-primary:hover {
+  color: #fff;
+  background-color: $text-primary;
+  border-color: $text-primary;
+}
+
+
+.dropdown-menu {
+  border-radius: 0;
+  min-width: 400px;
+}
+
+.dropdown-menu a {
+  //text-decoration: none !important;
+  &:hover{
+    text-decoration: none !important;
+  }
+}
+
+.nav.nav-stacked > li{
+  padding: 5px;
+}
+.nav.nav-stacked > li > a {
+  padding: 0px;
+}
+
+//Tables
+thead {
+  background-color: $gray-dark;
+  color: #FFF;
+
+}
+thead th {
+  font-weight: 400;
+}
+
+//Forms
+//Input text
+input[type="text"]{
+  border-radius: 0;
+}
+
+.input-sm {
+  border-radius: 0;
+}
+
+//Bootstrap overwrite
+//Addons
+.input-group-addon {
+  border-radius: 0;
+}
+
+//Pagination
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+  z-index: 3;
+  color: #fff !important;
+  cursor: default;
+  background-color: #a60008;
+  border-color: #a60008;
+}
+
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+  margin-left: 0;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
 // Width of the content area
 $content-width:    800px;
 $on-palm:          600px;
@@ -252,5 +398,8 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "chosen",
+        "datepicker",
+        "radio-checkbox"
 ;
