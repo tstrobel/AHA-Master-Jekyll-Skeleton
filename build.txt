@@ -10,3 +10,4 @@ jekyll serve
 jekyll build
 
 This is a test with emacs, test again
+git
