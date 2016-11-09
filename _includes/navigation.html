@@ -17,10 +17,22 @@
                 {% endif %}
                 <li class="{{active}}">
 
+                    {% if nav.subpages.size >= 0 %}
+                    <!-- dropdown -->
+                    <a href="{{ nav.link }}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{ nav.name }}
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        {% for subnav in {{nav.subpages}} %}
+                        <li><a href="#">{{subnav.name}}</a></li>
+                        {% endfor %}
+                    </ul>
+                     {% else %}
                     <a href="{{ nav.link }}" class="{{ nav.class }}">{{ nav.name }}
-
                     </a>
 
+                    {% endif %}
 
                 </li>
 

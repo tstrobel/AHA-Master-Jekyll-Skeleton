@@ -159,6 +159,14 @@ nav#main-navigation .menu > li {
   animation-fill-mode: both;
 }
 
+//NAvbar with dropdown
+.nav.navbar-nav.menu .btn.dropdown-toggle {
+  background-color: transparent;
+  margin: 0;
+  border-radius: 0;
+}
+
+
 //Helper Classes
 .no-padding {
   padding: 0 !important;
@@ -259,6 +267,18 @@ nav#main-navigation .menu > li {
 
   }
 
+a.btn-primary-stroked {
+
+  background-color: transparent;
+  text-decoration: none !important;
+  color: $text-primary !important;
+  border:2px solid $text-primary;
+  &:hover{
+    background-color: rgba(0,0,0,0.05);
+    color: $text-primary !important;
+  }
+}
+
 
 a.btn-secondary {
    background-color: $gray-dark;
@@ -269,6 +289,17 @@ a.btn-secondary {
       color: #fff;
     }
  }
+
+
+a.btn-secondary-stroked{
+  color: $gray-dark;
+  border:2px solid $gray-dark;
+  text-decoration: none !important;
+  &:hover{
+    background-color: rgba(0,0,0,0.05);
+    color: $gray-dark !important;
+  }
+}
 
 //Dropdown menu
 .btn.dropdown-toggle {
@@ -296,7 +327,7 @@ a.btn-secondary {
 
 .dropdown-menu {
   border-radius: 0;
-  min-width: 400px;
+  //min-width: 400px;
 }
 
 .dropdown-menu a {

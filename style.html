@@ -246,15 +246,17 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
 
             </div><!-- end row -->
 
-            <div class="row">
+            <div class="">
+                <div class="spacer"></div>
+                <div class="spacer"></div>
                 <h2 class="montsserat-heading">Menu</h2>
                 <h4 class="montsserat-heading">Dropdown</h4>
                     <div>
                         <div class="dropdown">
-                            <button class="btn dropdown-toggle btn-primary" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <a href="#" class="btn dropdown-toggle btn-primary" role="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                 Dropdown
                                 <span class="caret"></span>
-                            </button>
+                            </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                 <li>
                                     <div class="col-sm-12">
@@ -296,6 +298,51 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
                             </ul>
                         </div>
                     </div>
+
+                <div class="spacer"></div>
+                <h5 class="montsserat-heading">HTML</h5>
+{% highlight html %}
+<div>
+    <div class="dropdown">
+        <button class="btn dropdown-toggle btn-primary" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Dropdown
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li>
+                <div class="col-sm-12">
+                    <h4 class="heading">eCards Inventory Overview</h4></div>
+                <div class="col-sm-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation" class=" text-bold">ACLS EP<span class="pull-right">195</span></li>
+                        <li role="presentation" class="text-bold">ACLS Provider <span class="pull-right">1829</span></li>
+                        <li role="presentation" class="text-bold">BLS Provider <span class="pull-right">195</span></li>
+                        <li role="presentation" class="text-bold">Heartsaver CPR AED <span class="pull-right">195</span></li>
+                        <li role="presentation" class="text-bold">Heartsaver First Aid <span class="pull-right">195</span></li>
+                        <li role="presentation" class="text-bold">Heartsaver First Aid CPR AED <span class="pull-right">195</span></li>
+                        <li role="presentation" class="text-bold">PALS<span class="pull-right">195</span></li>
+                        <li role="presentation" class="text-bold">PEARS<span class="pull-right">195</span></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6" style="border-left:1px solid #ccc;">
+                    <ul class="nav nav-pills nav-stacked">
+
+                        <li role="presentation" class=""><a href="#">View & Manage Inventory</a></li>
+                        <li role="presentation" class=""><a href="#">Assign eCards to Instructors</a></li>
+                        <li role="presentation" class=""><a href="#">Assign eCards to Students</a></li>
+                        <li role="presentation" class=""><a href="#">View Emailed eCards</a></li>
+                        <li role="presentation" class=""><a href="#">Search eCards</a></li>
+                        <li role="presentation" class=""><a href="#">eCard Status</a></li>
+                        <li role="presentation" class=""><a href="#">Reclaim eCards</a></li>
+                        <li role="presentation" class=""><a href="#">Reports</a></li>
+                    </ul>
+                </div>
+                <div class="spacer"></div>
+            </li>
+        </ul>
+    </div>
+</div>{% endhighlight %}
+
             </div><!-- end row -->
 
 
@@ -310,10 +357,24 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
                 {% highlight html  %}
 <a href="#" class="btn btn-primary" role="button"> Login </a>{% endhighlight %}
 
+                <h4 class="montsserat-heading">Primary Stroked</h4>
+                <a href="#" class="btn btn-primary-stroked"> Primary Button Stroked </a>
+{% highlight html %}
+<a href="#" class="btn btn-primary-stroked"> Primary Button Stroked </a>{% endhighlight %}
+
+                <div class="spacer"></div>
+
                 <h4 class="montsserat-heading">Secondary</h4>
                 <a href="#" class="btn btn-secondary"> Secondary Button </a>
                 {% highlight html  %}
 <a href="#" class="btn btn-secondary"> Secondary Button </a>{% endhighlight %}
+
+                <h4 class="montsserat-heading">Secondary Stroked</h4>
+                <a href="#" class="btn btn-secondary-stroked"> Secondary Button Stroked </a>
+{% highlight html %}
+<a href="#" class="btn btn-secondary-stroked"> Secondary Button Stroked </a>{% endhighlight %}
+
+
             </div>
 
 
@@ -1052,6 +1113,40 @@ alert(selectedValue);
                 <div class="spacer"></div>
                 <h2 class="montsserat-heading">UX Functions</h2>
                 <h4 class="montsserat-heading">Show/Hide (Expandable)</h4>
+
+                <!-- Collapse -->
+                <div>
+
+                    <a class="" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Show/Hide
+                        <b class="caret"></b>
+                    </a>
+                    <div class="spacer"></div>
+                    <div class="collapse in" id="collapseExample">
+                        <div class="well">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, cupiditate delectus distinctio doloremque maxime provident! Adipisci aliquid, dolorem exercitationem facere illo, incidunt iusto non possimus praesentium qui sint vero voluptas!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="montsserat-heading">HTML</h5>
+{% highlight html %}
+<a class="" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Show/Hide
+    <b class="caret"></b>
+</a>
+<div class="spacer"></div>
+<div class="collapse in" id="collapseExample">
+    <div class="well">
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, cupiditate delectus distinctio doloremque maxime provident! Adipisci aliquid, dolorem exercitationem facere illo, incidunt iusto non possimus praesentium qui sint vero voluptas!
+        </p>
+    </div>
+</div>{% endhighlight %}
+
+
 
                 <div>
                     <div class="spacer"></div>
