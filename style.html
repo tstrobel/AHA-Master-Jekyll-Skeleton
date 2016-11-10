@@ -44,23 +44,21 @@ activelink: Style Guide
         <!--Sidebar-->
         <div id="sidebar" class="col-sm-2" >
             <div data-spy="affix" data-offset-top="300" data-offset-bottom="600">
-            <h4 class="montsserat-heading">Style Guide</h4>
+            <h4 class="montsserat-heading">Menu</h4>
             <ul class="list-unstyled">
-                <li>Colors</li>
-                <li>Typography</li>
-                <li>Headings</li>
-                <li>Links</li>
-                <li>Buttons</li>
-                <li>Forms</li>
+                <li><a href="#colorsWrapper">Colors</a></li>
+                <li><a href="#typoWrapper">Typography</a></li>
+                <li><a href="#headerWrapper">Headings</a></li>
+                <li><a href="#menuWrapper">Menu</a></li>
+                <li><a href="#buttonsWrapper">Buttons</a></li>
+                <li><a href="#linksWrapper">Links</a></li>
+                <li><a href="#formsWrapper">Forms</a></li>
+                    
+                <li><a href="#tablesWrapper">Tables</a></li>
+                <li><a href="#alertsWrapper">Alerts</a></li>
+                <li><a href="#uxWrapper">UX Functions</a></li>
                     <ul>
-                        <li>Input Text</li>
-                        <li>Dropdowns</li>
-                    </ul>
-                <li>Tables</li>
-                <li>Alerts</li>
-                <li>UX Functions</li>
-                    <ul>
-                        <li>Show/Hide</li>
+                        <li><a href="#showWrapper">Show/Hide</a></li>
                         <li><a href="#datepickerWrapper">Calendar</a></li>
                     </ul>
 
@@ -71,7 +69,7 @@ activelink: Style Guide
         </div>
         <!--Main-->
         <div id="main" class="col-sm-10">
-                <h2 class="montsserat-heading">Colors</h2>
+                <h2 class="montsserat-heading" id="colorsWrapper>Colors</h2>
                 <h4 class="montsserat-heading">Primary Color Palette</h4>
             <div class="row">
                 <!--Color Card-->
@@ -150,7 +148,7 @@ activelink: Style Guide
             </div><!-- end row -->
 
             <div class="spacer"></div>
-            <div class="spacer"></div>
+            <div class="spacer" id="typoWrapper"></div>
 
             <h2 class="montsserat-heading">Typography</h2>
             <h4 class="montsserat-heading">Helvetica Neue</h4>
@@ -240,7 +238,7 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
             <!--Headings-->
             <div class="">
                 <div class="spacer"></div>
-                <div class="spacer"></div>
+                <div class="spacer" id="headerWrapper"></div>
                 <h2 class="montsserat-heading">Headings</h2>
                 <h4 class="montsserat-heading">Normal</h4>
 
@@ -261,7 +259,7 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
 
             <div class="">
                 <div class="spacer"></div>
-                <div class="spacer"></div>
+                <div class="spacer" id="menuWrapper"></div>
                 <h2 class="montsserat-heading">Menu</h2>
                 <h4 class="montsserat-heading">Dropdown</h4>
                     <div>
@@ -369,7 +367,7 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
             <!--Buttons-->
             <div>
                 <div class="spacer"></div>
-                <div class="spacer"></div>
+                <div class="spacer" id="buttonsWrapper"></div>
                 <h2 class="montsserat-heading">Buttons</h2>
                 <h4 class="montsserat-heading">Primary</h4>
                 <a href="#" class="btn btn-primary" role="button"> Login </a>
@@ -401,7 +399,7 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
             <!--Links-->
             <div>
                 <div class="spacer"></div>
-                <div class="spacer"></div>
+                <div class="spacer" id="linksWrappers"></div>
                 <h2 class="montsserat-heading">Links</h2>
                 <a href="#"> This is a link </a>
         <div class="spacer"></div>
@@ -411,7 +409,7 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
             <!--Forms-->
             <div>
                 <div class="spacer"></div>
-                <div class="spacer"></div>
+                <div class="spacer" id="formsWrapper"></div>
                 <h2 class="montsserat-heading">Forms</h2>
                 <h4 class="montsserat-heading">Input Text</h4>
 
@@ -547,7 +545,7 @@ alert(selectedValue);
             <!--Tables-->
             <div>
                 <div class="spacer"></div>
-                <div class="spacer"></div>
+                <div class="spacer" id="tablesWrapper"></div>
                 <h2 class="montsserat-heading">Tables</h2>
                 <h4 class="montsserat-heading">Simple</h4>
                 <div class="table">
@@ -1108,7 +1106,7 @@ alert(selectedValue);
             <!--Alerts-->
             <div>
                 <div class="spacer"></div>
-                <div class="spacer"></div>
+                <div class="spacer" id="alertsWrapper"></div>
                 <h2 class="montsserat-heading">Alerts</h2>
                 <h4 class="montsserat-heading">Errors</h4>
                 <div class="alert alert-danger alert-dismissible" role="alert">Error! Please provide a valid email address</div>
@@ -1130,8 +1128,9 @@ alert(selectedValue);
             <!-- UX Functions -->
             <div>
                 <div class="spacer"></div>
-                <div class="spacer"></div>
+                <div class="spacer" id="uxWrapper"></div>
                 <h2 class="montsserat-heading">UX Functions</h2>
+                <div class="spacer" id="showWrapper"></div>
                 <h4 class="montsserat-heading">Show/Hide (Expandable)</h4>
 
                 <!-- Collapse -->
