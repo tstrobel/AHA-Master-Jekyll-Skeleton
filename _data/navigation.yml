@@ -1,7 +1,7 @@
 - name: Home
   link: index.html
   class: nav-1
-  subpages:
+  #subpages:
   #  - name: Child Page 1
    #   link: childpage1.html
     #- name: Child Page 2

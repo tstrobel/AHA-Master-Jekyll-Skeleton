@@ -167,6 +167,13 @@ nav#main-navigation .menu > li {
 }
 
 
+//Sidebar
+#sidebar ul#sidebarnav li a {
+  text-decoration: none !important;
+  color:#5d5d5d !important;
+} 
+
+
 //Helper Classes
 .no-padding {
   padding: 0 !important;
