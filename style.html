@@ -23,33 +23,18 @@ activelink: Style Guides
 
 <div class="spacer"></div>
 
-<div class="table">
-    <div class="row"></div>
-</div>
-
-<div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-dolor in hendrerit in vulputate velit esse molestie consequat,
-vel illum dolore eu feugiat nulla facilisis at vero eros et
-accumsan et iusto odio dignissim qui blandit praesent luptatum
-zzril delenit augue duis dolore te feugait nulla facilisi.
-Nam liber tempor cum soluta nobis eleifend option congue
-nihil imperdiet doming id quod mazim placerat facer possim
-assum. Typi non habent claritatem insitam; est usus legentis
-in iis qui facit eorum claritatem. Investigationes
-demonstraverunt lectores legere me lius quod ii legunt saepius.
-Claritas est etiam processus dynamicus, qui sequitur mutationem
-consuetudium lectorum. Mirum est notare quam littera gothica,
-quam nunc putamus parum claram, anteposuerit litterarum formas
-humanitatis per seacula quarta decima et quinta decima. Eodem
-modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
-in futurum.</div>
 
 
 
+<style type="text/css">
+    .affix {
+        position: fixed;
+        top: 20px;
+    }
+    .affix-bottom {
+        position: fixed;
+    }
+</style>
 
 
 
@@ -57,7 +42,8 @@ in futurum.</div>
 <div class="section">
     <div class="container">
         <!--Sidebar-->
-        <div id="sidebar" class="col-sm-2">
+        <div id="sidebar" class="col-sm-2" >
+            <div data-spy="affix" data-offset-top="300" data-offset-bottom="600">
             <h4 class="montsserat-heading">Style Guide</h4>
             <ul class="list-unstyled">
                 <li>Colors</li>
@@ -75,12 +61,13 @@ in futurum.</div>
                 <li>UX Functions</li>
                     <ul>
                         <li>Show/Hide</li>
-                        <li>Calendar</li>
+                        <li><a href="#datepickerWrapper">Calendar</a></li>
                     </ul>
 
 
 
             </ul>
+            </div><!-- end affix -->
         </div>
         <!--Main-->
         <div id="main" class="col-sm-10">
@@ -331,7 +318,7 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
     Show/Hide
     <b class="caret"></b>
 </a>
-<div id="code-menu">
+<div id="code-menu" class="collapse">
 {% highlight html %}
 <div>
     <div class="dropdown">
@@ -1181,7 +1168,7 @@ alert(selectedValue);
 
 
 
-                <div>
+                <div id="datepickerWrapper">
                     <div class="spacer"></div>
                     <div class="spacer"></div>
                     <h4 class="montsserat-heading">Calendar - Datepicker</h4>
@@ -1204,12 +1191,7 @@ alert(selectedValue);
 
                 </div>
 
-
-
             </div>
-
-
-        <h5 class="montsserat-heading">Git clone from cloud9.io 11/9/2016</h5>
 
         </div><!-- #main -->
     </div><!-- end container -->
@@ -1218,116 +1200,6 @@ alert(selectedValue);
 <div class="spacer"></div>
 <div class="spacer"></div>
 
-<div>
-    <div class="col-sm-12">slkfsfloerm Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-    quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-    ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-    dolor in hendrerit in vulputate velit esse molestie consequat,
-    vel illum dolore eu feugiat nulla facilisis at vero eros et
-    accumsan et iusto odio dignissim qui blandit praesent luptatum
-    zzril delenit augue duis dolore te feugait nulla facilisi.
-    Nam liber tempor cum soluta nobis eleifend option congue
-    nihil imperdiet doming id quod mazim placerat facer possim
-    assum. Typi non habent claritatem insitam; est usus legentis
-    in iis qui facit eorum claritatem. Investigationes
-    demonstraverunt lectores legere me lius quod ii legunt saepius.
-    Claritas est etiam processus dynamicus, qui sequitur mutationem
-    consuetudium lectorum. Mirum est notare quam littera gothica,
-    quam nunc putamus parum claram, anteposuerit litterarum formas
-    humanitatis per seacula quarta decima et quinta decima. Eodem
-    modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
-    in futurum.</div>
-</div>
-<div>
-    <div class="col-sm-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-    quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-    ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-    dolor in hendrerit in vulputate velit esse molestie consequat,
-    vel illum dolore eu feugiat nulla facilisis at vero eros et
-    accumsan et iusto odio dignissim qui blandit praesent luptatum
-    zzril delenit augue duis dolore te feugait nulla facilisi.
-    Nam liber tempor cum soluta nobis eleifend option congue
-    nihil imperdiet doming id quod mazim placerat facer possim
-    assum. Typi non habent claritatem insitam; est usus legentis
-    in iis qui facit eorum claritatem. Investigationes
-    demonstraverunt lectores legere me lius quod ii legunt saepius.
-    Claritas est etiam processus dynamicus, qui sequitur mutationem
-    consuetudium lectorum. Mirum est notare quam littera gothica,
-    quam nunc putamus parum claram, anteposuerit litterarum formas
-    humanitatis per seacula quarta decima et quinta decima. Eodem
-    modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
-    in futurum.</div>
-</div>
-<div>
-    <div class="col-sm-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-    quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-    ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-    dolor in hendrerit in vulputate velit esse molestie consequat,
-    vel illum dolore eu feugiat nulla facilisis at vero eros et
-    accumsan et iusto odio dignissim qui blandit praesent luptatum
-    zzril delenit augue duis dolore te feugait nulla facilisi.
-    Nam liber tempor cum soluta nobis eleifend option congue
-    nihil imperdiet doming id quod mazim placerat facer possim
-    assum. Typi non habent claritatem insitam; est usus legentis
-    in iis qui facit eorum claritatem. Investigationes
-    demonstraverunt lectores legere me lius quod ii legunt saepius.
-    Claritas est etiam processus dynamicus, qui sequitur mutationem
-    consuetudium lectorum. Mirum est notare quam littera gothica,
-    quam nunc putamus parum claram, anteposuerit litterarum formas
-    humanitatis per seacula quarta decima et quinta decima. Eodem
-    modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
-    in futurum.</div>
-</div>
-<div>
-    <div class="col-sm-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-    quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-    ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-    dolor in hendrerit in vulputate velit esse molestie consequat,
-    vel illum dolore eu feugiat nulla facilisis at vero eros et
-    accumsan et iusto odio dignissim qui blandit praesent luptatum
-    zzril delenit augue duis dolore te feugait nulla facilisi.
-    Nam liber tempor cum soluta nobis eleifend option congue
-    nihil imperdiet doming id quod mazim placerat facer possim
-    assum. Typi non habent claritatem insitam; est usus legentis
-    in iis qui facit eorum claritatem. Investigationes
-    demonstraverunt lectores legere me lius quod ii legunt saepius.
-    Claritas est etiam processus dynamicus, qui sequitur mutationem
-    consuetudium lectorum. Mirum est notare quam littera gothica,
-    quam nunc putamus parum claram, anteposuerit litterarum formas
-    humanitatis per seacula quarta decima et quinta decima. Eodem
-    modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
-    in futurum.</div>
-</div>
-<div>
-    <div class="col-sm-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-    quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-    ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-    dolor in hendrerit in vulputate velit esse molestie consequat,
-    vel illum dolore eu feugiat nulla facilisis at vero eros et
-    accumsan et iusto odio dignissim qui blandit praesent luptatum
-    zzril delenit augue duis dolore te feugait nulla facilisi.
-    Nam liber tempor cum soluta nobis eleifend option congue
-    nihil imperdiet doming id quod mazim placerat facer possim
-    assum. Typi non habent claritatem insitam; est usus legentis
-    in iis qui facit eorum claritatem. Investigationes
-    demonstraverunt lectores legere me lius quod ii legunt saepius.
-    Claritas est etiam processus dynamicus, qui sequitur mutationem
-    consuetudium lectorum. Mirum est notare quam littera gothica,
-    quam nunc putamus parum claram, anteposuerit litterarum formas
-    humanitatis per seacula quarta decima et quinta decima. Eodem
-    modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
-    in futurum.</div>
-</div>
 
 
 
