@@ -1,3 +1,23 @@
+// Calling Accessible Menu
+/*global jQuery */
+if (jQuery) {
+    (function ($) {
+        "use strict";
+        $(document).ready(function () {
+            // initialize the megamenu
+            //$('.dropdown').accessibleMegaMenu();
+
+            $('.megamenu').accessibleMegaMenu();
+
+            // hack so that the megamenu doesn't show flash of css animation after the page loads.
+            setTimeout(function () {
+                $('body').removeClass('init');
+
+            }, 100);
+        });
+    }(jQuery));
+}
+
 jQuery( document ).ready(function( $ ) {
     $('.fullHeight').setFullHeight();
 
