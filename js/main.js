@@ -1,3 +1,21 @@
+//Format for DataTables for row child (see more details)
+function format ( d ) {
+    // `d` is the original data object for the row
+    var detailhtml;
+
+    detailhtml = '\
+    <div class="text-center">\
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corporis distinctio enim expedita in officiis temporibus. Accusantium architecto dolor, facere laboriosam magni necessitatibus nemo nisi odit recusandae sunt tempore unde.</p>\
+    <a href="#" class="btn btn-sm btn-primary-stroked"> Assign to Instructor </a>\
+    <a href="#" class="btn btn-sm btn-secondary-stroked"> Assign to Training Site </a>\
+    <a href="#" class="btn btn-sm btn-primary-stroked"> Assign to Students </a>\
+        </div>\
+    ';
+
+    return detailhtml
+}
+
+
 // Calling Accessible Menu
 /*global jQuery */
 if (jQuery) {
@@ -7,16 +25,18 @@ if (jQuery) {
             // initialize the megamenu
             //$('.dropdown').accessibleMegaMenu();
 
-            $('.megamenu').accessibleMegaMenu();
+            $("div.megamenu").accessibleMegaMenu();
 
             // hack so that the megamenu doesn't show flash of css animation after the page loads.
             setTimeout(function () {
                 $('body').removeClass('init');
 
-            }, 100);
+            }, 1000);
         });
     }(jQuery));
 }
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 jQuery( document ).ready(function( $ ) {
     $('.fullHeight').setFullHeight();
@@ -43,9 +63,42 @@ jQuery( document ).ready(function( $ ) {
     }
 
     //Datatables
-    if($.fn.dataTable){
-        $('.dataTable').dataTable();
+    if($.fn.DataTable){
+
+
+
+
+        var table = $('.dataTable').DataTable();
         $('.dataTables_length select.form-control').chosen();
+
+        // Add event listener for opening and closing details
+        $('.dataTable tbody').on('click', 'td.details-control', function () {
+
+            var $caret = $(this).find('span.caret');
+
+            var tr = $(this).closest('tr');
+            var row = table.row( tr );
+
+            if ( row.child.isShown() ) {
+                // This row is already open - close it
+                row.child.hide();
+
+                setTimeout(function(){
+                    tr.removeClass('shown');
+                },300);
+                $caret.removeClass('rotate');
+            }
+            else {
+                // Open this row
+                row.child( format(row.data()) ).show();
+                setTimeout(function(){
+
+                tr.addClass('shown');
+                },300);
+                $caret.addClass('rotate');
+            }
+        } );
+
     }
 
     //Datepicker call

@@ -258,6 +258,10 @@ nav#main-navigation .menu > li {
   font-size: 12px;
 }
 
+.btn-sm {
+  padding: 8px;
+}
+
   //Primary
   .btn-primary {
 
@@ -396,6 +400,24 @@ input[type="text"]{
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
+
+
+// CSS Transform
+.caret-right {
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(-90deg);
+  transition: transform 250ms linear 0ms;
+}
+
+.rotate {
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+  transition: transform 250ms linear 0ms;
+}
+
+
 
 // Width of the content area
 $content-width:    800px;
