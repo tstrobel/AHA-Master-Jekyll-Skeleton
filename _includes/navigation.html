@@ -25,7 +25,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         {% for subnav in {{nav.subpages}} %}
-                        <li><a href="#">{{subnav.name}}</a></li>
+                        <li><a href="{{subnav.link}}">{{subnav.name}}</a></li>
                         {% endfor %}
                     </ul>
                      {% else %}

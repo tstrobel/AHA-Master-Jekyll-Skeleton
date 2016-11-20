@@ -52,6 +52,21 @@ a {
 
 .spacer {display: block;height: $spacing-unit;margin: 0;clear: both;}
 
+//Sub Brand
+.ahaSubBrandWrapper {
+  margin-top: 10px;
+  h1.subBrand{
+    font-size: 30px;line-height: 20px;vertical-align: middle;
+    span.subBrandTag{
+      font-size: 18px;
+      font-weight: 400 !important;
+    }
+  }
+
+}
+
+
+
 //Headings
 h1,h2,h3,h4 {}
 .heading {
@@ -401,6 +416,15 @@ input[type="text"]{
   border-bottom-left-radius: 0px;
 }
 
+//Banners
+.section-banner {
+  /*//background: url('img/recordplayer.jpg');*/
+  /*height: 200px;*/
+  /*//background-position: center top;*/
+  /*//background-size: cover;*/
+  /*//background-attachment: fixed;*/
+  background-color: #f8f8f8;
+}
 
 // CSS Transform
 .caret-right {

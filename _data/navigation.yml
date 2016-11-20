@@ -1,18 +1,14 @@
 - name: Home
   link: index.html
   class: nav-1
-  #subpages:
-  #  - name: Child Page 1
-   #   link: childpage1.html
-    #- name: Child Page 2
-     # link: childpage2.html
-    #- name: Child Page 3
-     # link: childpage3.html
-
-- name: Docs
-  link: docs.html
-  class: nav-4
   subpages:
+    - name: Home
+      link: index.html
+    - name: Child Page 2
+      link: childpage2.html
+    - name: Child Page 3
+      link: childpage3.html
+
 
 - name: Style Guide
   link: style.html

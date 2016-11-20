@@ -39,6 +39,12 @@ if (jQuery) {
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 jQuery( document ).ready(function( $ ) {
+
+    if($.fn.smoothScroll){
+        //Smooth Scroll Js
+        $('a').smoothScroll();
+    }
+
     $('.fullHeight').setFullHeight();
 
     $(window).resize(function(){
