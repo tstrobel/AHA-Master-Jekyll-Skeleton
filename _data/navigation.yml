@@ -19,4 +19,9 @@
   link: templates.html
   class: nav-6
   subpages:
+    - name: Student Landing
+      link: student-landing.html
+    - name: Inventory
+      link: inventory.html
+
 
