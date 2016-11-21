@@ -49,11 +49,11 @@ limitations under the License.
     list-style: none;
     margin: 0;
     padding: 0;
-    height: 3.077em;
+    //height: 3.077em;
     float: left;
-    color: #454545 !important;
-    text-shadow: 0 1px 0 #fff;
-    -moz-text-shadow: 0 1px 0 #fff;
+    color: #454545;
+    //text-shadow: 0 1px 0 #fff;
+    //-moz-text-shadow: 0 1px 0 #fff;
     //border-right: 1px solid #b3b3b3;
     //border-right-color: rgba(0, 0, 0, 0.3);
 }
@@ -70,7 +70,7 @@ limitations under the License.
     height: 3em;
     padding-left: 0.769em;
     padding-right: 0.769em;
-    color: #454545 !important;
+    color: #454545 ;
     text-decoration: none;
     //box-shadow: inset 1px 1px 0 #fff;
     z-index: inherit;
@@ -79,7 +79,7 @@ limitations under the License.
 
 .accessible-megamenu .accessible-megamenu-top-nav-item a[aria-haspopup]:hover, 
 .accessible-megamenu .accessible-megamenu-top-nav-item a[aria-haspopup]:focus {
-    color: #333 !important;
+    //color: #333 !important;
     //outline-offset: -1px;
 }
 
@@ -102,15 +102,15 @@ limitations under the License.
 }
 
 .accessible-megamenu .accessible-megamenu-top-nav-item:first-child a[aria-haspopup] {
-    border-bottom-left-radius: 3px;
+    //border-bottom-left-radius: 3px;
 }
 
 .accessible-megamenu .accessible-megamenu-top-nav-item:first-child a[aria-haspopup].open {
-    border-bottom-left-radius: 0px;
+    //border-bottom-left-radius: 0px;
     //border-left: 1px solid #b3b3b3;
     //border-left-color: rgba(0,0,0,0.3);
     //left: -1px;
-    margin-right: -1px;
+    //margin-right: -1px;
 }
 
 .accessible-megamenu .accessible-megamenu-panel {
@@ -168,8 +168,8 @@ limitations under the License.
     font-size: .92em;
     line-height: 1.2em;
     text-decoration: none;
-    color: #225FD7;
-    font-weight: bold;
+    //color: #225FD7;
+    //font-weight: bold;
     text-decoration: none;
     margin-bottom: 0.5em;
 }
@@ -185,7 +185,7 @@ limitations under the License.
 .accessible-megamenu .accessible-megamenu-panel.cols-4b {
     width: 878px;
     left: -6.462em;
-    border-top-left-radius: 3px;
+    //border-top-left-radius: 3px;
 }
 
 .accessible-megamenu .accessible-megamenu-panel.cols-4b > ol > li {

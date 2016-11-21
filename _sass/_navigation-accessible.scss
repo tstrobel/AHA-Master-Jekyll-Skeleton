@@ -1,0 +1,59 @@
+.megamenuWrapper {
+  background-color: $gray-light;
+
+  .nav-item {
+
+    &.active{
+      background-color: #000;
+
+
+    }
+
+    &.active > a{
+      color: white;
+
+      &:hover {
+        color: white;
+      }
+
+    }
+
+    > a {
+      background-color: transparent;
+      color: #000;
+      text-transform: uppercase;
+      text-shadow: 0 !important;
+      text-decoration: none !important;
+      border-radius: 0px;
+      position: relative;
+      display: block;
+      line-height: 3em;
+      height: 3em;
+      padding-left: 0.769em;
+      padding-right: 0.769em;
+      text-decoration: none;
+      z-index: inherit;
+
+
+      .open{
+        color: white;
+      }
+
+      &:hover{
+        background-color: #000;
+        color: #FFF;
+      }
+
+    }
+
+  }
+
+  .sub-nav .sub-nav-group {
+    a {
+      font-weight: normal;
+      color: #000;
+    }
+  }
+
+
+}
