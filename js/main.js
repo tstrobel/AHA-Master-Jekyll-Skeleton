@@ -52,7 +52,7 @@ jQuery( document ).ready(function( $ ) {
     });
 
     //Chosen select
-    jQuery("select.chosen-select").chosen({width:'100%'});
+    jQuery("select.chosen-select").chosen({width:'100%',disable_search: true});
 
     if($.fn.chosen){
         if($('.chosen-select').length){
@@ -74,8 +74,8 @@ jQuery( document ).ready(function( $ ) {
 
 
 
-        var table = $('.dataTable').DataTable();
-        $('.dataTables_length select.form-control').chosen();
+        var table = $('.dataTable').DataTable({"searching":false});
+        //$('.dataTables_length select.form-control').chosen({disable_search: true});
 
         // Add event listener for opening and closing details
         $('.dataTable tbody').on('click', 'td.details-control', function () {

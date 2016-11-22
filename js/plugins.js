@@ -1705,7 +1705,7 @@ $.fn.setFullHeight = function() {
             if (this.is_multiple) {
                 this.container.html('<ul class="chosen-choices"><li class="search-field"><input type="text" value="' + this.default_text + '" class="default" autocomplete="off" style="width:25px;" /></li></ul><div class="chosen-drop"><ul class="chosen-results"></ul></div>');
             } else {
-                this.container.html('<a class="chosen-single chosen-default"><span>' + this.default_text + '</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off" /></div><ul class="chosen-results"></ul></div>');
+                this.container.html('<a class="chosen-single chosen-default"><span>' + this.default_text + '</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><label for="'+ container_props.title +'_chosensearchquery" class="sr-only sr-only-focusable">Search Query</label> <input type="text" autocomplete="off" name="'+ container_props.title +'_chosensearchquery" id="'+ container_props.title +'_chosensearchquery" /></div><ul class="chosen-results"></ul></div>');
             }
             this.form_field_jq.hide().after(this.container);
             this.dropdown = this.container.find('div.chosen-drop').first();
@@ -3312,21 +3312,21 @@ if(includeDataTables){
     };
     DPGlobal.template = '<div class="datepicker">'+
         '<div class="datepicker-days">'+
-        '<table class=" table-condensed">'+
+        '<table class=" table-condensed"><caption>Datepicker Days</caption>'+
         DPGlobal.headTemplate+
         '<tbody></tbody>'+
         DPGlobal.footTemplate+
         '</table>'+
         '</div>'+
         '<div class="datepicker-months">'+
-        '<table class="table-condensed">'+
+        '<table class="table-condensed"><caption>Datepicker Months</caption>'+
         DPGlobal.headTemplate+
         DPGlobal.contTemplate+
         DPGlobal.footTemplate+
         '</table>'+
         '</div>'+
         '<div class="datepicker-years">'+
-        '<table class="table-condensed">'+
+        '<table class="table-condensed"><caption>Datepicker Years</caption>'+
         DPGlobal.headTemplate+
         DPGlobal.contTemplate+
         DPGlobal.footTemplate+

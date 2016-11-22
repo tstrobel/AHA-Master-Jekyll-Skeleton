@@ -11,7 +11,7 @@ activelink: Style Guide
 
 
                 <h2 class="montsserat-heading" id="colorsWrapper">Colors</h2>
-                <h4 class="montsserat-heading">Primary Color Palette</h4>
+                <h3 class="montsserat-heading">Primary Color Palette</h3>
             <div class="row">
                 <!--Color Card-->
                 <div class="col-sm-3">
@@ -20,7 +20,7 @@ activelink: Style Guide
 
                     </span>
                     <div class="card-content">
-                        <h5 class="montsserat-heading">ECC Crimson</h5>
+                        <span class="montsserat-heading">ECC Crimson</span>
                         <p>HEX: #A60008</p>
                     </div>
 
@@ -92,7 +92,7 @@ activelink: Style Guide
             <div class="spacer" id="typoWrapper"></div>
 
             <h2 class="montsserat-heading">Typography</h2>
-            <h4 class="montsserat-heading">Helvetica Neue</h4>
+            <h3 class="montsserat-heading">Helvetica Neue</h3>
 
 
             {% highlight css %}
@@ -106,14 +106,14 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
 
             </div>
 
-            <div class="col-sm-6 text-gray">
+            <div class="col-sm-6 text-gray-dark">
                 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
                 <br>
                 a b c d e f g h i j k l m n o p q r s t u v w x y z
                 <br>
                 1 2 3 4 5 6 7 8 9 0 ( , . ; : ? ! $ & * )
             </div>
-                <div class="col-sm-4 text-gray">
+                <div class="col-sm-4 text-gray-dark">
                     Font Weight: Normal
                 </div>
 
@@ -129,14 +129,14 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
 
                 </div>
 
-                <div class="col-sm-6 text-gray text-bold">
+                <div class="col-sm-6 text-gray-dark text-bold">
                     A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
                     <br>
                     a b c d e f g h i j k l m n o p q r s t u v w x y z
                     <br>
                     1 2 3 4 5 6 7 8 9 0 ( , . ; : ? ! $ & * )
                 </div>
-                <div class="col-sm-4 text-gray text-bold">
+                <div class="col-sm-4 text-gray-dark text-bold">
                     Font Weight: Bold
                 </div>
 
@@ -181,10 +181,10 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
                 <div class="spacer"></div>
                 <div class="spacer" id="headerWrapper"></div>
                 <h2 class="montsserat-heading">Headings</h2>
-                <h4 class="montsserat-heading">Normal</h4>
+                <h3 class="montsserat-heading">Normal</h3>
 
                 {% highlight html  %}
-<h2 class="heading"> Normal Heading </h2>{% endhighlight %}
+<h3 class="heading"> Normal Heading </h3>{% endhighlight %}
                 <h1 class="heading">H1</h1>
                 <h2 class="heading">H2</h2>
                 <h3 class="heading">H3</h3>
@@ -202,7 +202,7 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
                 <div class="spacer"></div>
                 <div class="spacer" id="menuWrapper"></div>
                 <h2 class="montsserat-heading">Menu</h2>
-                <h4 class="montsserat-heading">Dropdown</h4>
+                <h3 class="montsserat-heading">Dropdown</h3>
                     <div>
                         <div class="dropdown">
                             <a href="#" class="btn dropdown-toggle btn-primary" role="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -253,7 +253,7 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
 
                 <div class="spacer"></div>
                 <h5 class="montsserat-heading">HTML</h5>
-                <a class="" role="button" data-toggle="collapse" href="#code-menu" aria-expanded="false" aria-controls="code-menu">
+                <a class="" role="button" data-toggle="collapse" href="#code-menu" aria-expanded="false" aria-controls="code-menu" aria-label="showhide">
     Show/Hide
     <b class="caret"></b>
 </a>
@@ -320,7 +320,7 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
                 <div class="spacer"></div>
                 <div class="spacer" id="buttonsWrapper"></div>
                 <h2 class="montsserat-heading">Buttons</h2>
-                <h4 class="montsserat-heading">Primary</h4>
+                <h3 class="montsserat-heading">Primary</h3>
                 <a href="#" class="btn btn-primary" role="button"> Login </a>
                 {% highlight html  %}
 <a href="#" class="btn btn-primary" role="button"> Login </a>{% endhighlight %}
@@ -362,12 +362,12 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
                 <div class="spacer"></div>
                 <div class="spacer" id="formsWrapper"></div>
                 <h2 class="montsserat-heading">Forms</h2>
-                <h4 class="montsserat-heading">Input Text</h4>
+                <h3 class="montsserat-heading">Input Text</h3>
 
                 <div>
                     <div class="form-group">
                         <label class="control-label" for="tsName">Label <span class="required">*</span></label>
-                        <input class="form-control" value="" name="" id="" maxlength="50" type="text" placeholder="Input text">
+                        <input class="form-control" value="" name="tsName" id="tsName" maxlength="50" type="text" placeholder="Input text">
                     </div> <!-- form-group -->
 
 {% highlight html %}
@@ -387,6 +387,8 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
                 <div class="row">
                     <div class="col-sm-8 question text-bold">Do you speak a language other than English?</div>
                     <div class="col-sm-4 answer">
+                        <fieldset>
+                            <legend class="sr-only">Choose language</legend>
                         <label class="radio">
                             <input type="radio" name="otherLang" id="" value="yes" data-toggle="radio">
                             Yes
@@ -395,6 +397,7 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
                             <input type="radio" name="otherLang" id="" value="no" data-toggle="radio" checked>
                             No
                         </label>
+                        </fieldset>
                     </div>
                 </div><!-- row -->
 
@@ -498,9 +501,11 @@ alert(selectedValue);
                 <div class="spacer"></div>
                 <div class="spacer" id="tablesWrapper"></div>
                 <h2 class="montsserat-heading">Tables</h2>
-                <h4 class="montsserat-heading">Simple</h4>
-                <div class="table">
+                <h3 class="montsserat-heading">Simple</h3>
+                <div class="table-responsive">
+
                     <table class="table table-bordered">
+                        <caption class="sr-only text-gray-dark">eCards Inventory</caption>
                         <thead>
                             <tr>
                                 <th>eCard Code</th>
@@ -525,10 +530,13 @@ alert(selectedValue);
                         </tbody>
                     </table>
 
+                </div>
                     
 
 
-    {% highlight html %}<table class="table table-bordered">
+    {% highlight html %}
+
+    <table class="table table-bordered">
     <thead>
         <tr>
             <th>Column Heading</th>
@@ -550,11 +558,12 @@ alert(selectedValue);
                 <h4 class="montsserat-heading">Datatable with Search & Pagination</h4>
 
                 <!-- Example of dataTables -->
-                <div class="table">
+                <div class="table-responsive">
+
                 <table id="example" class="dataTable display table table-bordered table-striped" width="100%" cellspacing="0">
                     <thead>
                     <tr>
-                        <th></th>
+                        <th><span class="sr-only sr-only-focusable">Expandable</span></th>
                         <th>Name</th>
                         <th>Position</th>
                         <th>Office</th>
@@ -563,17 +572,7 @@ alert(selectedValue);
                         <th>Salary</th>
                     </tr>
                     </thead>
-                    <tfoot>
-                    <tr>
-                        <th></th>
-                        <th>Name</th>
-                        <th>Position</th>
-                        <th>Office</th>
-                        <th>Age</th>
-                        <th>Start date</th>
-                        <th>Salary</th>
-                    </tr>
-                    </tfoot>
+
                     <tbody>
                     <tr>
                         <td class="details-control text-center"><span class="caret caret-right"></span></td>
@@ -642,12 +641,13 @@ alert(selectedValue);
 
                     </tbody>
                 </table>
-                </div><!-- end div.table -->
+
+                </div><!-- end table-responsive -->
                 <!-- End example of datatables -->
 
                 <h5 class="montsserat-heading">HTML</h5>
 {% highlight html %}
-<div class="table">
+<div class="table-responsive">
 <table id="example" class="dataTable display table table-bordered table-striped" width="100%" cellspacing="0">
     <thead>
         <tr>
@@ -663,7 +663,7 @@ alert(selectedValue);
 </div>{% endhighlight %}
 
 
-            </div>
+
 
             <!--Tabs-->
 <div class="spacer" id="tabsWrapper"></div>
@@ -683,17 +683,17 @@ alert(selectedValue);
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane fade in active" id="home">
             <div class="spacer"></div>
-            <h4 class="montsserat-heading">Home</h4>
+            <h3 class="montsserat-heading">Home</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci asperiores aut dolore, ea explicabo facere illum, magni nemo nisi obcaecati officia perspiciatis reiciendis repellendus repudiandae similique totam? Ipsa, ipsam?</p>
         </div>
         <div role="tabpanel" class="tab-pane fade" id="profile">
             <div class="spacer"></div>
-            <h4 class="montsserat-heading">Profile</h4>
+            <h3 class="montsserat-heading">Profile</h3>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eaque rem tempore voluptatum! Asperiores, assumenda blanditiis cum enim eveniet facere illum, iste laudantium, nisi perspiciatis porro provident velit veniam voluptas.
         </div>
         <div role="tabpanel" class="tab-pane fade" id="messages">
             <div class="spacer"></div>
-            <h4 class="montsserat-heading">Messages</h4>
+            <h3 class="montsserat-heading">Messages</h3>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam dolore ea laboriosam magni, maiores modi nesciunt non numquam, pariatur perferendis quas sed tempore temporibus velit. Dolor eveniet illum quam.</div>
         <div role="tabpanel" class="tab-pane fade" id="settings">
             <div class="spacer"></div>
@@ -738,13 +738,13 @@ alert(selectedValue);
                 <div class="spacer"></div>
                 <div class="spacer" id="alertsWrapper"></div>
                 <h2 class="montsserat-heading">Alerts</h2>
-                <h4 class="montsserat-heading">Errors</h4>
+                <h3 class="montsserat-heading">Errors</h3>
                 <div class="alert alert-danger alert-dismissible" role="alert">Error! Please provide a valid email address</div>
                 {% highlight html %}
 <div class="alert alert-danger alert-dismissible" role="alert"> Error! Please provide a valid email address </div>{% endhighlight %}
 
                 <div class="spacer"></div>
-                <h4 class="montsserat-heading">Notification</h4>
+                <h3 class="montsserat-heading">Notification</h3>
                 <div class="alert alert-success" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Notification: Update is available</div>
                 {% highlight html %}
     <div class="alert alert-success" role="alert">
@@ -761,7 +761,7 @@ alert(selectedValue);
                 <div class="spacer" id="uxWrapper"></div>
                 <h2 class="montsserat-heading">UX Functions</h2>
                 <div class="spacer" id="showWrapper"></div>
-                <h4 class="montsserat-heading">Show/Hide (Expandable)</h4>
+                <h3 class="montsserat-heading">Show/Hide (Expandable)</h3>
 
                 <!-- Collapse -->
                 <div>
@@ -780,7 +780,7 @@ alert(selectedValue);
                     </div>
                 </div>
 
-                <h5 class="montsserat-heading">HTML</h5>
+                <h4 class="montsserat-heading">HTML</h4>
 {% highlight html %}
 <a class="" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
     Show/Hide

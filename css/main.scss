@@ -18,7 +18,7 @@ $spacing-unit:     30px;
 $text-color:       #111;
 $text-primary: #a60008;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #09489a;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -487,6 +487,5 @@ $on-laptop:        800px;
         "datepicker",
         "radio-checkbox",
         "megamenu",
-        "navigation-accessible",
-        "animate"
+        "navigation-accessible"
 ;
