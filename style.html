@@ -665,6 +665,74 @@ alert(selectedValue);
 
             </div>
 
+            <!--Tabs-->
+<div class="spacer" id="tabsWrapper"></div>
+<h2 class="montsserat-heading">Tabs</h2>
+
+<div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <div class="spacer"></div>
+            <h4 class="montsserat-heading">Home</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci asperiores aut dolore, ea explicabo facere illum, magni nemo nisi obcaecati officia perspiciatis reiciendis repellendus repudiandae similique totam? Ipsa, ipsam?</p>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile">
+            <div class="spacer"></div>
+            <h4 class="montsserat-heading">Profile</h4>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eaque rem tempore voluptatum! Asperiores, assumenda blanditiis cum enim eveniet facere illum, iste laudantium, nisi perspiciatis porro provident velit veniam voluptas.
+        </div>
+        <div role="tabpanel" class="tab-pane" id="messages">
+            <div class="spacer"></div>
+            <h4 class="montsserat-heading">Messages</h4>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam dolore ea laboriosam magni, maiores modi nesciunt non numquam, pariatur perferendis quas sed tempore temporibus velit. Dolor eveniet illum quam.</div>
+        <div role="tabpanel" class="tab-pane" id="settings">
+            <div class="spacer"></div>
+            <h4 class="montsserat-heading">Settings</h4>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eligendi fugiat in minima necessitatibus odio optio quaerat qui ratione reprehenderit. Assumenda atque dignissimos dolores inventore quae quia recusandae sequi voluptatibus.
+        </div>
+    </div>
+
+</div>
+
+<div class="spacer"></div>
+
+<h4 class="montsserat-heading">HTML</h4>
+{% highlight html %}
+<div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="home">...</div>
+        <div role="tabpanel" class="tab-pane fade" id="profile">...</div>
+        <div role="tabpanel" class="tab-pane fade" id="messages">...</div>
+        <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
+    </div>
+
+</div>
+{% endhighlight %}
+
+
+
+
+
             <!--Alerts-->
             <div>
                 <div class="spacer"></div>
@@ -754,6 +822,14 @@ alert(selectedValue);
 
             </div>
 
+<div class="spacer" id="skipcontent"></div>
+<h2 class="montsserat-heading">Skip To Content</h2>
+<p>Place this right after the &lt;body&gt; tag</p>
+{% highlight html %}
+<body>
+<a href="#content" class="sr-only sr-only-focusable" id="skippy"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
+</body>
+{% endhighlight %}
 
 
 
