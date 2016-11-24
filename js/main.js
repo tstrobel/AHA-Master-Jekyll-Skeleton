@@ -135,5 +135,21 @@ jQuery( document ).ready(function( $ ) {
     });
 
 
+    //sliding tabs
+    function leftSlide(tab){ $(tab).addClass('animated slideInLeft'); }
+    function rightSlide(tab){ $(tab).addClass('animated slideInRight'); }
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        var url = new String(e.target);
+        console.log("url " + url);
+        var pieces = url.split('#');
+        var seq=$(this).children('a').attr('data-seq');
+        var tab=$(this).children('a').attr('href');
+        if (pieces[1] == "profile"){ leftSlide(tab); }
+
+        console.log("target",e.target);
+        console.log("related target",e.relatedTarget);
+    });
+
+
 
 });

@@ -1,15 +1,96 @@
 ---
-layout: page-template
+layout: page
 activelink: Templates
+title: Student landig page
 ---
 
-{% include admin-bar.html%}
+<!--Student Landing page-->
+<style>
+    .bgFull{
+        background-image: url("img/people-looking-at-screen.jpg");
+    }
+    #ecardSearchWrapper {
+        color: #fff;
+    }
+
+</style>
+<div class=" bgFull" style="min-height: 800px">
+<div class="overlay"></div>
+    <div id="ecardSearchWrapper" class="row">
+        <div class="col-lg-3 col-md-4 col-sm-5 col-xs-11" style="float:none;margin: auto;overflow: hidden;">
+
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <h2 class=" text-thin">eCard Search</h2>
+
+            <!--content-->
+            <div>
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-pills" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" class="btn btn-primary">Student</a></li>
+                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" class="btn btn-primary">Employers</a></li>
+
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+
+                    <!--Student pane-->
+                    <div role="tabpanel" class="tab-pane fade in active" id="home">
+                        <h3 class="text-primary text-thin"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Students</h3>
+                        <div class="text-lg">
+                            Access your AHA eCard Profile or eCard
+                        </div>
+                        <p>
+                            To access your complete eCard profile, please log in by entering your first and last name and email address below. OR, if you have your eCard code, enter it below to access the eCard for that code.
+                        </p>
+                        <form action="">
+                            <div class="form-group">
+                                <label class="control-label" for="first">First Name</label>
+                                <input class="form-control" value="" name="first" id="first" type="text" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="last">Last Name</label>
+                                <input class="form-control" value="" name="last" id="last" type="text" placeholder="Last Name">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="email">Email</label>
+                                <input class="form-control" value="" name="email" id="email" type="text" placeholder="Email">
+                            </div>
+                            <div class="decorated"><span>OR</span></div>
+                            <div class="form-group">
+                                <label class="control-label" for="ecardcode">Ecard Code</label>
+                                <input class="form-control" value="" name="ecardcode" id="ecardcode" type="text" placeholder="Code">
+                            </div>
+                            <div class="spacer"></div>
+                            <button class="btn btn-primary btn-block" type="submit" style="letter-spacing: 2px;">Search</button>
+
+                        </form>
+                    </div>
+                    <!--Employers pane-->
+                    <div role="tabpanel" class="tab-pane fade" id="profile">
+
+                        <h3 class="text-primary text-thin"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Employers</h3>
+                        <div class="text-lg">
+                            Verify an AHA eCard
+                        </div>
+                        <p>To verify an eCard, please enter the eCard code you wish to verify.</p>
+                        <form action="">
+                            <div class="form-group">
+                                <label class="control-label" for="ecardcodeemp">eCard Code</label>
+                                <input class="form-control" value="" name="ecardcodeemp" id="ecardcodeemp" type="text" placeholder="Code">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Search</button>
+                        </form>
+                    </div>
+
+                </div>
 
 
-<div class="container">
 
-    <h2 class="heading heading-line"><span>eCard Inventory</span></h2>
+            </div><!-- end content -->
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem beatae deleniti, dignissimos doloremque dolores ducimus earum enim facere illum magnam magni, minima molestiae natus pariatur quaerat quibusdam reprehenderit vero.</p>
-
+        </div>
+    </div>
 </div>

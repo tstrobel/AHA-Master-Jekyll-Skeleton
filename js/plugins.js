@@ -1075,7 +1075,7 @@
 //jQuery Function
 $.fn.setFullHeight = function() {
     var winWidth = $(window).width(),
-        winHeight = $(window).height();
+        winHeight = $(window).height() - $('#ahaHeader').height() - $('#top-header').height() - $('#primaryNav').height();
     var $el = $(this);
     $el.css({
         'width': 'auto',
