@@ -14,12 +14,12 @@ title: Student landig page
     }
 
 </style>
-<div class=" bgFull" style="min-height: 800px">
+<div id="main" class=" bgFull" style="min-height: 800px">
 <div class="overlay"></div>
     <div id="ecardSearchWrapper" class="row">
         <div class="col-lg-3 col-md-4 col-sm-5 col-xs-11" style="float:none;margin: auto;overflow: hidden;">
 
-            <div class="spacer"></div>
+
             <div class="spacer"></div>
             <h2 class=" text-thin">eCard Search</h2>
 
@@ -27,6 +27,7 @@ title: Student landig page
             <div>
 
                 <!-- Nav tabs -->
+
                 <ul class="nav nav-pills" role="tablist">
                     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" class="btn btn-primary">Student</a></li>
                     <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" class="btn btn-primary">Employers</a></li>
@@ -45,15 +46,17 @@ title: Student landig page
                         <p>
                             To access your complete eCard profile, please log in by entering your first and last name and email address below. OR, if you have your eCard code, enter it below to access the eCard for that code.
                         </p>
+                        <div class="row" style="margin-bottom: 10px">
                         <form action="">
-                            <div class="form-group">
+                            <div class="form-group col-sm-6">
                                 <label class="control-label" for="first">First Name</label>
                                 <input class="form-control" value="" name="first" id="first" type="text" placeholder="First Name">
                             </div>
-                            <div class="form-group">
+                            <div class="form-group col-sm-6">
                                 <label class="control-label" for="last">Last Name</label>
                                 <input class="form-control" value="" name="last" id="last" type="text" placeholder="Last Name">
                             </div>
+                        </div>
                             <div class="form-group">
                                 <label class="control-label" for="email">Email</label>
                                 <input class="form-control" value="" name="email" id="email" type="text" placeholder="Email">
