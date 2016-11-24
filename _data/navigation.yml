@@ -23,5 +23,7 @@
       link: student-landing.html
     - name: Inventory
       link: inventory.html
+    - name: Assign eCards
+      link: assign-ecards.html
 
 

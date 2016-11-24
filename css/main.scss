@@ -164,6 +164,12 @@ h1,h2,h3,h4 {}
 .text-white {
   color: $text-white;
 }
+
+//Background Colors
+.bg-silver {
+  background-color: $gray-light;
+}
+
 //Navigation Bar
 #top-header .menu > li > a {
   text-decoration: none !important;
@@ -243,7 +249,7 @@ nav#main-navigation .menu > li {
 }
 .text-lg {
   font-size: large;
-  letter-spacing: 1px;
+  //letter-spacing: 1px;
 }
 
 .text-thin {
@@ -252,7 +258,7 @@ nav#main-navigation .menu > li {
 }
 
 p{
-  letter-spacing: 1px;
+  //letter-spacing: 1px;
 }
 
 .required {
@@ -383,19 +389,31 @@ a.btn-secondary-stroked{
 //Nav Pills
 .nav-pills>li>a {
   border-radius: 0px;
+  //color: #fff;
+
+}
+
+//Student landing page, search for ecards
+#ecardSearchWrapper .nav-pills>li>a{
   color: #fff;
+
+
   &:hover{
     background-color: $text-primary-dark;
   }
+
 }
 
-.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus  {
+#ecardSearchWrapper .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus  {
   background-color: $text-primary-dark;
 }
 
+
+
+
 //Tabs Tab Panels
 .tab-pane {
-  background-color: snow;
+  background-color: #fff;
   color: #000;
   border-radius: 0px;
   padding:20px;
@@ -546,6 +564,20 @@ form label{
   overflow: hidden;
   position: relative;
   z-index: 0;
+}
+
+//Chosen Overwrite
+.chosen-container-multi .chosen-choices li.search-field {
+  margin: 4px 0 0 0;
+  padding: 0;
+  white-space: nowrap;
+  height: 32px;
+
+  input[type="text"] {
+    margin-top: 4px !important;
+    color: #000 !important;
+  }
+
 }
 
 

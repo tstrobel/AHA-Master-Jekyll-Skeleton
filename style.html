@@ -336,11 +336,22 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
                 <a href="#" class="btn btn-secondary"> Secondary Button </a>
                 {% highlight html  %}
 <a href="#" class="btn btn-secondary"> Secondary Button </a>{% endhighlight %}
-
+                <div class="spacer"></div>
                 <h4 class="montsserat-heading">Secondary Stroked</h4>
                 <a href="#" class="btn btn-secondary-stroked"> Secondary Button Stroked </a>
 {% highlight html %}
 <a href="#" class="btn btn-secondary-stroked"> Secondary Button Stroked </a>{% endhighlight %}
+
+                <div class="spacer"></div>
+                <h4 class="montsserat-heading">Submit Button</h4>
+                <button class="btn btn-primary" type="submit">Button</button>
+                {% highlight html %}
+<button class="btn btn-default" type="submit">Button</button>{% endhighlight %}
+                <div class="spacer"></div>
+                <h4 class="montsserat-heading">Button Full Width </h4>
+                <button class="btn btn-primary btn-block" type="submit">Button</button>
+{% highlight html %}<button class="btn btn-default btn-block" type="submit">Button</button>{% endhighlight %}
+
 
 
             </div>
@@ -406,6 +417,7 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
                     <h5 class="montsserat-heading">HTML</h5>
 {% highlight html %}
 <div>
+    <fieldset>
     <label class="radio">
         <input type="radio" name="otherLang" id="" value="yes" data-toggle="radio">
         Yes
@@ -414,6 +426,7 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
         <input type="radio" name="otherLang" id="" value="no" data-toggle="radio" checked>
         No
     </label>
+    </fieldset>
 </div>
 {% endhighlight %}
                 </div>
@@ -496,6 +509,33 @@ alert(selectedValue);
 });{% endhighlight %}
             </div>
 
+<div class="spacer"></div>
+<h4 class="montsserat-heading">Dropdowns with Multi-select</h4>
+<div>
+    <label class="control-label" for="countrymulti">Country<span class="required"> * </span></label>
+    <select multiple data-placeholder="Select your countries" id="countrymulti" title="Country" name="countrymulti" class="form-control chosen-select">
+        <option value=""></option>
+        <option value="USA">USA</option>
+        <option value="VN">Vietnam</option>
+        <option value="MEX">Mexico</option>
+    </select>
+    <div class="spacer"></div>
+</div>
+<h5 class="montsserat-heading">HTML</h5>
+{% highlight html %}
+<div>
+    <label class="control-label" for="countrymulti">Country<span class="required"> * </span></label>
+    <select multiple data-placeholder="Select your countries" id="countrymulti" title="Country" name="countrymulti" class="form-control chosen-select">
+        <option value=""></option>
+        <option value="USA">USA</option>
+        <option value="VN">Vietnam</option>
+        <option value="MEX">Mexico</option>
+    </select>
+    <div class="spacer"></div>
+</div>
+{% endhighlight %}
+
+
             <!--Tables-->
             <div>
                 <div class="spacer"></div>
@@ -555,7 +595,7 @@ alert(selectedValue);
 
             <!--Datatable with Search & Pagination-->
                 <div class="spacer"></div>
-                <h4 class="montsserat-heading">Datatable with Search & Pagination</h4>
+                <h4 class="montsserat-heading">Datatable with Search, Pagination & Sorting</h4>
 
                 <!-- Example of dataTables -->
                 <div class="table-responsive">

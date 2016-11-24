@@ -1,0 +1,147 @@
+---
+layout: page-template
+activelink: Templates
+title: Assign eCards
+---
+
+{% include admin-bar.html%}
+
+
+<div class="container">
+
+
+<h2 class="heading heading-line text-thin"><span>Assign eCards to Students</span></h2>
+
+    <!--Show/Hide-->
+    <div class="bg-silver" style="padding: 10px;">
+    <a class="" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Show/Hide
+        <b class="caret"></b>
+    </a>
+
+    <div class="collapse in" id="collapseExample">
+        <div class="">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, cupiditate delectus distinctio doloremque maxime provident! Adipisci aliquid, dolorem exercitationem facere illo, incidunt iusto non possimus praesentium qui sint vero voluptas!
+            </p>
+        </div>
+    </div>
+    </div><!-- end Show/Hide -->
+<div class="spacer"></div>
+
+    <div class="bg-color-lightgrey padding-10">
+        <form action="">
+            <div class="row">
+                <div class="">
+            <div class="col-sm-4">
+            <div class="form-group">
+                <label for="birthdate">Select Course Date:</label>
+                <div class="input-group date">
+                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                    <input type="text" class="form-control datepicker" name="birthdate" id="birthdate" placeholder="Course date">
+                </div>
+            </div>
+            </div><!-- end col-sm-4 -->
+
+            <div class="col-sm-4">
+                <a href="#" class="btn btn-secondary btn-block" style="margin-top: 15px"><span class="glyphicon glyphicon-download" aria-hidden="true"></span> Download student list template</a>
+            </div><!-- end col-sm-4 -->
+
+            <div class="col-sm-4">
+                <a href="#" class="btn btn-secondary btn-block" style="margin-top: 15px"><span class="glyphicon glyphicon-upload" aria-hidden="true"></span> Upload Student List</a>
+            </div><!-- end col-sm-4 -->
+            </div><!-- row -->
+            </div>
+        </form>
+    </div>
+
+<div class="spacer"></div>
+<!-- Example of dataTables -->
+    <form action="">
+<div class="table">
+    <table id="example" class=" display table table-bordered table-striped" width="100%" cellspacing="0">
+        <thead>
+        <tr>
+
+            <th>Course Date</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Course Modules</th>
+        </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <div class="input-group date">
+                        <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                        <input type="text" value="11/28/2016" class="form-control datepicker" name="" id="" placeholder="Course date">
+                    </div>
+                </td>
+                <td>
+                    <input class="form-control" value="Frank" name="name" id="name" type="text" placeholder="First name"/>
+                </td>
+                <td>
+                    <input class="form-control" value="Sinatra" name="last" id="last" type="text" placeholder="Last name"/>
+                </td>
+                <td>
+                    <input class="form-control" value="hello@hello.com" name="email" id="email" type="text" placeholder=""/>
+                </td>
+                <td>
+                    <input class="form-control" value="(123) 456-7890" name="phone" id="phone" type="text" placeholder="Phone">
+                </td>
+                <td>
+                    <select multiple data-placeholder="Select Course Modules" id="coursemods" title="Course Modules" name="coursemods" class="form-control chosen-select">
+                        <option value="">Select Course Modules</option>
+                        <option value="USA">USA</option>
+                        <option value="VN">Vietnam</option>
+                        <option value="MEX">Mexico</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="input-group date">
+                        <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                        <input type="text" value="12/28/2016" class="form-control datepicker" name="" id="" placeholder="Course date">
+                    </div>
+                </td>
+                <td>
+                    <input class="form-control" value="Fred" name="name" id="name" type="text" placeholder="First name"/>
+                </td>
+                <td>
+                    <input class="form-control" value="Sinatra" name="last" id="last" type="text" placeholder="Last name"/>
+                </td>
+                <td>
+                    <input class="form-control" value="fred@hello.com" name="email" id="email" type="text" placeholder=""/>
+                </td>
+                <td>
+                    <input class="form-control" value="(423) 456-7890" name="phone" id="phone" type="text" placeholder="Phone">
+                </td>
+                <td>
+                    <select multiple data-placeholder="Select Course Modules" id="coursemods" title="Course Modules" name="coursemods" class="form-control chosen-select">
+                        <option value="">Select Course Modules</option>
+                        <option value="USA" selected>USA</option>
+                        <option value="VN" selected>Vietnam</option>
+                        <option value="MEX">Mexico</option>
+                    </select>
+                </td>
+            </tr>
+
+
+
+        </tbody>
+    </table>
+</div><!-- end div.table -->
+
+        <div>
+            <button type="submit" class="btn btn-primary">Continue</button>
+            <a href="#" class="btn btn-secondary">Go Back</a>
+        </div>
+
+    </form>
+<!-- End example of datatables -->
+</div>
