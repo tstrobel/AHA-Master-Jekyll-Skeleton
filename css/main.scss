@@ -392,6 +392,15 @@ a.btn-secondary-stroked{
   background-color: $text-primary-dark;
 }
 
+//Tabs Tab Panels
+.tab-pane {
+  background-color: snow;
+  color: #000;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+
 //Dropdown menu
 .btn.dropdown-toggle {
   color: #000;
