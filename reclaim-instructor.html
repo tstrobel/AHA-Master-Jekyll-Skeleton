@@ -10,7 +10,7 @@ title: Reclaim Instructor
 <div class="container">
 
 
-<h2 class="heading heading-line text-thin"><span>Reclaim eCards</span></h2>
+<h2 class="heading heading-line text-thin"><span>Reclaim eCards for Instructors</span></h2>
 <p>Reclaim eCards from Training Sites or Instructors before they have been assigned to students. Enter your reclaim quantity and select "reclaim", once you've entered all of your reclaim quantities submit your request by clicking the "Submit" button.</p>
     <!--Show/Hide-->
     <div class="bg-silver" style="padding: 10px;">
@@ -18,6 +18,7 @@ title: Reclaim Instructor
         Show/Hide
         <b class="caret"></b>
     </a>
+        <div class="spacer"></div>
 
     <div class="collapse in" id="collapseExample">
         <div class="">
@@ -27,7 +28,7 @@ title: Reclaim Instructor
                 <div class="row">
                     <!-- row -->
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <!--col2-->
+                        <!--col 1-->
                         <label class="control-label" for="course">Course<span class="required"> * </span></label>
                         <select data-placeholder="Select a course" id="course" title="Course" name="course" class="form-control chosen-select">
                             <option value=""></option>
@@ -37,22 +38,13 @@ title: Reclaim Instructor
                             <option value="course 4">Course 4</option>
                         </select>
 
-                        <div class="spacer"></div>
-                        <!-- dropdown -->
-                        <label class="control-label" for="invsource">Inventory Source<span class="required"> * </span></label>
-                        <select data-placeholder="Select inventory source" id="invsource" title="Invsource" name="invsource" class="form-control chosen-select">
-                            <option value=""></option>
-                            <option value="USA">USA</option>
-                            <option value="VN">Vietnam</option>
-                            <option value="MEX">Mexico</option>
-                        </select>
-                        <!-- end dropdown -->
+
 
                         <div class="spacer"></div>
 
                         <!-- radio buttons -->
                         <div>
-                            <span>Select training center or training site</span>
+                            <span>Reclaim From</span> <span class="required">*</span>
                             <fieldset>
                                 <label class="radio">
                                     <input type="radio" name="tcts" id="tcts1" value="tc" data-toggle="radio">
@@ -66,65 +58,59 @@ title: Reclaim Instructor
                         </div>
                         <!-- end radio buttons -->
 
-                        <div class="spacer"></div>
 
-                        <!-- dropdown -->
-                        <label class="control-label" for="trainingcenter">Training Center<span class="required"> * </span></label>
-                        <select data-placeholder="Select training center" id="trainingcenter" title="Trainingcenter" name="trainingcenter" class="form-control chosen-select">
-                            <option value=""></option>
-                            <option value="USA">USA</option>
-                            <option value="VN">Vietnam</option>
-                            <option value="MEX">Mexico</option>
-                        </select>
-                        <!-- end dropdown -->
-
-                        <div class="spacer"></div>
-
-                        <!-- dropdown -->
-                        <label class="control-label" for="trainingsite">Training Site<span class="required"> * </span></label>
-                        <select data-placeholder="Select training site" id="trainingsite" title="Trainingsite" name="trainingsite" class="form-control chosen-select">
-                            <option value=""></option>
-                            <option value="USA">USA</option>
-                            <option value="VN">Vietnam</option>
-                            <option value="MEX">Mexico</option>
-                        </select>
-                        <!-- end dropdown -->
-
-
-
-
-                        <div class="spacer"></div>
 
                         <!-- dropdown -->
                         <label class="control-label" for="instructor">Instructor<span class="required"> * </span></label>
-                        <select data-placeholder="Instructor" id="instructor" title="Instructor" name="instructor" class="form-control chosen-select">
-                            <option value=""></option>
-                            <option value="USA">USA</option>
-                            <option value="VN">Vietnam</option>
-                            <option value="MEX">Mexico</option>
+                        <select data-placeholder="Select training center" id="instructor" title="Instructor" name="trainingcenter" class="form-control chosen-select">
+                            <option value="00">John Doe</option>
+                            <option value="01">Jane Doe</option>
+                            <option value="02">Jane Smith</option>
+                            <option value="03">John Smith</option>
                         </select>
                         <!-- end dropdown -->
 
                         <div class="spacer"></div>
 
-                        <div class="heading">Available eCards Quantity: 1809</div>
 
-                        <div class="form-group">
-                            <label class="control-label" for="qty">Assign Quantity: </label>
-                            <input class="form-control" value="" name="qty" id="qty" type="text" placeholder="Qty">
-                        </div>
+
+                        <div class="heading hide">Available eCards Quantity: 1809</div>
+
+
 
 
 
                     </div><!-- end col-sm-12 -->
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <!--col 1-->
+
+
+                        <!--col 2-->
+
+                        <div class="form-group">
+
+                            <div class="text-bold margin-bottom-5">Date of Assignment</div>
+                            <label for="dateStart" class="sr-only">From</label>
+                            <div class="input-group date">
+                                <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                <input type="text" class="form-control datepicker" name="dateStart" id="dateStart" placeholder="Start date">
+                            </div>
+                            <div class="spacer"></div>
+                            <label for="dateEnd" class="sr-only">To</label>
+                            <div class="input-group date">
+                                <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                <input type="text" class="form-control datepicker" name="dateEnd" id="dateEnd" placeholder="End date">
+                            </div>
+                        </div>
+
+                        <div class="spacer"></div>
+
+                        <button class="btn btn-primary" type="submit">Search</button>
                     </div><!-- end col-sm-12 -->
                 </div><!-- end row -->
 
-                <div class="spacer"></div>
 
-                <button class="btn btn-primary" type="submit">Submit</button>
+
+
 
 
             </form>

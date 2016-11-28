@@ -52,7 +52,7 @@ a {
   }
 }
 
-.spacer {display: block;height: $spacing-unit;margin: 0;clear: both;}
+.spacer {display: block;height: $spacing-unit/2;margin: 0;clear: both;}
 
 //Sub Brand
 .ahaSubBrandWrapper {
@@ -230,6 +230,11 @@ nav#main-navigation .menu > li {
 .no-padding {
   padding: 0 !important;
 }
+
+.margin-bottom-5 {
+  margin-bottom: 5px !important;
+}
+
 .text-bold {
   font-weight: 700;
 }
@@ -425,6 +430,8 @@ a.btn-secondary-stroked{
   color: #000;
   border-radius: 0px;
   padding:20px;
+  border: 1px solid $grey-color-light;
+  border-top:0;
 }
 
 

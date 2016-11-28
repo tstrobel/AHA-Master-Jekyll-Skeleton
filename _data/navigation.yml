@@ -39,4 +39,8 @@
       link: reclaim-sites-done.html
     - name: Reclaim Instructor
       link: reclaim-instructor.html
+    - name: Reports
+      link: reports.html
+    - name: eCards Status
+      link: ecards-status.html
 

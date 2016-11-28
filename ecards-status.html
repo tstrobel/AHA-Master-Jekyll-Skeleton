@@ -1,0 +1,139 @@
+---
+layout: page-template
+activelink: Templates
+title: Ecards Status
+---
+
+{% include admin-bar.html%}
+
+
+<div class="container">
+
+
+<h2 class="heading heading-line text-thin"><span>eCards Status</span></h2>
+    <div class="spacer"></div>
+
+<!--tabs-->
+    <div>
+
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#tab01" aria-controls="home" role="tab" data-toggle="tab">Distributor Orders</a></li>
+            <li role="presentation"><a href="#tab02" aria-controls="profile" role="tab" data-toggle="tab">Assign to Instructors & Taining Sites</a></li>
+            <li role="presentation"><a href="#tab03" aria-controls="messages" role="tab" data-toggle="tab">Reclaims from Instructors & Training Sites</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="tab01">
+                <h3 class="heading">Distributor Orders</h3>
+                <h4>Search</h4>
+                <div>
+                    <form action="">
+                        <!-- dropdown -->
+                        <div class="row">
+                        <div class="col-sm-6">
+                        <label class="control-label" for="course">Course<span class="required"> * </span></label>
+                        <select data-placeholder="Select course" id="course" title="Course" name="course" class="form-control chosen-select">
+                            <option value="ACLS">ACLS</option>
+                            <option value="BLS">BLS</option>
+                            <option value="PALS">PALS</option>
+                            <option value="PEARS">PEARS</option>
+                        </select>
+                        </div>
+                        <!-- end dropdown -->
+                        <!--date-->
+                        <div class="col-sm-6">
+                        <div class="form-group">
+                            <div class="text-bold margin-bottom-5">Order Date</div>
+                            <div class="row">
+                            <div class="col-sm-6">
+                                <label for="dateStart" class="sr-only">From</label>
+                                <div class="input-group date">
+                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                    <input type="text" class="form-control datepicker" name="dateStart" id="dateStart" placeholder="Start date">
+                                </div>
+                            </div><!-- end col-sm-6 -->
+                            <div class="col-sm-6">
+                                <label for="dateEnd" class="sr-only">To</label>
+                                <div class="input-group date">
+                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                    <input type="text" class="form-control datepicker" name="dateEnd" id="dateEnd" placeholder="End date">
+                                </div>
+                            </div><!-- end col-sm-6 -->
+                            </div><!-- end row -->
+
+
+
+                        </div>
+                        </div>
+                        <!--end date-->
+                        </div><!-- end row -->
+                        <div class="spacer"></div>
+
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </form>
+                </div>
+
+
+
+                <!--content-->
+                <!-- Example of dataTables -->
+                <div class="table-responsive">
+                    <table id="example" class="dataTable display table table-bordered table-striped" width="100%" cellspacing="0">
+                        <thead>
+                        <tr>
+
+                            <th>Training Center ID</th>
+                            <th>TC Name</th>
+                            <th>Current Date</th>
+                            <th>0 - 30 Days</th>
+                            <th>31 - 60 Days</th>
+                            <th>61 - 90 Days</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>TX-A1234567890</td>
+                            <td>Rgional Hospital</td>
+                            <td>12/2/2016</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+
+
+                        </tbody>
+                    </table>
+                </div><!-- end div.table -->
+
+
+                <!-- End example of datatables -->
+
+            </div><!-- end tab-pane -->
+            <div role="tabpanel" class="tab-pane fade" id="tab02">
+                    <!--content-->
+                <h3 class="heading">Training Site Scores</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium assumenda cupiditate delectus eveniet ex facilis, iste labore magni nobis odio perferendis porro quae quasi quod rem sequi vel voluptatum!</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci architecto in nam nihil pariatur! Illum, perspiciatis, totam. Beatae distinctio dolorem ex laborum minima non officia reprehenderit sunt tempora veniam!</p>
+
+            </div><!-- end tab-pane -->
+            <div role="tabpanel" class="tab-pane fade" id="tab03">
+                <!--content-->
+                <h3 class="heading">Individual Instructor Scores</h3>
+                <p>This report shows all your students with eCards expiring within the next 30, 60, or 90 days. You may wish to contact or ask each instructor to contact these students with reminders to schedule training before their eCard expires. </p>
+            </div><!-- end tab-pane -->
+        </div>
+
+    </div>
+<!--end tabs-->
+
+
+
+
+
+</div>

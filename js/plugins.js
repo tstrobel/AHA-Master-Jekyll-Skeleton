@@ -3312,21 +3312,21 @@ if(includeDataTables){
     };
     DPGlobal.template = '<div class="datepicker">'+
         '<div class="datepicker-days">'+
-        '<table class=" table-condensed"><caption>Datepicker Days</caption>'+
+        '<table class=" table-condensed"><caption class="sr-only">Datepicker Days</caption>'+
         DPGlobal.headTemplate+
         '<tbody></tbody>'+
         DPGlobal.footTemplate+
         '</table>'+
         '</div>'+
         '<div class="datepicker-months">'+
-        '<table class="table-condensed"><caption>Datepicker Months</caption>'+
+        '<table class="table-condensed"><caption class="sr-only">Datepicker Months</caption>'+
         DPGlobal.headTemplate+
         DPGlobal.contTemplate+
         DPGlobal.footTemplate+
         '</table>'+
         '</div>'+
         '<div class="datepicker-years">'+
-        '<table class="table-condensed"><caption>Datepicker Years</caption>'+
+        '<table class="table-condensed"><caption class="sr-only">Datepicker Years</caption>'+
         DPGlobal.headTemplate+
         DPGlobal.contTemplate+
         DPGlobal.footTemplate+
