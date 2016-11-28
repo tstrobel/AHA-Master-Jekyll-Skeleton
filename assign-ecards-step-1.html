@@ -1,0 +1,124 @@
+---
+layout: page-template
+activelink: Templates
+title: Assign eCards Student Step 1
+---
+
+{% include admin-bar.html%}
+
+
+<div class="container">
+
+
+<h2 class="heading heading-line text-thin"><span>Assign eCards to Students</span></h2>
+
+<div class="spacer"></div>
+
+    <div class="">
+        <div class="heading">Select from yur available eCard inventory sources.</div>
+        <form action="">
+            <div class="row">
+                <!-- row -->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <label class="control-label" for="course">Course<span class="required"> * </span></label>
+                    <select data-placeholder="Select a course" id="course" title="Course" name="course" class="form-control chosen-select">
+                        <option value=""></option>
+                        <option value="course 1">Course 1</option>
+                        <option value="course 2">Course 2</option>
+                        <option value="course 3">Course 3</option>
+                        <option value="course 4">Course 4</option>
+                    </select>
+
+                    <div class="spacer"></div>
+                    <!-- dropdown -->
+                    <label class="control-label" for="invsource">Inventory Source<span class="required"> * </span></label>
+                    <select data-placeholder="Select inventory source" id="invsource" title="Invsource" name="invsource" class="form-control chosen-select">
+                        <option value=""></option>
+                        <option value="USA">USA</option>
+                        <option value="VN">Vietnam</option>
+                        <option value="MEX">Mexico</option>
+                    </select>
+                    <!-- end dropdown -->
+
+                    <div class="spacer"></div>
+
+                    <!-- radio buttons -->
+                    <div>
+                        <span>Select training center or training site</span>
+                        <fieldset>
+                            <label class="radio">
+                                <input type="radio" name="tcts" id="tcts1" value="tc" data-toggle="radio">
+                                Training Centers
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="tcts" id="tcts2" value="ts" data-toggle="radio" checked>
+                                Training Sites
+                            </label>
+                        </fieldset>
+                    </div>
+                    <!-- end radio buttons -->
+
+                    <div class="spacer"></div>
+
+                    <!-- dropdown -->
+                    <label class="control-label" for="trainingcenter">Training Center<span class="required"> * </span></label>
+                    <select data-placeholder="Select training center" id="trainingcenter" title="Trainingcenter" name="trainingcenter" class="form-control chosen-select">
+                        <option value=""></option>
+                        <option value="USA">USA</option>
+                        <option value="VN">Vietnam</option>
+                        <option value="MEX">Mexico</option>
+                    </select>
+                    <!-- end dropdown -->
+
+                    <div class="spacer"></div>
+
+                    <!-- dropdown -->
+                    <label class="control-label" for="trainingsite">Training Site<span class="required"> * </span></label>
+                    <select data-placeholder="Select training site" id="trainingsite" title="Trainingsite" name="trainingsite" class="form-control chosen-select">
+                        <option value=""></option>
+                        <option value="USA">USA</option>
+                        <option value="VN">Vietnam</option>
+                        <option value="MEX">Mexico</option>
+                    </select>
+                    <!-- end dropdown -->
+
+
+
+
+                    <div class="spacer"></div>
+
+                    <!-- dropdown -->
+                    <label class="control-label" for="instructor">Instructor<span class="required"> * </span></label>
+                    <select data-placeholder="Instructor" id="instructor" title="Instructor" name="instructor" class="form-control chosen-select">
+                        <option value=""></option>
+                        <option value="USA">USA</option>
+                        <option value="VN">Vietnam</option>
+                        <option value="MEX">Mexico</option>
+                    </select>
+                    <!-- end dropdown -->
+
+                    <div class="spacer"></div>
+
+                    <div class="heading">Available eCards Quantity: 1809</div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="qty">Assign Quantity: </label>
+                        <input class="form-control" value="" name="qty" id="qty" type="text" placeholder="Qty">
+                    </div>
+
+
+
+                </div><!-- end col-sm-12 -->
+            </div><!-- end row -->
+
+            <div class="spacer"></div>
+
+            <button class="btn btn-primary" type="submit">Submit</button>
+
+
+        </form>
+    </div>
+
+<div class="spacer"></div>
+
+</div>

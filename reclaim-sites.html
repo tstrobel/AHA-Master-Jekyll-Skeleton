@@ -1,0 +1,77 @@
+---
+layout: page-template
+activelink: Templates
+title: Reclaim - Sites
+---
+
+{% include admin-bar.html%}
+
+
+<div class="container">
+
+
+<h2 class="heading heading-line text-thin"><span>Reclaim eCards</span></h2>
+
+    <!--Show/Hide-->
+    <div class="bg-silver" style="padding: 10px;">
+    <a class="" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Show/Hide
+        <b class="caret"></b>
+    </a>
+
+    <div class="collapse in" id="collapseExample">
+        <div class="">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, cupiditate delectus distinctio doloremque maxime provident! Adipisci aliquid, dolorem exercitationem facere illo, incidunt iusto non possimus praesentium qui sint vero voluptas!
+            </p>
+        </div>
+    </div>
+    </div><!-- end Show/Hide -->
+
+
+<!-- Example of dataTables -->
+<form action="">
+<div class="table-responsive">
+    <table id="example" class="dataTable display table table-bordered table-striped" width="100%" cellspacing="0">
+        <thead>
+        <tr>
+            <th>Course</th>
+            <th>Date of Assignment</th>
+            <th>Reclaim From</th>
+            <th>Assigned Quantity</th>
+            <th>Previous Reclaims</th>
+            <th>Available Quantity</th>
+            <th>Reclaim Quantity</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+
+        <tbody>
+<tr>
+    <td>ACLS EP</td>
+    <td>12/2/2016</td>
+    <td>Sample training Site</td>
+    <td>20</td>
+    <td>2</td>
+    <td>18</td>
+    <td><div class="form-group">
+        <label class="control-label sr-only sr-only-focusable" for="qty">Qty</label>
+        <input class="form-control" value="" name="qty" id="qty" type="text" placeholder="0">
+    </div></td>
+    <td class="text-center"><a href="#" class="btn btn-secondary btn-sm btn-single">Reclaim</a></td>
+</tr>
+
+
+
+        </tbody>
+    </table>
+
+
+        <div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </div>
+</div>
+<!-- End example of datatables -->
+
+</form>

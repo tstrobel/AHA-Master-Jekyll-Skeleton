@@ -30,7 +30,7 @@ layout: page
 
 <!--Container with sidebar-->
 <div class="section">
-    <div class="container">
+    <div class="container" id="main">
     <div class="row">
         {% if page.url == "/templates.html" %}
         {% include sidebar-templates.html %}
@@ -38,7 +38,7 @@ layout: page
             {% include sidebar.html %}
         {% endif %}
         <!--Main-->
-        <div id="main" class="col-sm-10">
+        <div class="col-sm-10">
 
             {{content}}
             <!-- end row -->

@@ -541,7 +541,7 @@ alert(selectedValue);
                 <div class="spacer"></div>
                 <div class="spacer" id="tablesWrapper"></div>
                 <h2 class="montsserat-heading">Tables</h2>
-                <h3 class="montsserat-heading">Simple</h3>
+                <h3 class="montsserat-heading">Simple (No pagination is available for simple table)</h3>
                 <div class="table-responsive">
 
                     <table class="table table-bordered">
@@ -575,8 +575,8 @@ alert(selectedValue);
 
 
     {% highlight html %}
-
-    <table class="table table-bordered">
+<div class="table-responsive">
+<table class="table table-bordered">
     <thead>
         <tr>
             <th>Column Heading</th>
@@ -589,13 +589,14 @@ alert(selectedValue);
         <td>Value 2</td>
     </tr>
     </tbody>
-</table>{% endhighlight %}
+</table>
+</div>{% endhighlight %}
 
                 </div>
 
             <!--Datatable with Search & Pagination-->
                 <div class="spacer"></div>
-                <h4 class="montsserat-heading">Datatable with Search, Pagination & Sorting</h4>
+                <h3 class="montsserat-heading">Datatable with Search, Pagination & Sorting</h3>
 
                 <!-- Example of dataTables -->
                 <div class="table-responsive">

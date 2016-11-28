@@ -23,7 +23,20 @@
       link: student-landing.html
     - name: Inventory
       link: inventory.html
-    - name: Assign eCards
+    - name: Assign eCards Student Step 1
+      link: assign-ecards-step-1.html
+    - name: Assign eCards Student Step 2
       link: assign-ecards.html
-
+    - name: Assign eCards Student Step 3
+      link: assign-ecards-step-3.html
+    - name: Assign eCards Student Step 4
+      link: assign-ecards-step-4.html
+    - name: Reclaim - Sites
+      link: reclaim-sites.html
+    - name: Reclaim - Sites Verification
+      link: reclaim-sites-verification.html
+    - name: Reclaim - Sites Done
+      link: reclaim-sites-done.html
+    - name: Reclaim Instructor
+      link: reclaim-instructor.html
 
