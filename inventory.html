@@ -3,19 +3,14 @@ layout: page-template
 activelink: Templates
 title: Inventory
 ---
-
-{% include admin-bar.html%}
-
-
 <div class="container">
-
-
+    <div class="spacer"></div>
 <h2 class="heading heading-line text-thin"><span>eCard Inventory</span></h2>
 <p class="text-bold">Click on the course below to view and assign from your inventory. </p>
-
 <!-- Example of dataTables -->
-<div class="table">
+<div class="table-responsive">
     <table id="example" class="dataTable display table table-bordered table-striped" width="100%" cellspacing="0">
+        <caption class="sr-only">Inventory table</caption>
         <thead>
         <tr>
             <th></th>
@@ -80,13 +75,11 @@ title: Inventory
             <td>PEARS</td>
             <td>823</td>
             <td>90-3003</td>
-
         </tr>
-
-
 
         </tbody>
     </table>
-</div><!-- end div.table -->
+</div><!-- end div.table-responsive -->
 <!-- End example of datatables -->
 </div>
+<!--end container-->

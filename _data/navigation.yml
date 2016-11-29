@@ -47,4 +47,6 @@
       link: ecards-status-details.html
     - name: eCards Search
       link: ecards-search.html
+    - name: eCards Edit
+      link: ecards-edit.html
 

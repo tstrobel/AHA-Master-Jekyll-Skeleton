@@ -157,7 +157,28 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
 
                 
                 <div class="col-sm-12">
+                    <h3 class="montsserat-heading">Text Helper Classes</h3>
                     <div class="spacer"></div>
+
+
+                    <h4 class="montsserat-heading">Text Small</h4>
+{% highlight html %}
+<span class="text-sm"> TEXT SMALL </span>
+{% endhighlight %}
+                    <p class="boxed-content text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dolor dolore, eius eligendi enim, eum impedit iusto laborum laudantium magni modi nemo numquam odit omnis quas repudiandae, sint voluptates voluptatum.</p>
+
+
+                    <h4 class="montsserat-heading">Text Medium</h4>
+{% highlight html %}
+<span class="text-md"> TEXT MEDIUM </span>
+{% endhighlight %}
+                    <p class="boxed-content text-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dolor dolore, eius eligendi enim, eum impedit iusto laborum laudantium magni modi nemo numquam odit omnis quas repudiandae, sint voluptates voluptatum.</p>
+
+                    <h4 class="montsserat-heading">Text Large</h4>
+{% highlight html %}
+<span class="text-lg"> TEXT LARGE </span>
+{% endhighlight %}
+                    <p class="boxed-content text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dolor dolore, eius eligendi enim, eum impedit iusto laborum laudantium magni modi nemo numquam odit omnis quas repudiandae, sint voluptates voluptatum.</p>
 
                 <h4 class="montsserat-heading">Bold</h4>
                 {% highlight html  %}
@@ -795,6 +816,42 @@ alert(selectedValue);
     </div>{% endhighlight %}
 
             </div>
+
+            <!--Boxed Contents-->
+
+            <div>
+                <div class="spacer"></div>
+                <div class="spacer" id="boxedWrapper"></div>
+                <h2 class="montsserat-heading">Boxed Content</h2>
+                <h3 class="montsserat-heading">Default</h3>
+                <p class="text-md">This class will add a background color and padding</p>
+                <div class="boxed-content">
+                    <h4 class="montsserat-heading">Example</h4>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet doloribus iusto laudantium non, nostrum odio porro quibusdam sit? A accusamus aliquid et pariatur ratione? Aliquam enim molestiae nulla omnis sunt!
+                </p>
+                </div>
+
+
+            </div>
+
+            <div class="spacer"></div>
+
+            <!--end boxed contents-->
+
+            <!--Helpers-->
+            <div>
+                <div class="spacer" id="helpersWrapper"></div>
+                <h2 class="montsserat-heading">Helper Classes</h2>
+
+                <h3 class="montsserat-heading">Block</h3>
+                <p>Make element into a block with clearing</p>
+                {% highlight html%}
+<div class="block"> No Floating Allow Here </di>{% endhighlight %}
+
+            </div>
+
+            <!--end helpers-->
 
             <!-- UX Functions -->
             <div>

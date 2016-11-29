@@ -74,7 +74,7 @@ jQuery( document ).ready(function( $ ) {
 
 
 
-        var table = $('.dataTable').DataTable({"searching":false,"lengthChange": false});
+        var table = $('.dataTable').DataTable({"searching":false,"lengthChange": false,"sDom": 'rtip'});
         //$('.dataTables_length select.form-control').chosen({disable_search: true});
 
         // Add event listener for opening and closing details

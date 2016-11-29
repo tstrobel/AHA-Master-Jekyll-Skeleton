@@ -4,8 +4,6 @@ activelink: Templates
 title: Search
 ---
 
-{% include admin-bar.html%}
-
 <div class="container">
 
 <h2 class="heading heading-line text-thin"><span>Search eCards</span></h2>
@@ -141,21 +139,18 @@ title: Search
         <td>Le</td>
         <td><a href="mailto:sle@gmail.com">sle@gmail.com</a></td>
         <td>Wallet | Full</td>
-        <td class="text-center"><a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span><span class="sr-only">Edit</span></a></td>
-        <td class="text-center"><a href="#" class="btn btn-secondary btn-sm btn-single">Reclaim</a></td>
+        <td class="text-center"><a href="ecards-edit.html"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span><span class="sr-only">Edit</span></a></td>
+        <td class="text-center"><a href="#" class="btn btn-secondary btn-sm btn-single">Resend</a></td>
     </tr>
-
-
-
             </tbody>
         </table>
     </div>
     <!-- End example of datatables -->
 
     </form>
-    <div class="spacer"></div>
+
     <div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="#" class="btn btn-secondary">Go To Inventory</a>
     </div>
     <!-- end buttons -->
 </div>

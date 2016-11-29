@@ -223,6 +223,11 @@ nav#main-navigation .menu > li {
 #sidebar ul#sidebarnav li a {
   text-decoration: none !important;
   color:#5d5d5d !important;
+
+  &:hover{
+    margin-left: 6px;
+    color: $text-primary !important;
+  }
 } 
 
 
@@ -272,6 +277,18 @@ p{
 
 .required {
   color: $text-required;
+}
+
+.boxed-content {
+  background-color: $gray-light;
+  padding: 5px 10px;
+}
+
+.block {
+  display: block;
+  &::after{
+    clear:both;
+  }
 }
 
 //End Custom
@@ -339,6 +356,10 @@ p{
   font-size: 12px;
   letter-spacing: 2px;
   border-radius: 0;
+
+  &:hover{
+    letter-spacing: 3px;
+  }
 }
 
 .btn-sm {
@@ -504,10 +525,14 @@ form button {
   letter-spacing: 2px;
 }
 
-form label{
+form label, .label{
 
     letter-spacing: 0.5px;
     font-weight: 500;
+  font-size: 100%;
+  color: $text-color;
+  margin-bottom: 5px;
+  padding-left: 0;
 
 }
 

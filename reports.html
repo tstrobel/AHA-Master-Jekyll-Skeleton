@@ -4,9 +4,6 @@ activelink: Templates
 title: Reports
 ---
 
-{% include admin-bar.html%}
-
-
 <div class="container">
 
 
@@ -32,9 +29,9 @@ title: Reports
 
                 <!-- radio buttons -->
                 <div class="row">
-                <div class="col-sm-6"><span class="text-bold">Select how you would like to view your reports: </span></div>
-                <div class="col-sm-6">
 
+                <div class="col-sm-6">
+                    <div><span class="label">Select how you would like to view your reports: </span></div>
                     <fieldset>
                         <label class="radio">
                             <input type="radio" name="viewreport" id="summaryReport" value="summaryReport" data-toggle="radio">
@@ -52,6 +49,7 @@ title: Reports
                 <!--content-->
                 <!-- Example of dataTables -->
                 <div class="table-responsive">
+
                     <table id="example" class="dataTable display table table-bordered table-striped" width="100%" cellspacing="0">
                         <thead>
                         <tr>
