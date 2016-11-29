@@ -6,9 +6,7 @@ title: Search
 
 {% include admin-bar.html%}
 
-
 <div class="container">
-
 
 <h2 class="heading heading-line text-thin"><span>Search eCards</span></h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis consectetur cum cupiditate deleniti deserunt doloremque, doloribus dolorum ea fuga fugit labore, magnam maxime molestias numquam quisquam tenetur voluptates voluptatibus.</p>
@@ -18,7 +16,8 @@ title: Search
         Show/Hide
         <b class="caret"></b>
     </a>
-        <div class="spacer"></div>
+
+    <div class="spacer"></div>
 
     <div class="collapse in" id="collapseExample">
         <div class="">
@@ -63,8 +62,6 @@ title: Search
                         </div>
                     </div>
                 </div><!-- end row -->
-                
-
 
                 <div class="row">
                     <div class="col-sm-4">
@@ -103,68 +100,62 @@ title: Search
                 <div class="spacer"></div>
                 <button class="btn btn-primary" type="submit">Search</button>
                 <a href="#" class="btn btn-secondary-stroked"> Clear </a>
-
-
-
-
-
             </form>
 
             <!--end content-->
-
-
         </div>
     </div>
     </div><!-- end Show/Hide -->
 
+    <!-- Example of dataTables -->
+    <form action="" id="resultsTable">
+    <div class="spacer"></div>
+    <h3>Results</h3>
+    <div class="table-responsive">
+        <table id="example" class="dataTable display table table-bordered table-striped" width="100%" cellspacing="0">
+            <caption class="sr-only">Course details table</caption>
+            <thead>
+            <tr>
+                <th>Course</th>
+                <th>Course Date</th>
+                <th>eCard Code</th>
+                <th>TC</th>
+                <th>Instructor</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>View</th>
+                <th>Edit</th>
+                <th>Resend</th>
+            </tr>
+            </thead>
 
-<!-- Example of dataTables -->
-<form action="">
-<div class="table-responsive">
-    <table id="example" class="dataTable display table table-bordered table-striped" width="100%" cellspacing="0">
-        <caption class="sr-only">Course details table</caption>
-        <thead>
-        <tr>
-            <th>Course</th>
-            <th>Course Date</th>
-            <th>eCard Code</th>
-            <th>TC</th>
-            <th>Instructor</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>View</th>
-            <th>Edit</th>
-            <th>Resend</th>
-        </tr>
-        </thead>
-
-        <tbody>
-<tr>
-    <td>ACLS EP</td>
-    <td>12/2/2016</td>
-    <td>TX1234590</td>
-    <td>Center Name</td>
-    <td>Jane Doe</td>
-    <td>Sara</td>
-    <td>Le</td>
-    <td><a href="mailto:sle@gmail.com">sle@gmail.com</a></td>
-    <td>Wallet | Full</td>
-    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span><span class="sr-only">Edit</span></a></td>
-    <td class="text-center"><a href="#" class="btn btn-secondary btn-sm btn-single">Reclaim</a></td>
-</tr>
-
-
-
-        </tbody>
-    </table>
+            <tbody>
+    <tr>
+        <td>ACLS EP</td>
+        <td>12/2/2016</td>
+        <td>TX1234590</td>
+        <td>Center Name</td>
+        <td>Jane Doe</td>
+        <td>Sara</td>
+        <td>Le</td>
+        <td><a href="mailto:sle@gmail.com">sle@gmail.com</a></td>
+        <td>Wallet | Full</td>
+        <td class="text-center"><a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span><span class="sr-only">Edit</span></a></td>
+        <td class="text-center"><a href="#" class="btn btn-secondary btn-sm btn-single">Reclaim</a></td>
+    </tr>
 
 
-        <div>
-            <button type="submit" class="btn btn-primary">Submit</button>
 
-        </div>
+            </tbody>
+        </table>
+    </div>
+    <!-- End example of datatables -->
+
+    </form>
+    <div class="spacer"></div>
+    <div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    <!-- end buttons -->
 </div>
-<!-- End example of datatables -->
-
-</form>
