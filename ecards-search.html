@@ -1,0 +1,170 @@
+---
+layout: page-template
+activelink: Templates
+title: Search
+---
+
+{% include admin-bar.html%}
+
+
+<div class="container">
+
+
+<h2 class="heading heading-line text-thin"><span>Search eCards</span></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis consectetur cum cupiditate deleniti deserunt doloremque, doloribus dolorum ea fuga fugit labore, magnam maxime molestias numquam quisquam tenetur voluptates voluptatibus.</p>
+    <!--Show/Hide-->
+    <div class="bg-silver" style="padding: 10px;">
+    <a class="" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Show/Hide
+        <b class="caret"></b>
+    </a>
+        <div class="spacer"></div>
+
+    <div class="collapse in" id="collapseExample">
+        <div class="">
+
+            <!-- content -->
+            <form action="">
+
+                <!--student: first, last, email-->
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="control-label" for="first">First Name</label>
+                            <input class="form-control" value="" name="first" id="first" type="text" placeholder="First name">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="control-label" for="lastname">Last name</label>
+                            <input class="form-control" value="" name="lastname" id="lastname" type="text" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="control-label" for="email">Email</label>
+                            <input class="form-control" value="" name="email" id="email" type="text" placeholder="Email">
+                        </div>
+                    </div>
+                </div>
+
+                <!--ecard code-->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="control-label" for="ecode">eCard code</label>
+                            <input class="form-control" value="" name="ecode" id="ecode" type="text" placeholder="eCard code">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="control-label" for="estatus">eCode Status</label>
+                            <input class="form-control" value="" name="estatus" id="estatus" type="text" placeholder="eCard status">
+                        </div>
+                    </div>
+                </div><!-- end row -->
+                
+
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label class="control-label" for="course">Course(s)<span class="required"> * </span></label>
+                        <select multiple data-placeholder="Select courses" id="course" title="Course" name="course" class="form-control chosen-select">
+                            <option value=""></option>
+                            <option value="course 1">Course 1</option>
+                            <option value="course 2">Course 2</option>
+                            <option value="course 3">Course 3</option>
+                            <option value="course 4">Course 4</option>
+                        </select>
+
+                    </div>
+
+                        <div class="col-sm-4">
+                            <label for="coursedate">Course Date</label>
+                            <div class="input-group date">
+                                <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                <input type="text" class="form-control datepicker" name="coursedate" id="coursedate" placeholder="Course date">
+                            </div>
+                        </div>
+                    <div class="col-sm-4">
+                        <!-- dropdown -->
+                        <label class="control-label" for="instructor">Instructor<span class="required"> * </span></label>
+                        <select data-placeholder="Select training center" id="instructor" title="Instructor" name="trainingcenter" class="form-control chosen-select">
+                            <option value="00">John Doe</option>
+                            <option value="01">Jane Doe</option>
+                            <option value="02">Jane Smith</option>
+                            <option value="03">John Smith</option>
+                        </select>
+                        <!-- end dropdown -->
+                    </div>
+                    </div><!-- end row -->
+
+                    <!--buttons-->
+                <div class="spacer"></div>
+                <button class="btn btn-primary" type="submit">Search</button>
+                <a href="#" class="btn btn-secondary-stroked"> Clear </a>
+
+
+
+
+
+            </form>
+
+            <!--end content-->
+
+
+        </div>
+    </div>
+    </div><!-- end Show/Hide -->
+
+
+<!-- Example of dataTables -->
+<form action="">
+<div class="table-responsive">
+    <table id="example" class="dataTable display table table-bordered table-striped" width="100%" cellspacing="0">
+        <caption class="sr-only">Course details table</caption>
+        <thead>
+        <tr>
+            <th>Course</th>
+            <th>Course Date</th>
+            <th>eCard Code</th>
+            <th>TC</th>
+            <th>Instructor</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Resend</th>
+        </tr>
+        </thead>
+
+        <tbody>
+<tr>
+    <td>ACLS EP</td>
+    <td>12/2/2016</td>
+    <td>TX1234590</td>
+    <td>Center Name</td>
+    <td>Jane Doe</td>
+    <td>Sara</td>
+    <td>Le</td>
+    <td><a href="mailto:sle@gmail.com">sle@gmail.com</a></td>
+    <td>Wallet | Full</td>
+    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span><span class="sr-only">Edit</span></a></td>
+    <td class="text-center"><a href="#" class="btn btn-secondary btn-sm btn-single">Reclaim</a></td>
+</tr>
+
+
+
+        </tbody>
+    </table>
+
+
+        <div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </div>
+</div>
+<!-- End example of datatables -->
+
+</form>

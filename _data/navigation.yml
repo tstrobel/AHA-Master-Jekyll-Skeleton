@@ -43,4 +43,8 @@
       link: reports.html
     - name: eCards Status
       link: ecards-status.html
+    - name: eCards Status Details
+      link: ecards-status-details.html
+    - name: eCards Search
+      link: ecards-search.html
 
