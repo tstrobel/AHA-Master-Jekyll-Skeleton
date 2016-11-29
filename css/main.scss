@@ -52,7 +52,8 @@ a {
   }
 }
 
-.spacer {display: block;height: $spacing-unit/2;margin: 0;clear: both;}
+.spacer {display: block; margin: $spacing-unit/2 0;clear: both;}
+//.spacer {display: block;height: $spacing-unit/2;margin: $spacing-unit/2 0;clear: both;}
 
 //Sub Brand
 .ahaSubBrandWrapper {
@@ -238,6 +239,10 @@ nav#main-navigation .menu > li {
 
 .margin-bottom-5 {
   margin-bottom: 5px !important;
+}
+
+.margin-left-10 {
+  margin-left: -10px;
 }
 
 .text-bold {
@@ -542,6 +547,14 @@ table.dataTable thead .sorting::after, table.dataTable thead .sorting_asc::after
 }
 
 //Bootstrap overwrite
+
+#main .row {
+  margin-top: $spacing-unit/2;
+  margin-bottom: $spacing-unit/2;
+
+
+}
+
 //Addons
 .input-group-addon {
   border-radius: 0;
