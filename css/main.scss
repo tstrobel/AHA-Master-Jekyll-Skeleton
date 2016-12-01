@@ -26,6 +26,7 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+
 $gray-dark : #444444;
 $gray: #898989;
 $silver: #CCCCCC;
@@ -86,7 +87,9 @@ h1,h2,h3,h4 {}
   font-weight: bold;
 }
 
-
+h4 {
+  font-size: 16px;
+}
 
 .heading-line span {
   display: inline-block;
@@ -233,6 +236,11 @@ nav#main-navigation .menu > li {
 
 
 //Helper Classes
+.border-square {
+  border-radius: 0px !important;
+
+}
+
 .no-padding {
   padding: 0 !important;
 }
@@ -243,6 +251,10 @@ nav#main-navigation .menu > li {
 
 .margin-left-10 {
   margin-left: -10px;
+}
+
+.margin-left-15 {
+  margin-left: -15px;
 }
 
 .text-bold {
@@ -294,6 +306,11 @@ p{
   &::after{
     clear:both;
   }
+}
+
+
+.bg-primary-dark {
+  background-color: $text-primary;
 }
 
 //End Custom
@@ -363,7 +380,7 @@ p{
   border-radius: 0;
 
   &:hover{
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
   }
 }
 
@@ -391,7 +408,7 @@ p{
 
   }
 
-a.btn-primary-stroked {
+.btn-primary-stroked {
 
   background-color: transparent;
   text-decoration: none !important;
@@ -456,7 +473,7 @@ a.btn-secondary-stroked{
   color: #000;
   border-radius: 0px;
   padding:20px;
-  border: 1px solid $grey-color-light;
+  border: 1px solid $gray-light;
   border-top:0;
 }
 
@@ -551,9 +568,45 @@ table.dataTable thead .sorting::after, table.dataTable thead .sorting_asc::after
 #main .row {
   margin-top: $spacing-unit/2;
   margin-bottom: $spacing-unit/2;
+}
 
+//Label
+a.label {
+  text-decoration: underline;
+}
+a.label:focus, a.label:hover {
+  color: $text-primary;
+  margin-left: 5px;
+}
+
+
+//Modal
+.modal-backdrop {
+  z-index: 0 !important;
+}
+
+.modal-content {
+  border-radius: 0px;
+}
+
+.modal-footer .btn + .btn {
+  margin: 0 10px 20px 0;
+}
+
+.modal .close {
+  color: $text-primary-dark;
+  opacity: 0.8;
+  transform: rotate(0deg) ;
+  transform-origin: 50% 60%;
+  transition: transform .2s ease-in-out;
+
+  &:hover{
+    transform: rotate(-90deg) scale(1.2);
+
+  }
 
 }
+
 
 //Addons
 .input-group-addon {
@@ -579,6 +632,25 @@ table.dataTable thead .sorting::after, table.dataTable thead .sorting_asc::after
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
+
+//List Groups
+.list-group {
+
+  .list-group-item {
+    background-color: $gray-light;
+  }
+
+}
+.list-group-item:first-child{
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+
+}
+.list-group-item:last-child{
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
 
 //Banners
 .section-banner {
@@ -639,6 +711,48 @@ table.dataTable thead .sorting::after, table.dataTable thead .sorting_asc::after
 
 }
 
+//eCards Card
+.ecard-card {
+
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+  padding: 10px;
+  background-color: $gray-light;
+  border: 1px solid $gray;
+
+  .ecard-title {padding: 5px 0;}
+  .ecard-body {}
+  &.ecard-status-active{
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+  }
+
+
+}
+
+//Isotopes Grid
+.grid-item {
+
+  &.active{
+
+  }
+  &.inactive {
+      .thumbnail {
+
+        background-color: $gray-light;
+      }
+  }
+
+}
+
+
+//Animate CSS
+.animated-loop-10 {
+  animation-iteration-count: 10 !important;
+}
+
+.animated-loop-5 {
+  animation-iteration-count: 5 !important;
+}
 
 // Width of the content area
 $content-width:    800px;

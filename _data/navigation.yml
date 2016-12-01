@@ -2,12 +2,12 @@
   link: index.html
   class: nav-1
   subpages:
-    - name: Home
-      link: index.html
-    - name: Child Page 2
-      link: childpage2.html
-    - name: Child Page 3
-      link: childpage3.html
+#    - name: Home
+#      link: index.html
+#    - name: Child Page 2
+#      link: childpage2.html
+#    - name: Child Page 3
+#      link: childpage3.html
 
 
 - name: Style Guide
@@ -21,6 +21,8 @@
   subpages:
     - name: Student Landing
       link: student-landing.html
+    - name: eCards
+      link: ecards-cards.html
     - name: Inventory
       link: inventory.html
     - name: Assign eCards Student Step 1
