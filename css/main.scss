@@ -454,15 +454,18 @@ a.btn-secondary-stroked{
 
 //Nav Pills
 .nav-pills>li>a {
-  border-radius: 0px;
+  //border-radius: 0px;
   //color: #fff;
 
 }
 
+
+
+
 //Student landing page, search for ecards
 #ecardSearchWrapper .nav-pills>li>a{
   color: #fff;
-
+  border-radius: 4px 4px 0 0;
 
   &:hover{
     background-color: $text-primary-dark;
@@ -496,7 +499,7 @@ a.btn-secondary-stroked{
 .tab-pane {
   background-color: #fff;
   color: #000;
-  border-radius: 0px;
+  border-radius: 0px 4px 4px 4px;
   padding:20px;
   border: 1px solid $silver;
   border-top:0;

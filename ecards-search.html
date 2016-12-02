@@ -62,19 +62,19 @@ title: Search
                 </div><!-- end row -->
 
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
                         <label class="control-label" for="course">Course(s)<span class="required"> * </span></label>
                         <select multiple data-placeholder="Select courses" id="course" title="Course" name="course" class="form-control chosen-select">
-                            <option value=""></option>
-                            <option value="course 1">Course 1</option>
-                            <option value="course 2">Course 2</option>
-                            <option value="course 3">Course 3</option>
-                            <option value="course 4">Course 4</option>
+
+                            {% for course in site.data.course-data.course %}
+
+                            <option value="{{course.name}}">{{course.name}}</option>
+                            {% endfor %}
                         </select>
 
                     </div>
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-2">
                             <label for="coursedate">Course Date</label>
                             <div class="input-group date">
                                 <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
@@ -84,11 +84,11 @@ title: Search
                     <div class="col-sm-4">
                         <!-- dropdown -->
                         <label class="control-label" for="instructor">Instructor<span class="required"> * </span></label>
-                        <select data-placeholder="Select training center" id="instructor" title="Instructor" name="trainingcenter" class="form-control chosen-select">
-                            <option value="00">John Doe</option>
-                            <option value="01">Jane Doe</option>
-                            <option value="02">Jane Smith</option>
-                            <option value="03">John Smith</option>
+                        <select data-placeholder="Select instructor" id="instructor" title="Instructor" name="instructor" class="form-control chosen-select">
+                            <option value=""></option>
+                            {% for instructor in site.data.instructors.instructors %}
+                            <option value="{{instructor.name}}">{{instructor.name}}</option>
+                            {% endfor %}
                         </select>
                         <!-- end dropdown -->
                     </div>
@@ -194,6 +194,8 @@ title: Search
 </div>
 <!--end modal-->
 
+
+
 <script type="text/javascript">
     $(document).ready(function() {
         $('#resendModal').on('shown.bs.modal', function (event) {
@@ -202,6 +204,9 @@ title: Search
         });
     });
 </script>
+
+
+
 
 
 

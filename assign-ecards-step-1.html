@@ -16,21 +16,21 @@ title: Assign eCards Student Step 1
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <label class="control-label" for="course">Course<span class="required"> * </span></label>
                     <select data-placeholder="Select a course" id="course" title="Course" name="course" class="form-control chosen-select">
-                        <option value=""></option>
-                        <option value="course 1">Course 1</option>
-                        <option value="course 2">Course 2</option>
-                        <option value="course 3">Course 3</option>
-                        <option value="course 4">Course 4</option>
+
+                            {% for course in site.data.course-data.course %}
+                                     <option value="{{course.name}}">{{course.name}}</option>
+                            {% endfor%}
+
                     </select>
 
                     <div class="spacer"></div>
                     <!-- dropdown -->
                     <label class="control-label" for="invsource">Inventory Source<span class="required"> * </span></label>
                     <select data-placeholder="Select inventory source" id="invsource" title="Invsource" name="invsource" class="form-control chosen-select">
-                        <option value=""></option>
-                        <option value="USA">USA</option>
-                        <option value="VN">Vietnam</option>
-                        <option value="MEX">Mexico</option>
+                        <option value="x1">Soure 1</option>
+                        <option value="x2">Soure 2</option>
+                        <option value="x3">Soure 3</option>
+                        <option value="x4">Soure 4</option>
                     </select>
                     <!-- end dropdown -->
 
@@ -57,10 +57,10 @@ title: Assign eCards Student Step 1
                     <!-- dropdown -->
                     <label class="control-label" for="trainingcenter">Training Center<span class="required"> * </span></label>
                     <select data-placeholder="Select training center" id="trainingcenter" title="Trainingcenter" name="trainingcenter" class="form-control chosen-select">
-                        <option value=""></option>
-                        <option value="USA">USA</option>
-                        <option value="VN">Vietnam</option>
-                        <option value="MEX">Mexico</option>
+                        {% for tc in site.data.tc.tc %}
+                        {{tc.name}}
+                        <option value="{{tc.name}}">{{tc.name}}</option>
+                        {% endfor %}
                     </select>
                     <!-- end dropdown -->
 
@@ -69,10 +69,10 @@ title: Assign eCards Student Step 1
                     <!-- dropdown -->
                     <label class="control-label" for="trainingsite">Training Site<span class="required"> * </span></label>
                     <select data-placeholder="Select training site" id="trainingsite" title="Trainingsite" name="trainingsite" class="form-control chosen-select">
-                        <option value=""></option>
-                        <option value="USA">USA</option>
-                        <option value="VN">Vietnam</option>
-                        <option value="MEX">Mexico</option>
+                        {% for tc in site.data.tc.tc %}
+                        {{tc.name}}
+                        <option value="{{tc.name}}">{{tc.name}}</option>
+                        {% endfor %}
                     </select>
                     <!-- end dropdown -->
 
@@ -84,10 +84,9 @@ title: Assign eCards Student Step 1
                     <!-- dropdown -->
                     <label class="control-label" for="instructor">Instructor<span class="required"> * </span></label>
                     <select data-placeholder="Instructor" id="instructor" title="Instructor" name="instructor" class="form-control chosen-select">
-                        <option value=""></option>
-                        <option value="USA">USA</option>
-                        <option value="VN">Vietnam</option>
-                        <option value="MEX">Mexico</option>
+                        {% for instructor in site.data.instructors.instructors %}
+                        <option value="{{instructor.name}}">{{instructor.name}}</option>
+                        {% endfor %}
                     </select>
                     <!-- end dropdown -->
 

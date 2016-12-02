@@ -32,15 +32,31 @@ title: Reclaim Instructor
                         <label class="control-label" for="course">Course<span class="required"> * </span></label>
                         <select data-placeholder="Select a course" id="course" title="Course" name="course" class="form-control chosen-select">
                             <option value=""></option>
-                            <option value="course 1">Course 1</option>
-                            <option value="course 2">Course 2</option>
-                            <option value="course 3">Course 3</option>
-                            <option value="course 4">Course 4</option>
+                            {% for course in site.data.course-data.course %}
+                            <option value="{{course.name}}">{{course.name}}</option>
+                            {% endfor %}
                         </select>
 
-
-
                         <div class="spacer"></div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                        <!-- dropdown -->
+                        <label class="control-label" for="instructor">Instructor<span class="required"> * </span></label>
+                        <select data-placeholder="Select instructor" id="instructor" title="Instructor" name="instructor" class="form-control chosen-select">
+                            <option value="00"></option>
+                            {% for instructor in site.data.instructors.instructors %}
+                            <option value="{{instructor.name}}">{{instructor.name}}</option>
+                            {% endfor %}
+
+                        </select>
+                        <!-- end dropdown -->
+                        <div class="spacer"></div>
+                    </div>
+
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
                         <!-- radio buttons -->
                         <div>
@@ -57,67 +73,47 @@ title: Reclaim Instructor
                             </fieldset>
                         </div>
                         <!-- end radio buttons -->
-
-
-
-                        <!-- dropdown -->
-                        <label class="control-label" for="instructor">Instructor<span class="required"> * </span></label>
-                        <select data-placeholder="Select training center" id="instructor" title="Instructor" name="trainingcenter" class="form-control chosen-select">
-                            <option value="00">John Doe</option>
-                            <option value="01">Jane Doe</option>
-                            <option value="02">Jane Smith</option>
-                            <option value="03">John Smith</option>
-                        </select>
-                        <!-- end dropdown -->
-
                         <div class="spacer"></div>
+                    </div>
 
-
-
-                        <div class="heading hide">Available eCards Quantity: 1809</div>
-
-
-
-
-
-                    </div><!-- end col-sm-12 -->
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
+                            <div class="form-group">
 
-                        <!--col 2-->
+                                <div class="label margin-bottom-5">Date of Assignment</div>
+                                <div class="row">
+                                    <div class="col-sm-6">
 
-                        <div class="form-group">
+                                        <label for="dateStart" class="sr-only">From</label>
+                                        <div class="input-group date">
+                                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                            <input type="text" class="form-control datepicker" name="dateStart" id="dateStart" placeholder="Start date">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
 
-                            <div class="text-bold margin-bottom-5">Date of Assignment</div>
-                            <label for="dateStart" class="sr-only">From</label>
-                            <div class="input-group date">
-                                <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                <input type="text" class="form-control datepicker" name="dateStart" id="dateStart" placeholder="Start date">
-                            </div>
-                            <div class="spacer"></div>
-                            <label for="dateEnd" class="sr-only">To</label>
-                            <div class="input-group date">
-                                <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                <input type="text" class="form-control datepicker" name="dateEnd" id="dateEnd" placeholder="End date">
-                            </div>
-                        </div>
+                                        <label for="dateEnd" class="sr-only">To</label>
+                                        <div class="input-group date">
+                                             <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                                <input type="text" class="form-control datepicker" name="dateEnd" id="dateEnd" placeholder="End date">
+                                            </div>
+                                        </div>
+                                </div><!-- end row -->
+                                <div class="spacer"></div>
+                            </div><!-- end form group -->
 
-                        <div class="spacer"></div>
 
+
+
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <button class="btn btn-primary" type="submit">Search</button>
-                    </div><!-- end col-sm-12 -->
-                </div><!-- end row -->
+                    </div>
 
-
-
-
-
-
+                </div>
             </form>
-
             <!--end content-->
-
-
         </div>
     </div>
     </div><!-- end Show/Hide -->
@@ -169,3 +165,4 @@ title: Reclaim Instructor
 <!-- End example of datatables -->
 
 </form>
+</div>

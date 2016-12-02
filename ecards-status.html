@@ -33,10 +33,10 @@ title: Ecards Status
                         <div class="col-sm-6">
                         <label class="control-label" for="course">Course<span class="required"> * </span></label>
                         <select data-placeholder="Select course" id="course" title="Course" name="course" class="form-control chosen-select">
-                            <option value="ACLS">ACLS</option>
-                            <option value="BLS">BLS</option>
-                            <option value="PALS">PALS</option>
-                            <option value="PEARS">PEARS</option>
+                            <option value=""></option>
+                            {% for course in site.data.course-data.course %}
+                            <option value="{{course.name}}">{{course.name}}</option>
+                            {% endfor %}
                         </select>
                         </div>
                         <!-- end dropdown -->
