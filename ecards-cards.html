@@ -38,15 +38,15 @@ title: eCards
         <ul class="list-group filter-button-group">
             <li class="list-group-item">
                 <span class="badge bg-primary-dark">3</span>
-                <a href="#" data-filter="*" class="filter--link label">All</a>
+                <a href="#" data-filter="*" class="filter--link label"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> All</a>
             </li>
             <li class="list-group-item">
                 <span class="badge bg-success">2</span>
-                <a href="#" data-filter=".active" class="filter--link label">Active</a>
+                <a href="#" data-filter=".active" class="filter--link label"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Active </a>
             </li>
             <li class="list-group-item">
                 <span class="badge">1</span>
-                <a href="#" data-filter=".inactive" class="filter--link label">Inactive</a>
+                <a href="#" data-filter=".inactive" class="filter--link label"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span> Inactive</a>
             </li>
         </ul>
 
@@ -75,7 +75,7 @@ title: eCards
 
         <div class="">
 
-            <h3  class="col-sm-6"><span class="glyphicon glyphicon-list text-lg text-primary" aria-hidden="true"></span> <span id="nowShowingText">All</span> eCards</h3>
+            <h3  class="col-sm-6"> <span id="nowShowingText"><span class="glyphicon glyphicon-list text-lg text-primary" aria-hidden="true"></span> All</span> eCards</h3>
 
 
         <div class="col-sm-6 text-right">
@@ -237,18 +237,18 @@ title: eCards
             var filterText = "ALL";
             switch (filterValue){
                 case ".active":
-                    filterText = "Active";
+                    filterText = "<span class='glyphicon glyphicon-ok text-primary text-lg' aria-hidden='true'></span> Active";
                     break;
                 case ".inactive":
-                    filterText = "Inactive";
+                    filterText = "<span class='glyphicon glyphicon-ban-circle text-primary text-lg' aria-hidden='true'></span> Inactive";
                     break;
                 default:
-                    filterText = "All";
+                    filterText = "<span class='glyphicon glyphicon-list text-primary text-lg' aria-hidden='true'></span> All";
                     break;
             }
 
 
-            $('#nowShowingText').text(filterText);
+            $('#nowShowingText').html(filterText);
         });
 
 

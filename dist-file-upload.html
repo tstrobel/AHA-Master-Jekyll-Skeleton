@@ -1,0 +1,59 @@
+---
+layout: page
+activelink: Templates
+title: Distributor File Upload
+---
+
+<!--Student Landing page-->
+<style>
+    .bgFull{
+        background-image: url("img/desk-white.jpg");
+        background-color: #f8f8f8;
+    }
+    #ecardSearchWrapper {
+        color: #fff;
+    }
+
+</style>
+
+<!--Dropzone script for file upload presentation layer-->
+<script src="js/vendor/dropzone.js" type="text/javascript"></script>
+<!--<link rel="stylesheet" href="js/vendor/dropzone-style.css" type="text/css"/>-->
+<link rel="stylesheet" href="js/vendor/dropzone.css" type="text/css"/>
+<script>
+    Dropzone.options.myAwesomeDropzone = {
+        dictDefaultMessage: "<img src='img/icon-upload.png' width='75'><br>Drag files here to upload"
+    };
+</script>
+
+
+
+<div id="main" class=" bgFull" style="min-height: 800px">
+<div class="overlay"></div>
+    <div id="ecardUploadWrapper" class="row">
+        <div class="col-lg-5 col-md-5 col-sm-8 col-xs-11" style="float:none;margin: auto;overflow: hiddens;">
+
+
+            <div class="spacer"></div>
+            <h2 class=" text-thin text-primary">Upload Distributor eCard Orders</h2>
+
+            <!--content-->
+            <div class=" text-lg  ">To begin uploading the distributor eCard order, simply drag your file into this upload box or 'click' in the box. </div>
+
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+
+            <div class="animated slideInUp">
+            <form action="/file-upload" class="dropzone " id="my-awesome-dropzone">
+                <div class="fallback">
+                    <input name="file" type="file" multiple />
+                </div>
+            </form>
+            </div>
+
+
+           <!-- end content -->
+
+        </div>
+    </div>
+</div>

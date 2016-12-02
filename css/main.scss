@@ -32,6 +32,10 @@ $gray: #898989;
 $silver: #CCCCCC;
 $gray-light: #F8F8F8;
 
+$bootstrap-danger: #a94442;
+$bootstrap-danger-bg: #f2dede;
+
+
 $text-required: #a60008;
 
 //Custom Project Theme
@@ -593,7 +597,7 @@ table.dataTable thead .sorting::after, table.dataTable thead .sorting_asc::after
 
 //Label
 a.label {
-  text-decoration: underline;
+  //text-decoration: underline;
 }
 a.label:focus, a.label:hover {
   color: $text-primary;
@@ -773,6 +777,28 @@ a.label:focus, a.label:hover {
 
 .animated-loop-5 {
   animation-iteration-count: 5 !important;
+}
+
+
+//Dropzone file upload
+.dropzone {  transition: all 0.35s linear 0s;
+min-height: 150px;
+background: $silver;
+border-radius: 6px;
+border-style: dashed !important;
+border-color: $text-primary !important;
+
+
+}
+.dz-default.dz-message span{
+  display: inline-block;
+  font-size: 20px;
+  color: $gray-dark;
+}
+
+.dropzone:hover {
+  background-color: $bootstrap-danger-bg;
+
 }
 
 // Width of the content area

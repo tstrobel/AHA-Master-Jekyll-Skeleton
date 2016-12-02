@@ -51,4 +51,6 @@
       link: ecards-search.html
     - name: eCards Edit
       link: ecards-edit.html
+    - name: Distributor File Upload
+      link: dist-file-upload.html
 
