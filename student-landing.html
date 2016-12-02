@@ -31,7 +31,7 @@ title: Student landig page
 
                 <ul class="nav nav-pills" role="tablist">
                     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" class="text-uppercase">Student</a></li>
-                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" class="text-uppercase">Employers</a></li>
+                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" class="text-uppercase">Employer</a></li>
 
                 </ul>
 
@@ -40,29 +40,33 @@ title: Student landig page
 
                     <!--Student pane-->
                     <div role="tabpanel" class="tab-pane fade in active" id="home">
-                        <h3 class="text-primary text-thin"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Students</h3>
-                        <div class="text-lg">
+                        <h2 class="text-primary text-thin heading heading-line"><span>Students</span></h2>
+                        <div class="h3">
                             Access your AHA eCard Profile or eCard
                         </div>
-                        <p>
+                        <p class="text-md">
                             To access your complete eCard profile, please log in by entering your first and last name and email address below. OR, if you have your eCard code, enter it below to access the eCard for that code.
                         </p>
-                        <div class="row" style="margin-bottom: 10px">
+
                         <form action="">
-                            <div class="form-group col-sm-6">
-                                <label class="control-label" for="first">First Name</label>
-                                <input class="form-control" value="" name="first" id="first" type="text" placeholder="First Name">
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <label class="control-label" for="last">Last Name</label>
-                                <input class="form-control" value="" name="last" id="last" type="text" placeholder="Last Name">
-                            </div>
-                        </div>
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label class="control-label" for="first">First Name</label>
+                                    <input class="form-control" value="" name="first" id="first" type="text" placeholder="First Name">
+                                </div><!-- end col -->
+
+                                <div class="form-group col-sm-6">
+                                    <label class="control-label" for="last">Last Name</label>
+                                    <input class="form-control" value="" name="last" id="last" type="text" placeholder="Last Name">
+                                </div><!-- end col -->
+                            </div><!-- end row -->
                             <div class="form-group">
                                 <label class="control-label" for="email">Email</label>
                                 <input class="form-control" value="" name="email" id="email" type="text" placeholder="Email">
                             </div>
+
                             <div class="decorated"><span>OR</span></div>
+
                             <div class="form-group">
                                 <label class="control-label" for="ecardcode"><span class="glyphicon glyphicon-barcode" aria-hidden="true"></span> eCard Code </label>
                                 <input class="form-control" value="" name="ecardcode" id="ecardcode" type="text" placeholder="Code">
@@ -71,15 +75,16 @@ title: Student landig page
                             <button class="btn btn-primary btn-block animated slideIn" type="submit" style="letter-spacing: 2px;">Search</button>
 
                         </form>
+
                     </div>
                     <!--Employers pane-->
                     <div role="tabpanel" class="tab-pane fade" id="profile">
 
-                        <h3 class="text-primary text-thin"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Employers</h3>
-                        <div class="text-lg">
+                        <h2 class="text-primary text-thin heading heading-line"><span>Employer</span></h2>
+                        <div class="h3">
                             Verify an AHA eCard
                         </div>
-                        <p>To verify an eCard, please enter the eCard code you wish to verify.</p>
+                        <p class="text-md">To verify an eCard, please enter the eCard code you wish to verify.</p>
                         <form action="">
                             <div class="form-group">
                                 <label class="control-label" for="ecardcodeemp"><span class="glyphicon glyphicon-barcode" aria-hidden="true"></span> eCard Code</label>
