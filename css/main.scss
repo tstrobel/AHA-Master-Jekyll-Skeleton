@@ -57,7 +57,15 @@ a {
   }
 }
 
-.spacer {display: block; margin: $spacing-unit/2 0;clear: both;}
+.spacer {
+  display: block; margin: $spacing-unit/2 0;height: 1px;
+
+  &::after {
+    clear:both;
+  }
+
+}
+
 //.spacer {display: block;height: $spacing-unit/2;margin: $spacing-unit/2 0;clear: both;}
 
 //Sub Brand
@@ -91,7 +99,7 @@ h1,h2,h3,h4 {}
   font-weight: bold;
 }
 
-h4 {
+.h5 {
   font-size: 16px;
 }
 
@@ -246,6 +254,27 @@ nav#main-navigation .menu > li {
 
 
 //Helper Classes
+
+.box-shadow{
+  box-shadow: 4px 4px 4px #efefef;
+}
+
+.circle-shadow {
+  display: inline-block;
+  padding: 0 5px;
+  background-color: green;
+  padding: 10px;
+  border-radius: 17px;
+  width: 34px;
+  height: 34px;
+  color: white;
+  box-shadow: 2px 2px 4px #c1c1c1;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+}
+
+
 .border-square {
   border-radius: 0px !important;
 
@@ -265,6 +294,10 @@ nav#main-navigation .menu > li {
 
 .margin-left-15 {
   margin-left: -15px;
+}
+
+.margin-top-5 {
+  margin-top: 5px;
 }
 
 .text-bold {
@@ -757,8 +790,18 @@ a.label:focus, a.label:hover {
 
 }
 
+
+
+// Displays
+.display-table-cell {
+  display: table-cell;
+}
+
+
 //Isotopes Grid
 .grid-item {
+
+
 
   &.active{
 
@@ -768,6 +811,30 @@ a.label:focus, a.label:hover {
 
         background-color: $gray-light;
       }
+  }
+
+  .thumbnail {
+    box-shadow: 4px 4px 4px #efefef;
+
+    .label{
+      padding: 2px 5px;
+
+      font-weight: normal;
+
+
+      &.label-active{
+        background-color: green;
+        color: white;
+      }
+
+      &.label-inactive{
+        background-color: #f0ad4e;
+        color: white;
+      }
+
+    }
+
+
   }
 
 }
