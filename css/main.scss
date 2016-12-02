@@ -300,6 +300,10 @@ nav#main-navigation .menu > li {
   margin-top: 5px;
 }
 
+.margin-auto {
+  margin: auto;
+}
+
 .text-bold {
   font-weight: 700;
 }
@@ -323,7 +327,7 @@ nav#main-navigation .menu > li {
 }
 
 .text-thin {
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 1px;
 }
 
@@ -838,6 +842,25 @@ a.label:focus, a.label:hover {
   }
 
 }
+
+// Reclaim
+
+.reclaim-qty {
+  font-size: 60px;
+  font-weight: 200;
+  width: 80px;
+  height: 80px;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 5px;
+  border-radius: 40px;
+  box-shadow: 2px 2px 2px #efefef;
+  border: 1px solid #ccc;
+  text-shadow: 1px 1px 1px #c1c1c1;
+}
+
+
+
 
 
 //Animate CSS
