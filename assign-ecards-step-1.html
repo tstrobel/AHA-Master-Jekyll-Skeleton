@@ -14,7 +14,7 @@ title: Assign eCards Student Step 1
             <div class="row">
                 <!-- row -->
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <label class="control-label" for="course">Course<span class="required"> * </span></label>
+                    <label class="control-label text-uppercase text-gray-dark" for="course">Course<span class="required"> * </span></label>
                     <select data-placeholder="Select a course" id="course" title="Course" name="course" class="form-control chosen-select">
 
                             {% for course in site.data.course-data.course %}
@@ -25,12 +25,12 @@ title: Assign eCards Student Step 1
 
                     <div class="spacer"></div>
                     <!-- dropdown -->
-                    <label class="control-label" for="invsource">Inventory Source<span class="required"> * </span></label>
+                    <label class="control-label text-uppercase text-gray-dark" for="invsource">Inventory Source<span class="required"> * </span></label>
                     <select data-placeholder="Select inventory source" id="invsource" title="Invsource" name="invsource" class="form-control chosen-select">
-                        <option value="x1">Soure 1</option>
-                        <option value="x2">Soure 2</option>
-                        <option value="x3">Soure 3</option>
-                        <option value="x4">Soure 4</option>
+                        <option value=""></option>
+                        {% for tc in site.data.tc.tc %}
+                        <option value="{{tc.name}}">{{tc.name}}</option>
+                        {% endfor %}
                     </select>
                     <!-- end dropdown -->
 
@@ -38,7 +38,7 @@ title: Assign eCards Student Step 1
 
                     <!-- radio buttons -->
                     <div>
-                        <span class="label">Select training center or training site</span>
+                        <span class="label text-uppercase text-gray-dark">Select training center or training site</span>
                         <fieldset>
                             <label class="radio">
                                 <input type="radio" name="tcts" id="tcts1" value="tc" data-toggle="radio">
@@ -58,7 +58,7 @@ title: Assign eCards Student Step 1
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
                     <!-- dropdown -->
-                    <label class="control-label" for="trainingcenter">Training Center<span class="required"> * </span></label>
+                    <label class="control-label text-uppercase text-gray-dark" for="trainingcenter">Training Center<span class="required"> * </span></label>
                     <select data-placeholder="Select training center" id="trainingcenter" title="Trainingcenter" name="trainingcenter" class="form-control chosen-select">
                         {% for tc in site.data.tc.tc %}
                         {{tc.name}}
@@ -70,7 +70,7 @@ title: Assign eCards Student Step 1
                     <div class="spacer"></div>
 
                     <!-- dropdown -->
-                    <label class="control-label" for="trainingsite">Training Site<span class="required"> * </span></label>
+                    <label class="control-label text-uppercase text-gray-dark" for="trainingsite">Training Site<span class="required"> * </span></label>
                     <select data-placeholder="Select training site" id="trainingsite" title="Trainingsite" name="trainingsite" class="form-control chosen-select">
                         {% for tc in site.data.tc.tc %}
                         {{tc.name}}
@@ -85,13 +85,13 @@ title: Assign eCards Student Step 1
                     <div class="spacer"></div>
 
                     <!-- dropdown -->
-                    <label class="control-label" for="instructor">Instructor<span class="required"> * </span></label>
+                    <label class="control-label text-uppercase text-gray-dark" for="instructor">Instructor<span class="required"> * </span></label>
                     <select data-placeholder="Instructor" id="instructor" title="Instructor" name="instructor" class="form-control chosen-select">
                         {% for instructor in site.data.instructors.instructors %}
                         <option value="{{instructor.name}}">{{instructor.name}}</option>
                         {% endfor %}
                     </select>
-                    <!-- end dropdown -->
+
 
                     <div class="spacer"></div>
 
@@ -102,14 +102,16 @@ title: Assign eCards Student Step 1
 
 
                 <div class="col-sm-12">
-                    <div class="boxed-content">
+                    <div>
 
-                        <div class="heading">Available eCards Quantity: 1809</div>
+
+                            <div class="h5 text-gray-dark text-uppercase">Available eCards Quantity</div>
+                            <div class="h2 text-thin text-primary margin-top-5">1809</div>
 
 
                         <div class="form-group">
-                            <label class="control-label" for="qty">Assign Quantity: </label>
-                            <input class="form-control" value="" name="qty" id="qty" type="text" placeholder="Qty">
+                            <label class="control-label text-uppercase" for="qty">Assign Quantity </label>
+                            <input class="form-control input-text-underline" value="50" name="qty" id="qty" type="text" placeholder="enter quantity">
                         </div>
 
                     </div><!-- end boxed-content -->

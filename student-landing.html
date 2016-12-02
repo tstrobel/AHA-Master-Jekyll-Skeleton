@@ -7,7 +7,7 @@ title: Student landig page
 <!--Student Landing page-->
 <style>
     .bgFull{
-        background-image: url("img/desk.jpg");
+        background-image: url("img/desk-white.jpg");
         background-color: #f8f8f8;
     }
     #ecardSearchWrapper {
@@ -17,12 +17,12 @@ title: Student landig page
 </style>
 <div id="main" class=" bgFull" style="min-height: 800px">
 <div class="overlay"></div>
-    <div id="ecardSearchWrapper" class="row">
+    <div id="ecardSearchWrapper" class="row animated fadeIn">
         <div class="col-lg-5 col-md-5 col-sm-8 col-xs-11" style="float:none;margin: auto;overflow: hiddens;">
 
 
             <div class="spacer"></div>
-            <h2 class=" text-thin">eCard Search</h2>
+            <h2 class=" text-thin text-primary heading heading-line"><span>eCard Search</span></h2>
 
             <!--content-->
             <div class="">
@@ -40,7 +40,7 @@ title: Student landig page
 
                     <!--Student pane-->
                     <div role="tabpanel" class="tab-pane fade in active" id="home">
-                        <h2 class="text-primary text-thin heading heading-line"><span>Student</span></h2>
+                        <h2 class="text-primary text-thin"><span>Student</span></h2>
                         <div class="h3">
                             Access your AHA eCard Profile or eCard
                         </div>
@@ -51,26 +51,37 @@ title: Student landig page
                         <form action="">
                             <div class="row">
                                 <div class="form-group col-sm-6">
-                                    <label class="control-label" for="first">First Name</label>
-                                    <input class="form-control" value="" name="first" id="first" type="text" placeholder="First Name">
+                                    <label class="control-label text-uppercase" for="first">First Name</label>
+                                    <input class="form-control input-text-underline" value="" name="first" id="first" type="text" placeholder="enter your first name">
                                 </div><!-- end col -->
 
                                 <div class="form-group col-sm-6">
-                                    <label class="control-label" for="last">Last Name</label>
-                                    <input class="form-control" value="" name="last" id="last" type="text" placeholder="Last Name">
+                                    <label class="control-label text-uppercase" for="last">Last Name</label>
+                                    <input class="form-control input-text-underline" value="" name="last" id="last" type="text" placeholder="enter your last name">
                                 </div><!-- end col -->
                             </div><!-- end row -->
                             <div class="form-group">
-                                <label class="control-label" for="email">Email</label>
-                                <input class="form-control" value="" name="email" id="email" type="text" placeholder="Email">
+                                <label class="control-label text-uppercase" for="email">Email</label>
+                                <input class="form-control input-text-underline" value="" name="email" id="email" type="text" placeholder="your@email.com">
                             </div>
 
-                            <div class="decorated"><span>OR</span></div>
+                            <div class="spacer"></div>
+
+                            <!--<div class="decorated"><span>OR</span></div>-->
+
+
+                            <div class="bg-danger boxed-content">
+                                <div class="h4">Have your eCard Code?</div>
+
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur culpa cupiditate laboriosam reiciendis tenetur veniam! A autem illo mollitia provident vero voluptatem? Cumque harum ipsam ipsum quia quibusdam reiciendis.</p>
 
                             <div class="form-group">
-                                <label class="control-label" for="ecardcode"><span class="glyphicon glyphicon-barcode" aria-hidden="true"></span> eCard Code </label>
-                                <input class="form-control" value="" name="ecardcode" id="ecardcode" type="text" placeholder="Code">
+                                <label class="control-label text-uppercase" for="ecardcode"><span class="glyphicon glyphicon-barcode" aria-hidden="true"></span> eCard Code </label>
+                                <input class="form-control input-text-underline" value="" name="ecardcode" id="ecardcode" type="text" placeholder="enter eCard code">
                             </div>
+                            </div>
+
+
                             <div class="spacer"></div>
                             <button class="btn btn-primary btn-block animated slideIn" type="submit" style="letter-spacing: 2px;">Search</button>
 
@@ -80,15 +91,15 @@ title: Student landig page
                     <!--Employers pane-->
                     <div role="tabpanel" class="tab-pane fade" id="profile">
 
-                        <h2 class="text-primary text-thin heading heading-line"><span>Employer</span></h2>
+                        <h2 class="text-primary text-thin "><span>Employer</span></h2>
                         <div class="h3">
                             Verify an AHA eCard
                         </div>
                         <p class="text-md">To verify an eCard, please enter the eCard code you wish to verify.</p>
                         <form action="">
                             <div class="form-group">
-                                <label class="control-label" for="ecardcodeemp"><span class="glyphicon glyphicon-barcode" aria-hidden="true"></span> eCard Code</label>
-                                <input class="form-control" value="" name="ecardcodeemp" id="ecardcodeemp" type="text" placeholder="Code">
+                                <label class="control-label text-uppercase" for="ecardcodeemp"><span class="glyphicon glyphicon-barcode" aria-hidden="true"></span> eCard Code</label>
+                                <input class="form-control input-text-underline" value="" name="ecardcodeemp" id="ecardcodeemp" type="text" placeholder="enter eCard code">
                             </div>
                             <button type="submit" class="btn btn-primary btn-block ">Search</button>
                         </form>

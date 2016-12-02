@@ -110,27 +110,27 @@ h1,h2,h3,h4 {}
 }
 
 .heading.heading-line span::before {
-  border-color: #e4e4e4;
+  border-color: $text-primary;
   right: 100%;
   margin-right: 15px;
   content: "";
   position: absolute;
   height: 5px;
-  border-top: 1px solid #e4e4e4;
+  border-top: 1px solid $text-primary;
   top: 12px;
   width: 1200px;
   box-sizing: border-box;
  }
 
 .heading.heading-line span::after {
-  border-color: #e4e4e4;
+  border-color: $text-primary;
   left: 100%;
   margin-left: 15px;
   top: 15px;
   content: "";
   position: absolute;
   height: 5px;
-  border-top: 1px solid #e4e4e4;
+  border-top: 1px solid $text-primary;
   width: 1200px;
   box-sizing: border-box;
 }
@@ -150,7 +150,7 @@ h1,h2,h3,h4 {}
   content: '';
   position: absolute;
   top: 50%;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #c1c1c1;
   width: 591px; /* half of limiter*/
   margin: 0 20px;
 }
@@ -606,6 +606,17 @@ input[type="text"]{
 
 .input-sm {
   border-radius: 0;
+}
+
+.input-text-underline {
+  border: 0;
+  border-bottom: 1px solid;
+  padding: 2px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  border-color: $gray;
+  background-color: transparent;
 }
 
 form button {

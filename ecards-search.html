@@ -27,20 +27,20 @@ title: Search
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="form-group">
-                            <label class="control-label" for="first">First Name</label>
-                            <input class="form-control" value="" name="first" id="first" type="text" placeholder="First name">
+                            <label class="control-label text-gray-dark text-uppercase" for="first">First Name</label>
+                            <input class="form-control input-text-underline" value="" name="first" id="first" type="text" placeholder="first name">
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="form-group">
-                            <label class="control-label" for="lastname">Last name</label>
-                            <input class="form-control" value="" name="lastname" id="lastname" type="text" placeholder="Last name">
+                            <label class="control-label text-gray-dark text-uppercase" for="lastname">Last name</label>
+                            <input class="form-control input-text-underline" value="" name="lastname" id="lastname" type="text" placeholder="last name">
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="form-group">
-                            <label class="control-label" for="email">Email</label>
-                            <input class="form-control" value="" name="email" id="email" type="text" placeholder="Email">
+                            <label class="control-label text-gray-dark text-uppercase" for="email">Email</label>
+                            <input class="form-control input-text-underline" value="" name="email" id="email" type="text" placeholder="email">
                         </div>
                     </div>
                 </div>
@@ -49,21 +49,21 @@ title: Search
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <label class="control-label" for="ecode">eCard code</label>
-                            <input class="form-control" value="" name="ecode" id="ecode" type="text" placeholder="eCard code">
+                            <label class="control-label text-gray-dark text-uppercase" for="ecode">eCard code</label>
+                            <input class="form-control input-text-underline" value="" name="ecode" id="ecode" type="text" placeholder="eCard code">
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <label class="control-label" for="estatus">eCode Status</label>
-                            <input class="form-control" value="" name="estatus" id="estatus" type="text" placeholder="eCard status">
+                            <label class="control-label text-gray-dark text-uppercase" for="estatus">eCode Status</label>
+                            <input class="form-control input-text-underline" value="" name="estatus" id="estatus" type="text" placeholder="eCard status">
                         </div>
                     </div>
                 </div><!-- end row -->
 
                 <div class="row">
                     <div class="col-sm-6">
-                        <label class="control-label" for="course">Course(s)<span class="required"> * </span></label>
+                        <label class="control-label text-gray-dark text-uppercase" for="course">Course(s)<span class="required"> * </span></label>
                         <select multiple data-placeholder="Select courses" id="course" title="Course" name="course" class="form-control chosen-select">
 
                             {% for course in site.data.course-data.course %}
@@ -75,7 +75,7 @@ title: Search
                     </div>
 
                         <div class="col-sm-2">
-                            <label for="coursedate">Course Date</label>
+                            <label for="coursedate" class="text-gray-dark text-uppercase">Course Date</label>
                             <div class="input-group date">
                                 <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
                                 <input type="text" class="form-control datepicker" name="coursedate" id="coursedate" placeholder="Course date">
@@ -83,7 +83,7 @@ title: Search
                         </div>
                     <div class="col-sm-4">
                         <!-- dropdown -->
-                        <label class="control-label" for="instructor">Instructor<span class="required"> * </span></label>
+                        <label class="control-label text-gray-dark text-uppercase" for="instructor">Instructor<span class="required"> * </span></label>
                         <select data-placeholder="Select instructor" id="instructor" title="Instructor" name="instructor" class="form-control chosen-select">
                             <option value=""></option>
                             {% for instructor in site.data.instructors.instructors %}
