@@ -77,7 +77,7 @@ jQuery( document ).ready(function( $ ) {
         var table = $('.dataTable').DataTable();
         //Below example to turn off sort amount and searching
         //var table = $('.dataTable').DataTable({"searching":false,"lengthChange": false,"sDom": 'rtip'});
-        $('.dataTables_length select.form-control').chosen();
+       // $('.dataTables_length select.form-control').chosen();
 
         // Add event listener for opening and closing details
         $('.dataTable tbody').on('click', 'td.details-control', function () {

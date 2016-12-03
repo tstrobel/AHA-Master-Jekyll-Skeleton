@@ -52,7 +52,7 @@ title: Assign eCards
 <div class="spacer"></div>
 <!-- Example of dataTables -->
     <form action="">
-<div class="table-responsive">
+<div class="">
     <table id="example" class=" display table table-bordered table-striped" width="100%" cellspacing="0">
         <thead>
         <tr>
@@ -71,23 +71,29 @@ title: Assign eCards
                 <td>
                     <div class="input-group date">
                         <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                        <input type="text" value="11/28/2016" class="form-control datepicker" name="" id="" placeholder="Course date">
+                        <label for="coursedate2" class="sr-only">course date</label>
+                        <input type="text" value="11/28/2016" class="form-control datepicker" name="coursedate2" id="coursedate2" placeholder="Course date">
                     </div>
                 </td>
                 <td>
-                    <input class="form-control" value="Frank" name="name" id="name" type="text" placeholder="First name"/>
+                    <label for="name2" class="sr-only">name2</label>
+                    <input class="form-control" value="Frank" name="name2" id="name2" type="text" placeholder="First name"/>
                 </td>
                 <td>
-                    <input class="form-control" value="Sinatra" name="last" id="last" type="text" placeholder="Last name"/>
+                    <label for="last2" class="sr-only">last2</label>
+                    <input class="form-control" value="Sinatra" name="last2" id="last2" type="text" placeholder="Last name"/>
                 </td>
                 <td>
-                    <input class="form-control" value="hello@hello.com" name="email" id="email" type="text" placeholder=""/>
+                    <label for="email2" class="sr-only">email2</label>
+                    <input class="form-control" value="hello@hello.com" name="email2" id="email2" type="text" placeholder=""/>
                 </td>
                 <td>
-                    <input class="form-control" value="(123) 456-7890" name="phone" id="phone" type="text" placeholder="Phone">
+                    <label for="phone2" class="sr-only">phone2</label>
+                    <input class="form-control" value="(123) 456-7890" name="phone2" id="phone2" type="text" placeholder="Phone">
                 </td>
                 <td>
-                    <select multiple data-placeholder="Select Course Modules" id="coursemods" title="Course Modules" name="coursemods" class="form-control chosen-select">
+                    <label for="coursemods2" class="sr-only">coursemods2</label>
+                    <select multiple data-placeholder="Select Course Modules" id="coursemods2" title="CourseModules2" name="coursemods2" class="form-control chosen-select">
                         <option value="">Select Course Modules</option>
                         <option value="BLS">BLS</option>
                         <option value="PALS">PALS</option>
@@ -100,23 +106,29 @@ title: Assign eCards
                 <td>
                     <div class="input-group date">
                         <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                        <input type="text" value="12/28/2016" class="form-control datepicker" name="" id="" placeholder="Course date">
+                        <label for="coursedate1" class="sr-only">course date</label>
+                        <input type="text" value="12/28/2016" class="form-control datepicker" name="coursedate1" id="coursedate1" placeholder="Course date">
                     </div>
                 </td>
                 <td>
+                    <label for="name" class="sr-only">name</label>
                     <input class="form-control" value="Fred" name="name" id="name" type="text" placeholder="First name"/>
                 </td>
                 <td>
+                    <label for="last" class="sr-only">last</label>
                     <input class="form-control" value="Sinatra" name="last" id="last" type="text" placeholder="Last name"/>
                 </td>
                 <td>
+                    <label for="email" class="sr-only">email</label>
                     <input class="form-control" value="fred@hello.com" name="email" id="email" type="text" placeholder=""/>
                 </td>
                 <td>
+                    <label for="phone" class="sr-only">phone</label>
                     <input class="form-control" value="(423) 456-7890" name="phone" id="phone" type="text" placeholder="Phone">
                 </td>
                 <td>
-                    <select multiple data-placeholder="Select Course Modules" id="coursemods" title="Course Modules" name="coursemods" class="form-control chosen-select">
+                    <label for="coursemods" class="sr-only">course modules</label>
+                    <select multiple data-placeholder="Select Course Modules" id="coursemods" title="CourseModules1" name="coursemods" class="form-control chosen-select">
                         <option value="">Select Course Modules</option>
                         <option value="BLS" selected>BLS</option>
                         <option value="PALS" selected>PALS</option>

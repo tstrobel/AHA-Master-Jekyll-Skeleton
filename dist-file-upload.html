@@ -22,7 +22,7 @@ title: Distributor File Upload
 <link rel="stylesheet" href="js/vendor/dropzone.css" type="text/css"/>
 <script>
     Dropzone.options.myAwesomeDropzone = {
-        dictDefaultMessage: "<img src='img/icon-upload.png' width='75'><br>Drag files here to upload"
+        dictDefaultMessage: "<img src='img/icon-upload.png' width='75' alt=''><br>Drag files here to upload"
     };
 </script>
 
@@ -46,7 +46,8 @@ title: Distributor File Upload
             <div class="animated slideInUp">
             <form action="/file-upload" class="dropzone " id="my-awesome-dropzone">
                 <div class="fallback">
-                    <input name="file" type="file" multiple />
+                    <label for="fileupload" class="sr-only">upload file</label>
+                    <input id="fileupload" name="file" type="file" multiple />
                 </div>
             </form>
             </div>
@@ -57,3 +58,15 @@ title: Distributor File Upload
         </div>
     </div>
 </div>
+
+
+<!--jQuery to add id attribute to input and add label fo accessibility-->
+<!--Must have-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        setTimeout(function(){
+            //dropzone file upload
+            $('.dz-hidden-input').attr('id','dz-hidden-input').before("<label for='dz-hidden-input' class='sr-only'>upload file</label>");
+        },1000);
+    });
+</script>

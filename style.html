@@ -329,10 +329,10 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
 <div id="iconsWrapper">
     <div class="spacer"></div>
     <h2 class="montsserat-heading">Images/Icons</h2>
-    <img src="img/admin.png" alt="" style="width: 45px;">
+    <img src="img/admin-2.png" alt="" style="width: 45px;">
     <div class="spacer"></div>
     {% highlight html %}
-<img src="img/admin.png" alt="" style="width: 45px;">{% endhighlight %}
+<img src="img/admin-2.png" alt="" style="width: 45px;">{% endhighlight %}
 
 </div>
 
@@ -408,8 +408,8 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;            {% endhighli
 
                 <div>
                     <div class="form-group">
-                        <label class="control-label" for="tsName">Label <span class="required">*</span></label>
-                        <input class="form-control" value="" name="tsName" id="tsName" maxlength="50" type="text" placeholder="Input text">
+                        <label class="control-label text-gray-dark text-uppercase" for="tsName">Label <span class="required">*</span></label>
+                        <input class="form-control input-text-underline" value="" name="tsName" id="tsName" maxlength="50" type="text" placeholder="enter your text here">
                     </div> <!-- form-group -->
 
 {% highlight html %}
@@ -508,7 +508,7 @@ console.log($el.prop("checked"));
                 <h4 class="montsserat-heading">Dropdowns</h4>
 
                 <div>
-                    <label class="control-label" for="country">Country<span class="required"> * </span></label>
+                    <label class="control-label text-gray-dark text-uppercase" for="country">Country<span class="required"> * </span></label>
                     <select id="country" title="Country" name="country" class="form-control chosen-select">
                         <option value=""></option>
                         <option value="USA">USA</option>
@@ -543,7 +543,7 @@ alert(selectedValue);
 <div class="spacer"></div>
 <h4 class="montsserat-heading">Dropdowns with Multi-select</h4>
 <div>
-    <label class="control-label" for="countrymulti">Country<span class="required"> * </span></label>
+    <label class="control-label text-gray-dark text-uppercase" for="countrymulti">Country<span class="required"> * </span></label>
     <select multiple data-placeholder="Select your countries" id="countrymulti" title="Country" name="countrymulti" class="form-control chosen-select">
         <option value=""></option>
         <option value="USA">USA</option>
@@ -811,18 +811,31 @@ alert(selectedValue);
                 <div class="spacer" id="alertsWrapper"></div>
                 <h2 class="montsserat-heading">Alerts</h2>
                 <h3 class="montsserat-heading">Errors</h3>
-                <div class="alert alert-danger alert-dismissible" role="alert">Error! Please provide a valid email address</div>
+                <div class="alert alert-danger alert-dismissible border-square" role="alert">Error! Please provide a valid email address</div>
                 {% highlight html %}
-<div class="alert alert-danger alert-dismissible" role="alert"> Error! Please provide a valid email address </div>{% endhighlight %}
+<div class="alert alert-danger alert-dismissible border-square" role="alert"> Error! Please provide a valid email address </div>{% endhighlight %}
 
                 <div class="spacer"></div>
                 <h3 class="montsserat-heading">Notification</h3>
-                <div class="alert alert-success" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Notification: Update is available</div>
+                <div class="alert alert-success border-square" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="alert-notification">
+
+                        <span class="glyphicon glyphicon-bell animated flash circle-shadow-notification" aria-hidden="true"></span>
+                        <p class="padding-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad deserunt distinctio earum est eum eveniet magnam maiores nesciunt nihil, quidem vero! Ad adipisci, error iure laudantium magnam officiis reprehenderit.</p>
+
+
+                    </div>
+                </div>
                 {% highlight html %}
-    <div class="alert alert-success" role="alert">
+    <div class="alert alert-success border-square" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
-        </button>Notification: Update is available
+        </button>
+        <div class="alert-notification">
+            <span class="glyphicon glyphicon-bell animated flash circle-shadow-notification" aria-hidden="true"></span>
+            <p class="padding-10">...</p>
+        </div>
     </div>{% endhighlight %}
 
             </div>
@@ -913,7 +926,7 @@ alert(selectedValue);
                     <div class="spacer"></div>
                     <h4 class="montsserat-heading">Calendar - Datepicker</h4>
                     <div class="form-group">
-                        <label for="birthdate">Birthday</label>
+                        <label for="birthdate" class="text-gray-dark text-uppercase">Birthday</label>
                         <div class="input-group date">
                             <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
                             <input type="text" class="form-control datepicker" name="birthdate" id="birthdate" placeholder="Birthdate">

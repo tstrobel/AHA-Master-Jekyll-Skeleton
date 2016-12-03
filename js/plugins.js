@@ -1261,7 +1261,7 @@ $.fn.setFullHeight = function() {
 
         AbstractChosen.prototype.choice_label = function(item) {
             if (this.include_group_label_in_selected && (item.group_label != null)) {
-                return "<b class='group-name'>" + item.group_label + "</b>" + item.html;
+                return "<strong class='group-name'>" + item.group_label + "</strong>" + item.html;
             } else {
                 return item.html;
             }
@@ -1703,7 +1703,7 @@ $.fn.setFullHeight = function() {
             }
             this.container = $("<div />", container_props);
             if (this.is_multiple) {
-                this.container.html('<ul class="chosen-choices"><li class="search-field"><input type="text" value="' + this.default_text + '" class="default" autocomplete="off" style="width:25px;" /></li></ul><div class="chosen-drop"><ul class="chosen-results"></ul></div>');
+                this.container.html('<ul class="chosen-choices"><li class="search-field"><label for="'+ container_props.title +'_chosensearchquery" class="sr-only">search</label><input type="text" value="' + this.default_text + '" class="default" autocomplete="off" style="width:25px;" name="'+ container_props.title +'_chosensearchquery" id="'+ container_props.title +'_chosensearchquery" /></li></ul><div class="chosen-drop"><ul class="chosen-results"></ul></div>');
             } else {
                 this.container.html('<a class="chosen-single chosen-default"><span>' + this.default_text + '</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><label for="'+ container_props.title +'_chosensearchquery" class="sr-only sr-only-focusable">Search Query</label> <input type="text" autocomplete="off" name="'+ container_props.title +'_chosensearchquery" id="'+ container_props.title +'_chosensearchquery" /></div><ul class="chosen-results"></ul></div>');
             }

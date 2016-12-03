@@ -413,6 +413,12 @@ p{
   line-height: 14px;
   vertical-align: top;
 }
+.alert-notification {
+
+position: relative;
+  width: 95%;
+}
+
 
 //Buttons
 
@@ -507,17 +513,19 @@ a.btn-secondary-stroked{
 
 //Student landing page, search for ecards
 #ecardSearchWrapper .nav-pills>li>a{
-  color: #fff;
+  color: #000;
   border-radius: 4px 4px 0 0;
 
   &:hover{
     background-color: $text-primary-dark;
+    color: #fff;
   }
 
 }
 
 #ecardSearchWrapper .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus  {
   background-color: $text-primary-dark;
+  color: #fff;
 }
 
 
@@ -594,6 +602,10 @@ a.btn-secondary-stroked{
 }
 
 //Tables
+caption {
+  color: #000;
+}
+
 thead {
   background-color: $gray-dark;
   color: #FFF;
