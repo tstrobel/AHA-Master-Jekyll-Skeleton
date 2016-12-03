@@ -9,14 +9,12 @@ title: Search
 <h2 class="heading heading-line text-thin"><span>Search eCards</span></h2>
 <p class="text-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis consectetur cum cupiditate deleniti deserunt doloremque, doloribus dolorum ea fuga fugit labore, magnam maxime molestias numquam quisquam tenetur voluptates voluptatibus.</p>
     <!--Show/Hide-->
-    <div class="bg-silver" style="padding: 10px;">
+    <div class="h4 text-uppercase"><span class="glyphicon glyphicon-search text-primary" aria-hidden="true"></span> Search</div>
+    <div class="bg-silver boxed-content">
     <a class="" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         Show/Hide
         <b class="caret"></b>
     </a>
-
-    <div class="spacer"></div>
-
     <div class="collapse in" id="collapseExample">
         <div class="">
 
@@ -106,9 +104,11 @@ title: Search
     </div><!-- end Show/Hide -->
 
     <!-- Example of dataTables -->
-    <form action="" id="resultsTable">
+
     <div class="spacer"></div>
-    <h3>Results</h3>
+    <div class="spacer"></div>
+    <form action="" id="resultsTable">
+        <div class="h4 text-uppercase"><span class="glyphicon glyphicon-list text-primary" aria-hidden="true"></span> Results</div>
     <div class="table-responsive">
         <table id="example" class="dataTable display table table-bordered table-striped" width="100%" cellspacing="0">
             <caption class="sr-only">Course details table</caption>
@@ -165,14 +165,14 @@ title: Search
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Resend</h4>
+                    <h4 class="modal-title text-uppercase" id="myModalLabel">Resend</h4>
                 </div>
                 <div class="modal-body">
                     <!--modal content-->
                     <form action="">
                         <div class="form-group">
-                            <label class="control-label" for="studentemail">Student Email Address:</label>
-                            <input class="form-control" value="j.doe@email.com" name="studentemail" id="studentemail" type="text" placeholder="Email">
+                            <label class="control-label text-gray-dark text-uppercase" for="studentemail">Student Email Address</label>
+                            <input class="form-control input-text-underline" value="j.doe@email.com" name="studentemail" id="studentemail" type="text" placeholder="Email">
                         </div>
                     </form>
 

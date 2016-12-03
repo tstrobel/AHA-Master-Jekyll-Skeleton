@@ -12,13 +12,24 @@ title: Reclaim Instructor
 
 <h2 class="heading heading-line text-thin"><span>Reclaim eCards for Instructors</span></h2>
 <p class="text-md">Reclaim eCards from Training Sites or Instructors before they have been assigned to students. Enter your reclaim quantity and select "reclaim", once you've entered all of your reclaim quantities submit your request by clicking the "Submit" button.</p>
+
+    <div class="spacer"></div>
+
+
     <!--Show/Hide-->
-    <div class="bg-silver" style="padding: 10px;">
+
+    <div class="h4 text-uppercase"><span class="glyphicon glyphicon-search text-primary" aria-hidden="true"></span> Search</div>
+
+
+    <div class="bg-silver boxed-content">
     <a class="" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+
         Show/Hide
         <b class="caret"></b>
     </a>
-        <div class="spacer"></div>
+
+
+
 
     <div class="collapse in" id="collapseExample">
         <div class="">
@@ -29,7 +40,7 @@ title: Reclaim Instructor
                     <!-- row -->
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <!--col 1-->
-                        <label class="control-label" for="course">Course<span class="required"> * </span></label>
+                        <label class="control-label text-gray-dark text-uppercase" for="course">Course<span class="required"> * </span></label>
                         <select data-placeholder="Select a course" id="course" title="Course" name="course" class="form-control chosen-select">
                             <option value=""></option>
                             {% for course in site.data.course-data.course %}
@@ -43,7 +54,7 @@ title: Reclaim Instructor
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
                         <!-- dropdown -->
-                        <label class="control-label" for="instructor">Instructor<span class="required"> * </span></label>
+                        <label class="control-label text-gray-dark text-uppercase" for="instructor">Instructor<span class="required"> * </span></label>
                         <select data-placeholder="Select instructor" id="instructor" title="Instructor" name="instructor" class="form-control chosen-select">
                             <option value="00"></option>
                             {% for instructor in site.data.instructors.instructors %}
@@ -60,7 +71,7 @@ title: Reclaim Instructor
 
                         <!-- radio buttons -->
                         <div>
-                            <span class="label">Reclaim From <span class="required">*</span></span>
+                            <span class="label text-gray-dark text-uppercase">Reclaim From <span class="required">*</span></span>
                             <fieldset>
                                 <label class="radio">
                                     <input type="radio" name="tcts" id="tcts1" value="tc" data-toggle="radio">
@@ -80,7 +91,7 @@ title: Reclaim Instructor
 
                             <div class="form-group">
 
-                                <div class="label margin-bottom-5">Date of Assignment</div>
+                                <div class="label margin-bottom-5 text-gray-dark text-uppercase">Date of Assignment</div>
                                 <div class="row">
                                     <div class="col-sm-6">
 
@@ -120,6 +131,9 @@ title: Reclaim Instructor
 
 
 <!-- Example of dataTables -->
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="h4 text-uppercase"><span class="glyphicon glyphicon-list text-primary" aria-hidden="true"></span> Results</div>
 <form action="">
 <div class="table-responsive">
     <table id="example" class="dataTable display table table-bordered table-striped" width="100%" cellspacing="0">
@@ -148,7 +162,7 @@ title: Reclaim Instructor
         <label class="control-label sr-only sr-only-focusable" for="qty">Qty</label>
         <input class="form-control" value="" name="qty" id="qty" type="text" placeholder="0">
     </div></td>
-    <td class="text-center"><a href="#" class="btn btn-secondary btn-sm btn-single">Reclaim</a></td>
+    <td class="text-center"><a href="#" class="btn btn-primary-stroked btn-sm btn-single">Reclaim</a></td>
 </tr>
 
 
