@@ -130,7 +130,7 @@ a {
     margin-left: 0px;
   }
   &.openMenu {
-    margin-left: 400px;
+    margin-left: 800px;
   }
 
 }
@@ -1024,8 +1024,8 @@ border-color: $text-primary !important;
 
 //Body No Scroll
 .noScroll {
-  overflow: hidden;
-  position: fixed;
+  overflow: hidden ;
+  position: fixed !important;
 }
 
 
