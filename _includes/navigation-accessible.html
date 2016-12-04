@@ -1,13 +1,10 @@
-<!-- Navigation =============== -->
-
-<!--Making navigation keyboard accessible-->
-<!-- html structure -->
+<!-- Accessible Mega Menu - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Navigation / / / / / / / / / / / / / / / / / / / / / / / / / / -->
+<!--Making navigation keyboard accessible / / / / / / / / / / / / / -->
 <div id="primaryNav" class="megamenuWrapper hidden-xs">
     <div class="container">
-
-
-<div class="megamenu">
-    <ul class="nav-menu">
+        <div class="megamenu">
+            <ul class="nav-menu">
         <!-- li for tier 1 links -->
         {% for nav in site.data.navigation %}
 
@@ -45,7 +42,8 @@
         </li>
         {% endfor %}
     </ul>
+        </div>
+    </div>
+    <!-- end container * * * * * -->
 </div>
-
-    </div><!-- end container -->
-</div><!-- end megamenuWrapper -->
+<!-- end megamenuWrapper - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
