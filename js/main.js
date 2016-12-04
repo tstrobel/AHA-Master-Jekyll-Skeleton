@@ -141,3 +141,30 @@ jQuery( document ).ready(function( $ ) {
 
 
 });
+
+//MOBILE MENU
+$(document).ready(function(){
+    $('#mobileMenuClose').find('a').on('click',function (e) {
+        e.preventDefault();
+        var mainContent = $('#mainContentWrapper');
+        if (mainContent.hasClass('openMenu')){
+            mainContent.removeClass('openMenu').addClass('closeMenu');
+        }else{
+            mainContent.addClass('closeMenu');
+        }
+        mainContent.toggleClass('noScroll');
+    });
+
+    //Open Mobile Menu
+    $('#openMobileMenu').on('click',function(e){
+        e.preventDefault();
+        var mainContent = $('#mainContentWrapper');
+
+        if (mainContent.hasClass('closeMenu')){
+            mainContent.removeClass('closeMenu').addClass('openMenu');
+        }else{
+            mainContent.addClass('openMenu');
+        }
+        mainContent.addClass('noScroll');
+    });
+});
