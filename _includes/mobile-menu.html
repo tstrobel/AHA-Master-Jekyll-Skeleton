@@ -1,0 +1,64 @@
+<!--Mobile Menu-->
+<div id="mobileMenu" class="col-xs-12 col-sm-12">
+
+
+        <!--Menu content-->
+        <div class="spacer"></div>
+    <div id="mobileMenuClose" class="text-right">
+        <a href="#" class="closeMenu" role="button">
+            <span aria-hidden="true" class="text-thin">&times;</span>
+            <span class="sr-only sr-only-focusable">Close</span>
+        </a>
+
+    </div>
+        <div id="mobileMenuLogo">
+            <img src="img/admin-3.png" alt="menu" class="">
+        </div>
+    <div class="spacer"></div>
+        <!--<div class="h3 text-uppercase decorated"><span>Menu</span></div>-->
+
+        <ul class="nav-menu list-unstyled">
+            <!-- li for tier 1 links -->
+            {% for nav in site.data.navigation offset:2 %}
+
+            {% for subnav in {{nav.subpages}} %}
+            <li class="nav-item "><a href="{{subnav.link}}" class="h5 text-uppercase">{{subnav.name}}</a></li>
+            {% endfor %}
+
+
+            {% endfor %}
+        </ul>
+
+</div>
+<!-- end mobile menu -->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#mobileMenuClose').find('a').on('click',function (e) {
+            e.preventDefault();
+            var mainContent = $('#mainContentWrapper');
+
+            if (mainContent.hasClass('openMenu')){
+                mainContent.removeClass('openMenu').addClass('closeMenu');
+            }else{
+                mainContent.addClass('closeMenu');
+            }
+
+
+        });
+
+        //Open Mobile Menu
+        $('#openMobileMenu').on('click',function(e){
+            e.preventDefault();
+            var mainContent = $('#mainContentWrapper');
+
+            if (mainContent.hasClass('closeMenu')){
+                mainContent.removeClass('closeMenu').addClass('openMenu');
+            }else{
+                mainContent.addClass('openMenu');
+            }
+
+
+        });
+
+    });
+</script>

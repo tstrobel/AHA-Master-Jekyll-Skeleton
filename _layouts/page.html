@@ -4,7 +4,6 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <head>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -21,28 +20,29 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/animate.css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
-
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body class="ecard">
+<!-- MOBILE NAVIGATION - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<div id="mainMobileWrapper">
+{% include mobile-menu.html %}
+</div>
+<!-- END MOBILE NAVIGATION - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- MAIN CONTENT WRAPPER - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<div id="mainContentWrapper" class="col-sm-12">
 <div id="top"></div>
 {% include skip-to-content.html%}
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-
 {% include header-cpr.html %}
 {% include navigation-accessible.html %}
-
-  <!-- Example row of columns -->
-  {{ content }}
-
-
+<!--  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+{{ content }}
+<!--  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 {% include footer.html %}
-
-
-<!-- /container -->
-
+</div>
+<!-- END MAIN CONTENT WRAPPER - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>

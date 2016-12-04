@@ -15,6 +15,7 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
+$heart-color: #DF0000;
 $text-color:       #111;
 $text-white: #fff;
 $text-primary: #a60008;
@@ -41,13 +42,17 @@ $text-required: #a60008;
 
 $box-shadow: 4px 4px 4px rgba(0,0,0,0.1);
 
+$transition: all 0.35s ease;
+
+
 //Custom Project Theme
 * {
   //transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
 }
 
-body {
+body.ecard {
   font:400 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #2B283B;
 }
 
 a {
@@ -60,12 +65,81 @@ a {
   }
 }
 
-.spacer {
-  display: block; margin: $spacing-unit/2 0;height: 1px;
+//Mobile Menu
 
-  &::after {
-    clear:both;
+
+#mainMobileWrapper{
+  position: absolute;
+  color: #F53E42;
+
+  #mobileMenuLogo{
+      img {
+        width: 37px;
+      }
   }
+
+  #mobileMenuClose{
+
+      position: absolute;
+      font-size: 40px;
+      right: 0;
+    line-height: 10px;
+
+      a {
+        color: #F53E42 !important;
+
+
+        &:hover {
+          color: #F53E42;
+        }
+      }
+  }
+
+  #mobileMenu {
+    ul.nav-menu{
+      li.nav-item {
+
+        padding: 5px;
+
+
+
+        a {
+          color: #F53E42;
+
+
+          &:hover {
+            text-decoration: none;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+// Main Content
+
+#mainContentWrapper{
+  background-color: #FFFFFF;
+  //margin-left:400px;
+  padding:0;
+  overflow: hidden;
+  transition: $transition;
+
+  &.closeMenu {
+    margin-left: 0px;
+  }
+  &.openMenu {
+    margin-left: 400px;
+  }
+
+}
+
+#openMobileMenu {
+  color: $heart-color;
+  font-size: 30px;
+
+  margin-top: -8px;
 
 }
 
@@ -243,6 +317,10 @@ nav#main-navigation .menu > li {
   box-shadow: 0px 4px 4px rgba(0,0,0,0.15);
 }
 
+#adminLogo {
+  max-width: 50px; display: inline-block;margin-right: 20px;
+}
+
 
 //Sidebar
 #sidebar ul#sidebarnav li a {
@@ -257,7 +335,14 @@ nav#main-navigation .menu > li {
 
 
 //Helper Classes
+.spacer {
+  display: block; margin: $spacing-unit/2 0;height: 1px;
 
+  &::after {
+    clear:both;
+  }
+
+}
 .box-shadow{
   box-shadow: $box-shadow;
 }
@@ -649,6 +734,7 @@ form label, .label{
   //color: $text-color;
   margin-bottom: 5px;
   padding-left: 0;
+  color: inherit;
 
 }
 
@@ -778,6 +864,13 @@ a.label:focus, a.label:hover {
   opacity: 0.15;
   background-color: #000000;
   position: absolute;
+  z-index: 9999;
+}
+
+.overlay-mobile-menu{
+  background-color: #2B283B;
+  color:#F53E42;
+  opacity: 0.5;
 }
 
 //Background Full
@@ -895,9 +988,6 @@ a.label:focus, a.label:hover {
 }
 
 
-
-
-
 //Animate CSS
 .animated-loop-10 {
   animation-iteration-count: 10 !important;
@@ -928,6 +1018,16 @@ border-color: $text-primary !important;
   background-color: $bootstrap-danger-bg;
 
 }
+
+
+
+
+//Body No Scroll
+.noScroll {
+  overflow: hidden;
+  position: fixed;
+}
+
 
 // Width of the content area
 $content-width:    800px;
