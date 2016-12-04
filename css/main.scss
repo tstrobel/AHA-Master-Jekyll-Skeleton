@@ -104,7 +104,7 @@ a {
 
 
         a {
-          color: #F53E42;
+          color: #FFF;
 
 
           &:hover {
@@ -940,7 +940,7 @@ a.label:focus, a.label:hover {
       .thumbnail {
 
         background-color: $gray-light;
-        border-top: 3px solid #f0ad4e;
+        border-top: 3px solid #854b00;
       }
   }
 
@@ -960,7 +960,7 @@ a.label:focus, a.label:hover {
       }
 
       &.label-inactive{
-        background-color: #f0ad4e;
+        background-color: #854b00;
         color: white;
       }
 
