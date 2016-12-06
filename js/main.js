@@ -139,7 +139,8 @@ jQuery( document ).ready(function( $ ) {
     //Tooltips - Popover
     $('[data-toggle="popover"]').popover();
 
-
+    //Sticky Admin Bar
+    $("#adminBar").sticky({topSpacing:0,zIndex:9999});
 
 });
 
