@@ -25,7 +25,8 @@ title: Assign eCards Student Step 1
 
                     <div class="spacer"></div>
                     <!-- dropdown -->
-                    <label class="control-label text-uppercase text-gray-dark" for="invsource">Inventory Source<span class="required"> * </span></label>
+
+                    <label class="control-label text-uppercase text-gray-dark" for="invsource">Inventory Source<span class="required"> * </span> <a tabindex="0" role="button" class="" data-toggle="popover" title="What is it?" data-content="And here's some amazing content. It's very engaging. Right?"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><span class="sr-only">Help</span></a> </label>
                     <select data-placeholder="Select inventory source" id="invsource" title="Invsource" name="invsource" class="form-control chosen-select">
                         <option value=""></option>
                         {% for tc in site.data.tc.tc %}

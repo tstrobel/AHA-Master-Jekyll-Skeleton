@@ -136,7 +136,8 @@ jQuery( document ).ready(function( $ ) {
         console.log($el.prop("checked"));
     });
 
-
+    //Tooltips - Popover
+    $('[data-toggle="popover"]').popover();
 
 
 

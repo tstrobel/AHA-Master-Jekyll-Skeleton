@@ -1,6 +1,8 @@
 {
   "instructors":[
-    {"name":"John Doe"}
+    {"name":"Please select"}
+    ,{"name":"Select all instructors"}
+    ,{"name":"John Doe"}
     ,{"name":"Jane Doe"}
     ,{"name":"John Smith"}
     ,{"name":"Jane Smith"}
