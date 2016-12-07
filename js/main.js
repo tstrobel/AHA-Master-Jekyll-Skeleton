@@ -140,7 +140,8 @@ jQuery( document ).ready(function( $ ) {
     $('[data-toggle="popover"]').popover();
 
     //Sticky Admin Bar
-    $("#adminBar").sticky({topSpacing:0,zIndex:9999});
+    $(".makeSticky").sticky({topSpacing:0,zIndex:9999});
+
 
 });
 

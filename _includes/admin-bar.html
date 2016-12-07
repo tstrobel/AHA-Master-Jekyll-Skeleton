@@ -1,12 +1,13 @@
 <!--eCard admin bar-->
-<div id="adminBar" class="bg-color-grey hidden-xs">
+<div id="adminBar" class="bg-color-grey hidden-xs makeSticky">
     <div class="container padding-10">
         <div class="col-sm-8">
             <img src="img/admin-2.png" alt="adminlogo" class="pull-left" id="adminLogo">{% include accessible-ecard-manage.html %}
         </div>
         <div class="col-sm-4 text-right">
+            {% if page.showQty %}
             <div class="h3 text-thin text-primary margin-top-5" style="line-height: 40px;"><span class="text-gray-dark">Available Qty:</span> 1809</div>
-            <p class="">This will be displayed on assignment pages to give a quick overview of available qty.</p>
+            {% endif %}
         </div>
 
     </div>
