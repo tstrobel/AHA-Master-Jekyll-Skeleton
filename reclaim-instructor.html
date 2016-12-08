@@ -19,20 +19,28 @@ showQty: true
 
     <!--Show/Hide-->
 
-    <div class="h4 text-uppercase"><span class="glyphicon glyphicon-search text-primary" aria-hidden="true"></span> Search</div>
-
-
-    <div class="bg-silver boxed-content">
-    <a class="" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-
-        Show/Hide
-        <b class="caret"></b>
-    </a>
 
 
 
+    <div class="">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="h4 text-uppercase"><span class="glyphicon glyphicon-search text-primary" aria-hidden="true"></span> Search</div>
+            </div>
 
-    <div class="collapse in" id="collapseExample">
+            <div class="col-sm-6">
+                <a class="pull-right" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+
+                    Show / Hide
+                    <b class="caret"></b>
+                </a>
+
+            </div>
+        </div>
+
+
+
+    <div class="collapse in boxed-content" id="collapseExample">
         <div class="">
 
             <!-- content -->
@@ -93,22 +101,24 @@ showQty: true
 
                             <div class="form-group">
 
-                                <div class="label margin-bottom-5 text-gray-dark text-uppercase">Date of Assignment</div>
+                                <div class="label margin-bottom-5 text-gray-dark text-uppercase">Date of Assignment <span>(default last 5 days)</span></div>
                                 <div class="row">
                                     <div class="col-sm-6">
 
-                                        <label for="dateStart" class="sr-only">From</label>
+                                        <label for="dateStart" class="">From</label>
                                         <div class="input-group date">
                                             <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                            <input type="text" class="form-control datepicker" name="dateStart" id="dateStart" placeholder="Start date">
+                                            <input type="text" value="12/4/2016" class="form-control datepicker" name="dateStart" id="dateStart" placeholder="Start date">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
 
-                                        <label for="dateEnd" class="sr-only">To</label>
+                                        <label for="dateEnd" class="">To</label>
+
                                         <div class="input-group date">
+
                                              <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                                <input type="text" class="form-control datepicker" name="dateEnd" id="dateEnd" placeholder="End date">
+                                                <input type="text" value="12/8/2016" class="form-control datepicker" name="dateEnd" id="dateEnd" placeholder="End date">
                                             </div>
                                         </div>
                                 </div><!-- end row -->

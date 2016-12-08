@@ -2,20 +2,36 @@
 layout: page-template
 activelink: Templates
 title: Search
+showQty: true
 ---
 
 <div>
 
 <h2 class="heading heading-line text-thin"><span>Search eCards</span></h2>
 <p class="text-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis consectetur cum cupiditate deleniti deserunt doloremque, doloribus dolorum ea fuga fugit labore, magnam maxime molestias numquam quisquam tenetur voluptates voluptatibus.</p>
+
+
+
     <!--Show/Hide-->
-    <div class="h4 text-uppercase"><span class="glyphicon glyphicon-search text-primary" aria-hidden="true"></span> Search</div>
-    <div class="bg-silver boxed-content">
-    <a class="" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        Show/Hide
+
+    <div class="">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="h4 text-uppercase"><span class="glyphicon glyphicon-search text-primary" aria-hidden="true"></span> Search</div>
+            </div>
+            <div class="col-sm-6">
+
+
+
+    <a class="pull-right" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Show / Hide
         <b class="caret"></b>
     </a>
-    <div class="collapse in" id="collapseExample">
+
+            </div>
+        </div>
+
+    <div class="collapse in  boxed-content" id="collapseExample">
         <div class="">
 
             <!-- content -->
@@ -198,6 +214,7 @@ title: Search
 
 <script type="text/javascript">
     $(document).ready(function() {
+
         $('#resendModal').on('shown.bs.modal', function (event) {
             var modal = $(this);
             modal.find('#studentemail').focus();

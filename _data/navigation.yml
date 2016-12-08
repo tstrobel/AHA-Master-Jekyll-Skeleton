@@ -19,15 +19,15 @@
   link: templates.html
   class: nav-6
   subpages:
-    - name: Student Landing
+    - name: + Student Landing
       link: student-landing.html
-    - name: eCards
+    - name: + eCards
       link: ecards-cards.html
-    - name: Inventory
+    - name: + Inventory
       link: inventory.html
-    - name: Assign eCards Student Step 1
+    - name: + Assign eCards Student Step 1
       link: assign-ecards-step-1.html
-    - name: Assign eCards Student Step 2
+    - name: + Assign eCards Student Step 2
       link: assign-ecards.html
     - name: Assign eCards Student Step 3
       link: assign-ecards-step-3.html
@@ -35,22 +35,22 @@
       link: assign-ecards-step-4.html
     - name: Reclaim - Sites
       link: reclaim-sites.html
-    - name: Reclaim - Sites Verification
+    - name: + Reclaim - Sites Verification
       link: reclaim-sites-verification.html
     - name: Reclaim - Sites Done
       link: reclaim-sites-done.html
-    - name: Reclaim Instructor
+    - name: + Reclaim Instructor (dates)
       link: reclaim-instructor.html
-    - name: Reports
+    - name: + Reports
       link: reports.html
     - name: eCards Status
       link: ecards-status.html
     - name: eCards Status Details
       link: ecards-status-details.html
-    - name: eCards Search
+    - name: + eCards Search
       link: ecards-search.html
-    - name: eCards Edit
+    - name: + eCards Edit
       link: ecards-edit.html
-    - name: Distributor File Upload
+    - name: + Distributor File Upload
       link: dist-file-upload.html
 

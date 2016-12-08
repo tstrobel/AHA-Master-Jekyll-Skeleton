@@ -762,6 +762,11 @@ a.label:focus, a.label:hover {
 
 
 //Modal
+.modal-dialog {
+  top:25%;
+}
+
+
 .modal-backdrop {
   z-index: 0 !important;
 }
@@ -1060,6 +1065,7 @@ $on-laptop:        800px;
   .text-right{
     text-align: left !important;
   }
+  h3,.h3 {font-size: 20px !important;}
 } /*// Landscape phones and down*/
 @media (max-width: 767px) {
   .text-right{
