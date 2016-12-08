@@ -1,4 +1,4 @@
-<!--Mobile Menu - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--Mobile Menu -->
 <div id="mobileMenu" class="col-xs-12 col-sm-12">
     <!--Menu content-->
     <div class="spacer"></div>
@@ -15,10 +15,10 @@
     <ul class="nav-menu list-unstyled">
         {% for nav in site.data.navigation offset:2 %}
         {% for subnav in {{nav.subpages}} %}
-        <li class="nav-item "><a href="{{subnav.link}}" class="h5 text-uppercase">{{subnav.name}}</a></li>
+        <li class="nav-item"><a href="{{subnav.link}}" class="h5 text-uppercase">{{subnav.name}}</a></li>
         {% endfor %}
         {% endfor %}
     </ul>
 </div>
-<!-- end mobile menu - -  - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!-- end mobile menu  -->
 

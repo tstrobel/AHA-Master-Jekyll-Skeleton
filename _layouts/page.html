@@ -1,21 +1,21 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <title>eCard - {{page.title}}</title>
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-  <meta name="description" content="">
+  <meta name="description" content="American Heart Association Intructors Network eCards">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="http://static.heart.org/ahaanywhere/images/favicon.png" type="image/vnd.microsoft.icon">
   <link rel="apple-touch-icon" href="http://static.heart.org/ahaanywhere/images/aha_heart_torch_180.png">
   <!--<link rel="stylesheet" href="css/bootstrap.css"/>-->
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/core.css"/>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/animate.css">
@@ -23,16 +23,16 @@
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body class="ecard">
-
-<!-- MOBILE NAVIGATION - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+{% include skip-to-content.html%}
+<!-- MOBILE NAVIGATION  -->
 <div id="mainMobileWrapper">
 {% include mobile-menu.html %}
 </div>
-<!-- END MOBILE NAVIGATION - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-<!-- MAIN CONTENT WRAPPER - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!-- END MOBILE NAVIGATION -->
+<!-- MAIN CONTENT WRAPPER  -->
 <div id="mainContentWrapper" class="col-sm-12">
 <div id="top"></div>
-{% include skip-to-content.html%}
+
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
@@ -40,10 +40,11 @@
 {% include navigation-accessible.html %}
 <!--  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 {{ content }}
+
 <!--  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 {% include footer.html %}
 </div>
-<!-- END MAIN CONTENT WRAPPER - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- END MAIN CONTENT WRAPPER -->
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>

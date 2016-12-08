@@ -35,7 +35,7 @@ showQty: true
         <div class="">
 
             <!-- content -->
-            <form action="">
+            <form action="#">
 
                 <!--student: first, last, email-->
                 <div class="row">
@@ -123,10 +123,10 @@ showQty: true
 
     <div class="spacer"></div>
     <div class="spacer"></div>
-    <form action="" id="resultsTable">
+    <form action="#" id="resultsTable">
         <div class="h4 text-uppercase"><span class="glyphicon glyphicon-list text-primary" aria-hidden="true"></span> Results</div>
     <div class="table-responsive">
-        <table id="example" class="dataTable display table table-bordered table-striped" width="100%" cellspacing="0">
+        <table id="example" class="dataTable display table table-bordered table-striped">
             <caption class="sr-only">Course details table</caption>
             <thead>
             <tr>
@@ -175,34 +175,36 @@ showQty: true
 
 
 <!-- Modal -->
-<!--Modal box - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--Modal box -->
     <div class="modal fade" id="resendModal" role="dialog" aria-labelledby="resendModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
+                <form action="#">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title text-uppercase" id="myModalLabel">Resend</h4>
+                    <div class="h4 modal-title text-uppercase" id="myModalLabel">Resend</div>
                 </div>
                 <div class="modal-body">
                     <!--modal content-->
-                    <form action="">
+
                         <div class="form-group">
                             <label class="control-label text-gray-dark text-uppercase" for="studentemail">Student Email Address</label>
                             <input class="form-control input-text-underline" value="j.doe@email.com" name="studentemail" id="studentemail" type="text" placeholder="Email">
                         </div>
-                    </form>
 
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto, dignissimos fugiat itaque modi nam ut voluptate? Alias autem error et iure mollitia nobis, veniam voluptatibus? Animi dolore fugit magnam.</p>
                 </div>
                 <div class="modal-footer text-center">
 
-                    <button type="button" class="btn btn-primary btn-sm">Resend eCard</button>
-                    <button  type="button" class="btn btn-primary-stroked btn-sm">Save email address & resend eCard</button>
+                    <button type="submit" class="btn btn-primary btn-sm">Resend eCard</button>
+                    <a href="#" class="btn btn-primary-stroked btn-sm">Save email address & resend eCard</a>
 
 
 
                 </div>
+                </form>
+
             </div>
         </div>
     </div>

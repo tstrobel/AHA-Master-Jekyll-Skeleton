@@ -1,4 +1,4 @@
-<!-- Accessible Mega Menu - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Accessible Mega Menu  -->
 <!-- Navigation / / / / / / / / / / / / / / / / / / / / / / / / / / -->
 <!--Making navigation keyboard accessible / / / / / / / / / / / / / -->
 <div id="primaryNav" class="megamenuWrapper hidden-xs">
@@ -7,7 +7,6 @@
             <ul class="nav-menu">
         <!-- li for tier 1 links -->
         {% for nav in site.data.navigation %}
-
         <!--<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>-->
         {% assign url = page.url|remove:'/' %}
         {% if page.activelink == nav.name %}
@@ -15,11 +14,15 @@
         {% else %}
         {% assign active = '' %}
         {% endif %}
-        <li class="nav-item {{active}}">
+                {% if active != '' %}
+        <li class="nav-item {{ active }}">
+            {% else %}
+        <li class="nav-item">
+            {% endif %}
+
             <!-- link -->
             {% if nav.subpages.size >= 0 %}
             <a href="#">{{nav.name}} <span class="caret"></span></a>
-
             <div class="sub-nav">
                 <!-- sub-nav-group for hover -->
                 <div class="sub-nav-group">
@@ -34,11 +37,9 @@
                 </div>
             </div>
             {% else %}
-            <a href="{{ nav.link }}" class="{{ nav.class }}">{{ nav.name }}
+            <a href="{{nav.link}}" class="{{nav.class}}">{{ nav.name }}
             </a>
-
             {% endif %}
-
         </li>
         {% endfor %}
     </ul>
@@ -46,4 +47,4 @@
     </div>
     <!-- end container * * * * * -->
 </div>
-<!-- end megamenuWrapper - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- end megamenuWrapper  -->

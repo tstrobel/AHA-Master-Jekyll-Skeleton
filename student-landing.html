@@ -5,24 +5,14 @@ title: Student landig page
 ---
 
 <!--Student Landing page-->
-<style>
-    .bgFull{
-        background-image: url("img/desk-white.jpg");
-        background-color: #f8f8f8;
-    }
-    #ecardSearchWrapper {
-        color: #fff;
-    }
-
-</style>
-<div id="main" class=" bgFull">
+<div id="main" class="bgFullLogin">
 
     <div id="ecardSearchWrapper" class="row animated fadeIn">
         <div class="col-lg-5 col-md-5 col-sm-8 col-xs-11" style="float:none;margin: auto;overflow: hiddens;">
 
 
             <div class="spacer"></div>
-            <h2 class=" text-thin text-primary heading heading-line"><span>eCard Search</span></h2>
+            <h2 class="text-thin text-primary heading heading-line"><span>eCard Search</span></h2>
 
             <!--content-->
             <div class="">
@@ -48,7 +38,7 @@ title: Student landig page
                             To access your complete eCard profile, please log in by entering your first and last name and email address below. OR, if you have your eCard code, enter it below to access the eCard for that code.
                         </p>
 
-                        <form action="">
+                        <form action="#">
                             <div class="row">
                                 <div class="form-group col-sm-6">
                                     <label class="control-label text-uppercase" for="first">First Name</label>
@@ -91,26 +81,28 @@ title: Student landig page
                     <!--Employers pane-->
                     <div role="tabpanel" class="tab-pane fade" id="profile">
 
-                        <h2 class="text-primary text-thin "><span>Employer</span></h2>
+                        <h2 class="text-primary text-thin"><span>Employer</span></h2>
                         <div class="h3">
                             Verify an AHA eCard
                         </div>
                         <p class="text-md">To verify an eCard, please enter the eCard code you wish to verify.</p>
-                        <form action="">
+                        <form action="#">
                             <div class="form-group">
                                 <label class="control-label text-uppercase" for="ecardcodeemp"><span class="glyphicon glyphicon-barcode" aria-hidden="true"></span> eCard Code</label>
                                 <input class="form-control input-text-underline" value="" name="ecardcodeemp" id="ecardcodeemp" type="text" placeholder="enter eCard code">
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block ">Search</button>
+                            <button type="submit" class="btn btn-primary btn-block">Search</button>
                         </form>
                     </div>
 
                 </div>
 
-
+                <div class="spacer"></div>
+                <div class="spacer"></div>
 
             </div><!-- end content -->
 
         </div>
     </div>
 </div>
+
