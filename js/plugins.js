@@ -4228,15 +4228,15 @@ $.fn.setFullHeight = function() {
 var includeDataTables = true;
 if(includeDataTables){
     document.write('<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.css"/>');
-    document.write('<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.2/css/fixedHeader.bootstrap.css"/>');
-    document.write('<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/keytable/2.1.3/css/keyTable.bootstrap.css"/>');
-    document.write('<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.1.0/css/responsive.bootstrap.css"/>');
+    // document.write('<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.2/css/fixedHeader.bootstrap.css"/>');
+    // document.write('<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/keytable/2.1.3/css/keyTable.bootstrap.css"/>');
+    // document.write('<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.1.0/css/responsive.bootstrap.css"/>');
 
 
     document.write('<script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.js"><\/script>');
     document.write('<script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.js"><\/script>');
-    document.write('<script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.1.2/js/dataTables.fixedHeader.js"><\/script>');
-    document.write('<script type="text/javascript" src="https://cdn.datatables.net/keytable/2.1.3/js/dataTables.keyTable.js"><\/script>');
+    // document.write('<script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.1.2/js/dataTables.fixedHeader.js"><\/script>');
+    // document.write('<script type="text/javascript" src="https://cdn.datatables.net/keytable/2.1.3/js/dataTables.keyTable.js"><\/script>');
     document.write('<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.js"><\/script>');
 
 }
