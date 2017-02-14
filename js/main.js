@@ -6,9 +6,9 @@ function format ( d ) {
     detailhtml = '\
     <div class="text-center">\
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corporis distinctio enim expedita in officiis temporibus. Accusantium architecto dolor, facere laboriosam magni necessitatibus nemo nisi odit recusandae sunt tempore unde.</p>\
-    <a href="#" class="btn btn-sm btn-primary-stroked"> Assign to Instructor </a>\
-    <a href="#" class="btn btn-sm btn-secondary-stroked"> Assign to Training Site </a>\
-    <a href="#" class="btn btn-sm btn-primary-stroked"> Assign to Students </a>\
+    <a href="#" class="btn btn-sm btn-primary"> Assign to Instructor </a>\
+    <a href="#" class="btn btn-sm btn-secondary"> Assign to eCard Location </a>\
+    <a href="#" class="btn btn-sm btn-primary"> Assign to Students </a>\
         </div>\
     ';
 
@@ -80,31 +80,39 @@ jQuery( document ).ready(function( $ ) {
        // $('.dataTables_length select.form-control').chosen();
 
         // Add event listener for opening and closing details
-        $('.dataTable tbody').on('click', 'td.details-control', function () {
+        $('.dataTable tbody').on('click keypress', 'td.details-control > .caret', function (e) {
 
-            var $caret = $(this).find('span.caret');
+            console.log(e.which);
+            console.log(e);
 
-            var tr = $(this).closest('tr');
-            var row = table.row( tr );
+            if (e.which == 13 || e.type == 'click'){
+                var $caret = $(this).find('span.caret');
 
-            if ( row.child.isShown() ) {
-                // This row is already open - close it
-                row.child.hide();
+                var tr = $(this).closest('tr');
+                var row = table.row( tr );
 
-                setTimeout(function(){
-                    tr.removeClass('shown');
-                },300);
-                $caret.removeClass('rotate');
+                if ( row.child.isShown() ) {
+                    // This row is already open - close it
+                    row.child.hide();
+
+                    setTimeout(function(){
+                        tr.removeClass('shown');
+                    },300);
+                    $caret.removeClass('rotate');
+                }
+                else {
+                    // Open this row
+                    row.child( format(row.data()) ).show();
+                    setTimeout(function(){
+
+                    tr.addClass('shown');
+                    },300);
+                    $caret.addClass('rotate');
+                }
+
             }
-            else {
-                // Open this row
-                row.child( format(row.data()) ).show();
-                setTimeout(function(){
 
-                tr.addClass('shown');
-                },300);
-                $caret.addClass('rotate');
-            }
+
         } );
 
     }

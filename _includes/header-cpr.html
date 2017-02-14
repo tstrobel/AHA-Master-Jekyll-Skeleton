@@ -52,7 +52,7 @@
 <div id="ahaHeader" role="banner">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-xs-12 clearfix ahaSublogoWrapper">
+            <div class="col-sm-9 col-xs-9 clearfix ahaSublogoWrapper">
                 <div class="ahaSubBrandWrapper">
                     <h1 class="subBrand pull-left">CPR & FIRST AID <br><span class="text-uppercase subBrandTag">Instructor Network</span></h1>
                     <!-- mobile menu open icon -->
@@ -61,6 +61,33 @@
                         <span class="sr-only sr-only-focusable">Open mobile menu</span>
                     </a>
                 </div>
+            </div>
+            <div class="col-sm-3 col-xs-9 text-right">
+                <!--Login-->
+                <a href="#" class="dropdown-toggle" data-close-others="true" data-hover="dropdown" data-toggle="dropdown">
+                    <img alt="" class="img-circle" src="img/profile.png" id="profileImg">
+                    <span class="username hidden-xs">User</span>
+                    <i class="fa fa-ellipsis-v profile-show-more"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-default pull-right" id="profileMenu">
+                    <li>
+                        <a data-toggle="modal" data-target="#modal-1" href="" class=""><i class="fa fa-exclamation-triangle"></i> Alerts <span class="badge badge-danger right">2</span>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+
+                    <li>
+                        <a href="/AHAECC/ecc.jsp?pid=ahaecc.editProfile">
+                            <i class="fa fa-user"></i> Edit Profile </a>
+                    </li>
+
+                    <li>
+                        <a href="/registration/common/AHASamlRequest.jsp?action=logout&amp;application=eccportal" id="logoutId">
+                            <i class="fa fa-sign-out"></i>Log Out
+                        </a>
+                    </li>
+                </ul>
+
             </div>
         </div>
     </div>

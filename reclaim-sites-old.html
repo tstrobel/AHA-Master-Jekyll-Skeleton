@@ -152,5 +152,51 @@ showQty: true
     <div class="spacer"></div>
 
 
+<!-- Example of dataTables -->
+<form action="#">
+<div class="table-responsive">
+    <table id="example" class="dataTable display table table-bordered table-striped">
+        <caption class="sr-only">Reclaim table</caption>
+        <thead>
+        <tr>
+            <th>Course</th>
+            <th>Date of Assignment</th>
+            <th>Reclaim From</th>
+            <th>Assigned Quantity</th>
+            <th>Previous Reclaims</th>
+            <th>Available Quantity</th>
+            <th>Reclaim Quantity</th>
+            <th>Action</th>
+        </tr>
+        </thead>
 
+        <tbody>
+<tr>
+    <td>ACLS EP</td>
+    <td>12/2/2016</td>
+    <td>Sample training Site</td>
+    <td>20</td>
+    <td>2</td>
+    <td>18</td>
+    <td><div class="form-group">
+        <label class="control-label sr-only sr-only-focusable" for="qty">Qty</label>
+        <input class="form-control" value="" name="qty" id="qty" type="text" placeholder="0">
+    </div></td>
+    <td class="text-center"><a href="#" class="btn btn-primary btn-sm btn-single">Reclaim</a></td>
+</tr>
+
+
+
+        </tbody>
+    </table>
+
+
+        <div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </div>
+</div>
+<!-- End example of datatables -->
+
+</form>
 </div><!-- end container -->

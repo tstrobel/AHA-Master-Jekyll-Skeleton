@@ -49,7 +49,7 @@ showQty: true
                             </label>
                             <label class="radio">
                                 <input type="radio" name="tcts" id="tcts2" value="ts" data-toggle="radio" checked>
-                                Training Sites
+                                eCard Locations
                             </label>
                         </fieldset>
                     </div>
@@ -73,7 +73,7 @@ showQty: true
                     <div class="spacer"></div>
 
                     <!-- dropdown -->
-                    <label class="control-label text-uppercase text-gray-dark" for="trainingsite">Training Site<span class="required"> * </span></label>
+                    <label class="control-label text-uppercase text-gray-dark" for="trainingsite">eCard Location<span class="required"> * </span></label>
                     <select data-placeholder="Select training site" id="trainingsite" title="Trainingsite" name="trainingsite" class="form-control chosen-select">
                         {% for tc in site.data.tc.tc %}
                         {{tc.name}}
@@ -87,13 +87,7 @@ showQty: true
 
                     <div class="spacer"></div>
 
-                    <!-- dropdown -->
-                    <label class="control-label text-uppercase text-gray-dark" for="instructor">Instructor<span class="required"> * </span></label>
-                    <select data-placeholder="Instructor" id="instructor" title="Instructor" name="instructor" class="form-control chosen-select">
-                        {% for instructor in site.data.instructors.instructors %}
-                        <option value="{{instructor.name}}">{{instructor.name}}</option>
-                        {% endfor %}
-                    </select>
+
 
 
                     <div class="spacer"></div>
@@ -105,7 +99,7 @@ showQty: true
 
 
                 <div class="col-sm-12">
-                    <div>
+                    <div class="boxed-content">
 
 
                             <div class="h5 text-gray-dark text-uppercase">Available eCards Quantity</div>
@@ -114,8 +108,15 @@ showQty: true
 
                         <div class="form-group">
                             <label class="control-label text-uppercase" for="qty">Assign Quantity </label><span class="text-gray-dark label text-thin"> (enter quantity below) </span>
-                            <input class="form-control input-text-underline" value="50" name="qty" id="qty" type="text" placeholder="enter quantity">
+                            <input class="form-control" value="50" name="qty" id="qty" type="text" placeholder="enter quantity" style="width:50px;">
                         </div>
+                        <div>
+                            <label class="checkbox" for="boolUploadStuList">
+                                <input type="checkbox" value="yes" name="boolUploadStuList" id="boolUploadStuList" data-toggle="checkbox" />
+                                Upload student list?
+                            </label>
+                        </div>
+
 
                     </div><!-- end boxed-content -->
                 </div>

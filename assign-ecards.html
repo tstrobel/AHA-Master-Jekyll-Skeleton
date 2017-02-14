@@ -7,7 +7,53 @@ showQty: true
 <div class="">
 <h2 class="heading heading-line text-thin"><span>Assign eCards to Students</span></h2>
 
-{% include show-hide.html %}
+    <!--Show/Hide-->
+    <div class="">
+        <a class="pull-right" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Show / Hide
+            <b class="caret"></b>
+        </a>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="collapse in boxed-content" id="collapseExample">
+            <div class="">
+                <br/>
+                <p class="text-md">
+                    To assign eCards, you may manually enter the student information OR you may upload a file containing the student information. To upload a file, click the "Upload Student List" button and choose the file you wish to upload.
+                </p>
+                <p>
+                    <strong>NOTE:</strong> You must download a new template each time you upload a student list. The file must be in .xls or .csv format. Once the student information has been populated in the fields below, click the "Continue" button to proceed emailing eCards to students.
+                </p>
+                <div class="table-responsive">
+                    <table class="table  table-bordered table-striped">
+                        <tr>
+                            <td style="width: 200px;" class="text-bold">Course</td><td>BLS Provider</td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-bold">Training Center</td><td>Sample Training Center 1</td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold">eCard Location</td><td>Sample eCard Location 1</td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold">Instructor</td><td>Sample instructor Name 1</td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold">Available eCards Quantity</td><td>1809</td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold">Assign Quantity</td><td>5</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Show/Hide -->
+
+
+
 <div class="spacer"></div>
 
     <div class="">
@@ -44,18 +90,20 @@ showQty: true
         <caption class="sr-only">Course table</caption>
         <thead>
         <tr>
-
+            <th><input type="checkbox"/></th>
             <th>Course Date</th>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
             <th>Phone</th>
             <th>Course Modules</th>
+            <th>Delete</th>
         </tr>
         </thead>
 
         <tbody>
             <tr>
+                <td><input type="checkbox"/></td>
                 <td>
                     <div class="input-group date">
                         <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
@@ -88,9 +136,12 @@ showQty: true
                         <option value="ACLS">ACLS</option>
                     </select>
                 </td>
+                <td class="text-center"><a href=""><i class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
+                </a></td>
             </tr>
 
             <tr>
+                <td><input type="checkbox"/></td>
                 <td>
                     <div class="input-group date">
                         <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
@@ -123,6 +174,8 @@ showQty: true
                         <option value="ACLS">ACLS</option>
                     </select>
                 </td>
+                <td class="text-center"><a href=""><i class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
+                </a></td>
             </tr>
 
 

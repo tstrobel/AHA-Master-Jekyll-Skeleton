@@ -11,12 +11,56 @@ showQty: true
 
 <h2 class="heading heading-line text-thin"><span>Assign eCards to Students - Confirm</span></h2>
 
-    {% include show-hide.html %}
+    <!--Show/Hide-->
+    <div class="">
+        <a class="pull-right" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Show / Hide
+            <b class="caret"></b>
+        </a>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="collapse in boxed-content" id="collapseExample">
+            <div class="">
+                <br>
+                <h3><i class="fa fa-exclamation-circle  text-warning" aria-hidden="true"></i>
+                     Confirm</h3>
+                <p class="text-md">
+                    Confirm the information below is correct to finish assigning your eCards.
+                </p>
+                <div class="table-responsive">
+                    <table class="table  table-bordered table-striped">
+                        <tr>
+                            <td style="width: 200px;" class="text-bold">Course</td><td>BLS Provider</td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-bold">Training Center</td><td>Sample Training Center 1</td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold">eCard Location</td><td>Sample eCard Location 1</td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold">Instructor</td><td>Sample instructor Name 1</td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold">Available eCards Quantity</td><td>1809</td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold">Assign Quantity</td><td>5</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Show/Hide -->
+
+    <div class="spacer"></div>
 
 
 <!-- Example of dataTables -->
 <div class="table-responsive">
-    <table id="example" class="dataTable display table table-bordered table-striped">
+    <table id="example" class="display table table-bordered table-striped">
         <caption class="sr-only">Course table</caption>
         <thead>
         <tr>
@@ -27,6 +71,7 @@ showQty: true
             <th>Email</th>
             <th>Phone</th>
             <th>Course Modules</th>
+            <th>Delete</th>
         </tr>
         </thead>
 
@@ -38,6 +83,8 @@ showQty: true
     <td>js@eamil.com</td>
     <td>(469) 123-4567</td>
     <td>Exam, Written, CPR, AED</td>
+    <td class="text-center"><a href=""><i class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
+    </a></td>
 </tr>
 
 

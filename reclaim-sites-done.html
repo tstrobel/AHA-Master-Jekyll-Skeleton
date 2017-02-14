@@ -13,44 +13,96 @@ showQty: true
 
 <h2 class="heading heading-line text-thin"><span>Reclaim eCards - Complete</span></h2>
 
-    {% include show-hide.html%}
+
+    <div class="thumbnail">
+        <div class="caption">
+
+            <div style="position: relative;width: 95%;">
+
+                <!--<span class="glyphicon glyphicon-qrcode text-primary text-lg" aria-hidden="true"></span>-->
 
 
-<!-- Example of dataTables -->
 
-<div class="table-responsive">
-    <table id="example" class="dataTable display table table-bordered table-striped">
-        <caption class="sr-only">Course table</caption>
-        <thead>
-        <tr>
-            <th>Course</th>
-            <th>Date of Assignment</th>
-            <th>Reclaim From</th>
-            <th>Assigned Quantity</th>
-            <th>Previous Reclaims</th>
-            <th>Available Quantity</th>
+            </div>
 
-        </tr>
-        </thead>
+            <div class="text-center" id="numberDisplay" style="height: 114px;overflow: hidden;">
+                <div class="text-gray-dark text-bold text-uppercase text-lg">Reclaimed Successful</div>
 
-        <tbody>
-<tr>
-    <td>ACLS EP</td>
-    <td>12/2/2016</td>
-    <td>Sample training Site</td>
-    <td>20</td>
-    <td>2</td>
-    <td>18</td>
-</tr>
+                <div id="counter" class="text-success" style="font-size: 80px;">1809</div>
+                <script>
+                    var fnCounter = function() {
+                        $({countNum: $('#counter').text()}).delay(1000).animate({countNum: 1818}, {
+                            duration: 1500,
+                            easing: 'linear',
+                            step: function () {
+                                $('#counter').text(Math.floor(this.countNum));
+                            },
+                            complete: function () {
+                                $('#counter').text(this.countNum);
+                                //alert('finished');
+                                $('#counter').addClass("animated fadeOut");
+                                $('#counter').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                                    $('#counter').delay(100).animate({height:0},500);
+                                });
+                            }
+                        });
+                    }
 
-        </tbody>
-    </table>
+                    fnCounter();
 
-        <div>
-            <a href="#" class="btn btn-secondary">Go To Inventory</a>
+
+                </script>
+
+                <div class="h1 text-success margin-auto margin-top-5 text-thin animated slideInUp" style="font-size: 80px;"><i class="fa fa-check-square fa-1x text-success" aria-hidden="true"></i></div>
+            </div>
+
+            <div class="spacer"></div>
+
+
+            <div class="row">
+
+                <div class="col-md-6 col-md-offset-3 col-xs-12">
+
+
+
+                    <div class="col-sm-8 col-xs-12">
+                        <div>
+                            <div class="text-gray-dark text-uppercase">Course</div>
+                            <div class="coursetitle h3 margin-top-5">Heartsaver CPR AED </div>
+                        </div>
+                        <div>
+                            <div class="text-gray-dark text-uppercase">eCard Location</div>
+                            <div class="h5 margin-top-5">Baylor College of Medicine of Garland</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 text-right col-xs-12">
+                        <div>
+                            <div class="text-gray-dark text-uppercase">Available Qty.</div>
+                            <div class="h3 text-gray-dark margin-top-5">1809</div>
+                        </div>
+                        <div>
+                            <div class="text-gray-dark text-uppercase">assignment date</div>
+                            <div class="h5 margin-top-5 crdate">12/9/2016</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div><!-- end row -->
+
+
+
+
 
         </div>
-</div>
-<!-- End example of datatables -->
+
+
+    </div>
+
+    <!-- Buttons -->
+    <div>
+
+        <a href="#" class="btn btn-secondary">Go To Inventory</a>
+    </div>
 
 </div><!-- container -->
