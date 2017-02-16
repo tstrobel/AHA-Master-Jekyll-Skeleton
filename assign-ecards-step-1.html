@@ -39,63 +39,94 @@ showQty: true
                     <div class="spacer"></div>
 
                     <!-- radio buttons -->
-                    <div>
-                        <span class="label text-uppercase text-gray-dark">Select training center or training site</span>
+                    <div id="assignType">
+                        <span class="label text-uppercase text-gray-dark">Select</span>
                         <fieldset>
                             <legend class="sr-only">filter by</legend>
                             <label class="radio">
-                                <input type="radio" name="tcts" id="tcts1" value="tc" data-toggle="radio">
+                                <input type="radio" name="aType" id="tcts1" value="tc" data-toggle="radio">
                                 Training Centers
                             </label>
                             <label class="radio">
-                                <input type="radio" name="tcts" id="tcts2" value="ts" data-toggle="radio" checked>
+                                <input type="radio" name="aType" id="tcts2" value="eloc" data-toggle="radio">
                                 eCard Locations
                             </label>
                         </fieldset>
                     </div>
                     <!-- end radio buttons -->
 
+                    <script>
+                        $(document).ready(function(){
+
+                            var showELoc = function(){
+                                if ($('#ddELoc').hasClass('hide')){
+                                    $('#ddELoc').removeClass('hide');
+                                }
+                            };
+
+                            var showTC = function(){
+                                if ($('#ddTC').hasClass('hide')){
+                                    $('#ddTC').removeClass('hide');
+                                }
+                                hideELoc();
+                            };
+
+                            var hideELoc = function () {
+                                if ($('#ddELoc').hasClass('hide')){
+
+                                }else{
+                                    $('#ddELoc').addClass('hide')
+                                }
+                            };
+
+
+                            $('#assignType .radio').on('toggle',function(e) {
+                                var $el = $(e.target);
+                                var elname = e.target.name;
+                                //console.log($el.val());
+                                if ($el.val() == 'tc'){
+                                    showTC();
+                                    //$('#ddELoc').toggleClass('hide');
+                                }else{
+                                    showTC();
+                                    showELoc();
+
+                                }
+                                //console.log(elname);
+                            });
+                        });
+                    </script>
+
+                    <!-- dropdown -->
+                    <div id="ddTC" class="hide">
+                        <label class="control-label text-uppercase text-gray-dark" for="trainingcenter">Training Center<span class="required"> * </span></label>
+                        <select data-placeholder="Select training center" id="trainingcenter" title="Trainingcenter" name="trainingcenter" class="form-control chosen-select">
+                            {% for tc in site.data.tc.tc %}
+                            {{tc.name}}
+                            <option value="{{tc.name}}">{{tc.name}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <!-- end dropdown -->
+
+                    <div class="spacer"></div>
+
+                    <!-- dropdown -->
+                    <div id="ddELoc" class="hide">
+                        <label class="control-label text-uppercase text-gray-dark" for="trainingsite">eCard Location<span class="required"> * </span></label>
+                        <select data-placeholder="Select training site" id="trainingsite" title="Trainingsite" name="trainingsite" class="form-control chosen-select">
+                            {% for tc in site.data.tc.tc %}
+                            {{tc.name}}
+                            <option value="{{tc.name}}">{{tc.name}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <!-- end dropdown -->
+
                     <div class="spacer"></div>
 
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-                    <!-- dropdown -->
-                    <label class="control-label text-uppercase text-gray-dark" for="trainingcenter">Training Center<span class="required"> * </span></label>
-                    <select data-placeholder="Select training center" id="trainingcenter" title="Trainingcenter" name="trainingcenter" class="form-control chosen-select">
-                        {% for tc in site.data.tc.tc %}
-                        {{tc.name}}
-                        <option value="{{tc.name}}">{{tc.name}}</option>
-                        {% endfor %}
-                    </select>
-                    <!-- end dropdown -->
-
-                    <div class="spacer"></div>
-
-                    <!-- dropdown -->
-                    <label class="control-label text-uppercase text-gray-dark" for="trainingsite">eCard Location<span class="required"> * </span></label>
-                    <select data-placeholder="Select training site" id="trainingsite" title="Trainingsite" name="trainingsite" class="form-control chosen-select">
-                        {% for tc in site.data.tc.tc %}
-                        {{tc.name}}
-                        <option value="{{tc.name}}">{{tc.name}}</option>
-                        {% endfor %}
-                    </select>
-                    <!-- end dropdown -->
-
-
-
-
-                    <div class="spacer"></div>
-
-
-
-
-                    <div class="spacer"></div>
-
-
-
-
-                </div><!-- end col-sm-12 -->
 
 
                 <div class="col-sm-12">
@@ -125,7 +156,7 @@ showQty: true
 
             <div class="spacer"></div>
 
-            <button class="btn btn-primary" type="submit">Submit</button>
+            <a href="assign-ecards.html" class="btn btn-primary" role="button">Submit</a>
 
 
         </form>
