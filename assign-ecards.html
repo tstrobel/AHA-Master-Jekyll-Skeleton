@@ -10,12 +10,39 @@ showQty: true
     <!--Show/Hide-->
     <div class="">
         <a class="pull-right" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            Show / Hide
-            <b class="caret"></b>
+            <span class="text">Hide Info</span>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
         </a>
+
+        <script type="text/javascript">
+            //Toggle show hide to change text and icon to indicate
+            var toggleShowHide = {
+              init: function(){
+                  var $el = $('a[data-toggle="collapse"]');
+                  $el.on('click',function (e) {
+                      ($el.delay(1000).hasClass('collapsed'))? toggleShowHide.hide($el) : toggleShowHide.show($el);
+                  });
+              },
+              hide: function(obj){
+                  obj.children('.text').text('Hide Info');
+                  (obj.children('.fa').hasClass('fa-caret-up')) ? obj.children('.fa').removeClass('fa-caret-up').addClass('fa-caret-down') : '' ;
+              },
+              show: function(obj){
+                  obj.children('.text').text('Show Info');
+                  (obj.children('.fa').hasClass('fa-caret-down')) ? obj.children('.fa').removeClass('fa-caret-down').addClass('fa-caret-up') : '';
+              }
+            };
+
+            $(document).ready(function(){
+                //Show Hide toggle
+                toggleShowHide.init();
+            });
+
+        </script>
+
         <div class="spacer"></div>
         <div class="spacer"></div>
-        <div class="collapse in boxed-content" id="collapseExample">
+        <div class="collapse in" id="collapseExample">
             <div class="">
                 <br/>
                 <p class="text-md">
@@ -71,11 +98,11 @@ showQty: true
             </div><!-- end col-sm-4 -->
 
             <div class="col-sm-4">
-                <a href="#" class="btn btn-secondary btn-block" style="margin-top: 15px"><span class="glyphicon glyphicon-download" aria-hidden="true"></span> Download template</a>
+                <a href="#" class="btn btn-secondary btn-block" style="margin-top: 15px"><span class="fa fa-arrow-down fa-2x" aria-hidden="true"></span> Download template</a>
             </div><!-- end col-sm-4 -->
 
             <div class="col-sm-4">
-                <a href="#" class="btn btn-secondary btn-block" style="margin-top: 15px"><span class="glyphicon glyphicon-upload" aria-hidden="true"></span> Upload Student List</a>
+                <a href="#" class="btn btn-secondary btn-block" style="margin-top: 15px"><span class="fa fa-arrow-up fa-2x" aria-hidden="true"></span> Upload Student List</a>
             </div><!-- end col-sm-4 -->
             </div><!-- row -->
             </div>
@@ -192,3 +219,7 @@ showQty: true
     </form>
 <!-- End example of datatables -->
 </div>
+
+
+
+

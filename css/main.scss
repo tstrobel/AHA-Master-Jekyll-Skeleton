@@ -19,6 +19,7 @@ $heart-color: #DF0000;
 $text-color:       #111;
 $text-white: #fff;
 $text-primary: #a60008;
+$text-warning: #F0C953;
 $text-primary-dark: darken( $text-primary, 10% );
 $background-color: #fdfdfd;
 $brand-color:      #09489a;
@@ -361,7 +362,7 @@ nav#main-navigation .menu > li {
 }
 
 #adminLogo {
-  max-width: 50px; display: inline-block;margin-right: 0px;
+  max-width: 71px; display: inline-block;margin-right: 0px;
 }
 
 
@@ -465,6 +466,11 @@ nav#main-navigation .menu > li {
 .text-left {
   text-align: left !important;
 }
+
+.text-warning {
+  color: $text-warning !important;
+}
+
 
 p{
   //letter-spacing: 1px;
@@ -632,6 +638,13 @@ a.btn-secondary-stroked{
   }
 }
 
+//Font Awesome
+.fa-2x {
+  font-size: 1.5em !important;
+  vertical-align: middle;
+}
+
+
 //Nav Pills
 .nav-pills>li>a {
   //border-radius: 0px;
@@ -752,6 +765,11 @@ thead th {
   vertical-align: top !important;
 }
 
+
+tr.shown{
+  background-color: #f7f7f7;
+}
+
 //Forms
 //Input text
 input[type="text"]{
@@ -812,6 +830,10 @@ a.label:focus, a.label:hover {
 
 
 //Modal
+.modal-header {
+  background-color: $grey-color-light;
+}
+
 .modal-dialog {
   top:25%;
 }

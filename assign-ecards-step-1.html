@@ -106,6 +106,7 @@ showQty: true
                             <option value="{{tc.name}}">{{tc.name}}</option>
                             {% endfor %}
                         </select>
+                        {% include lookup-modal-link-only.html %}
                     </div>
                     <!-- end dropdown -->
 
@@ -120,6 +121,7 @@ showQty: true
                             <option value="{{tc.name}}">{{tc.name}}</option>
                             {% endfor %}
                         </select>
+
                     </div>
                     <!-- end dropdown -->
 
@@ -164,3 +166,4 @@ showQty: true
 
 <div class="spacer"></div>
 
+{% include lookup-modal.html %}
