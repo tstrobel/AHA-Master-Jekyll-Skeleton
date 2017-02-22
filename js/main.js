@@ -5,7 +5,7 @@ function format ( d ) {
 
     detailhtml = '\
     <div class="text-center">\
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corporis distinctio enim expedita in officiis temporibus. Accusantium architecto dolor, facere laboriosam magni necessitatibus nemo nisi odit recusandae sunt tempore unde.</p>\
+    <br/>\
     <a href="#" class="btn btn-sm btn-primary"> Assign to Instructor </a>\
     <a href="#" class="btn btn-sm btn-primary"> Assign to eCard Location </a>\
     <a href="#" class="btn btn-sm btn-primary"> Assign to Students </a>\
