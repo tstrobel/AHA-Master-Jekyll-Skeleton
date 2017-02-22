@@ -76,37 +76,48 @@ jQuery( document ).ready(function( $ ) {
 
         //var table = $('.dataTable').DataTable();
         //Below example to turn off sort amount and searching
-        var table = $('.dataTable').DataTable({"searching":false,"lengthChange": false,"info": false,"sDom": 'rtip'});
+        var table = $('.dataTable').DataTable({"searching":false,"lengthChange": false,"info": false,"sDom": 'rtip',columnDefs: [{
+            targets: "nosort",
+            orderable: false
+        }]});
+
+
+
        // $('.dataTables_length select.form-control').chosen();
 
         // Add event listener for opening and closing details
-        $('.dataTable tbody').on('click keypress', 'td.details-control > .caret', function (e) {
+        $('.dataTable th.nosort').removeClass('sorting_asc');
+        $('.dataTable tbody').on('click keypress', 'td.details-control', function (e) {
 
             console.log(e.which);
             console.log(e);
 
             if (e.which == 13 || e.type == 'click'){
                 var $caret = $(this).find('span.caret');
+                console.log($caret);
 
                 var tr = $(this).closest('tr');
+
                 var row = table.row( tr );
 
                 if ( row.child.isShown() ) {
                     // This row is already open - close it
                     row.child.hide();
+                    row.child()
 
                     setTimeout(function(){
                         tr.removeClass('shown');
-                    },300);
+                    },100);
                     $caret.removeClass('rotate');
                 }
                 else {
                     // Open this row
-                    row.child( format(row.data()) ).show();
+                    row.child( format(row.data()),'active' ).show();
+
                     setTimeout(function(){
 
                     tr.addClass('shown');
-                    },300);
+                    },100);
                     $caret.addClass('rotate');
                 }
 
@@ -114,6 +125,7 @@ jQuery( document ).ready(function( $ ) {
 
 
         } );
+
 
     }
 

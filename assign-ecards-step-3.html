@@ -13,10 +13,39 @@ showQty: true
 
     <!--Show/Hide-->
     <div class="">
+        <!--Show/Hide Link-->
         <a class="pull-right" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            Show / Hide
-            <b class="caret"></b>
+            <span class="text">Hide Info</span>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
         </a>
+        <!--End link-->
+        <!--script for link-->
+        <script type="text/javascript">
+            //Toggle show hide to change text and icon to indicate
+            var toggleShowHide = {
+                init: function(){
+                    var $el = $('a[data-toggle="collapse"]');
+                    $el.on('click',function (e) {
+                        ($el.delay(1000).hasClass('collapsed'))? toggleShowHide.hide($el) : toggleShowHide.show($el);
+                    });
+                },
+                hide: function(obj){
+                    obj.children('.text').text('Hide Info');
+                    (obj.children('.fa').hasClass('fa-caret-up')) ? obj.children('.fa').removeClass('fa-caret-up').addClass('fa-caret-down') : '' ;
+                },
+                show: function(obj){
+                    obj.children('.text').text('Show Info');
+                    (obj.children('.fa').hasClass('fa-caret-down')) ? obj.children('.fa').removeClass('fa-caret-down').addClass('fa-caret-up') : '';
+                }
+            };
+
+            $(document).ready(function(){
+                //Show Hide toggle
+                toggleShowHide.init();
+            });
+
+        </script>
+        <!--end script-->
         <div class="spacer"></div>
         <div class="spacer"></div>
         <div class="collapse in boxed-content" id="collapseExample">
