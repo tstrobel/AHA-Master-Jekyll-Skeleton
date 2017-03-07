@@ -1,4 +1,12 @@
 
+* To push to Amazon S3 bucket
+* will need to install s3_website plugin
+* type 'gem install s3_website'
+* then create cfg file, 's3_website cfg create'
+* then apply cfg file,  '3_website cfg apply'
+* to push the build jekyll _site, type 's3_website push'
+* here is the doc, https://github.com/laurilehmijoki/s3_website
+
 S3
 s3_website cfg create
 3_website cfg apply
@@ -11,3 +19,9 @@ jekyll build
 
 This is a test with emacs, test again
 git from codeanywhere
+
+Usefull GIT tips
+https://github.com/git-tips/tips
+
+git
+https://github.com/tutrinh/AHA-Master-Jekyll-Skeleton.git

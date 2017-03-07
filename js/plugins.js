@@ -1994,10 +1994,13 @@ $.fn.setFullHeight = function() {
                 container_props.id = this.form_field.id.replace(/[^\w]/g, '_') + "_chosen";
             }
             this.container = $("<div />", container_props);
+            //Modify to inject label for search input field for accessibility
+            //Generate random
+            var rand = Date.now();
             if (this.is_multiple) {
-                this.container.html('<ul class="chosen-choices"><li class="search-field"><label for="'+ container_props.title +'_chosensearchquery" class="sr-only">search</label><input type="text" value="' + this.default_text + '" class="default" autocomplete="off" style="width:25px;" name="'+ container_props.title +'_chosensearchquery" id="'+ container_props.title +'_chosensearchquery" /></li></ul><div class="chosen-drop"><ul class="chosen-results"></ul></div>');
+                this.container.html('<ul class="chosen-choices"><li class="search-field"><label for="'+ container_props.title +'_chosensearchquery'+rand+'" class="sr-only">search</label><input type="text" value="' + this.default_text + '" class="default" autocomplete="off" style="width:25px;" name="'+ container_props.title +'_chosensearchquery'+rand+'" id="'+ container_props.title +'_chosensearchquery '+rand+'" /></li></ul><div class="chosen-drop"><ul class="chosen-results"></ul></div>');
             } else {
-                this.container.html('<a class="chosen-single chosen-default"><span>' + this.default_text + '</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><label for="'+ container_props.title +'_chosensearchquery" class="sr-only sr-only-focusable">Search Query</label> <input type="text" autocomplete="off" name="'+ container_props.title +'_chosensearchquery" id="'+ container_props.title +'_chosensearchquery" /></div><ul class="chosen-results"></ul></div>');
+                this.container.html('<a class="chosen-single chosen-default"><span>' + this.default_text + '</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><label for="'+ container_props.title +'_chosensearchquery'+rand+'" class="sr-only sr-only-focusable">Search Query</label> <input type="text" autocomplete="off" name="'+ container_props.title +'_chosensearchquery'+rand+'" id="'+ container_props.title +'_chosensearchquery'+rand+'" /></div><ul class="chosen-results"></ul></div>');
             }
             this.form_field_jq.hide().after(this.container);
             this.dropdown = this.container.find('div.chosen-drop').first();

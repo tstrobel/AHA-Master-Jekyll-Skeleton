@@ -1,0 +1,11 @@
+<!--Sidebar-->
+<div id="sidebar" class="col-sm-2 hidden-sm hidden-xs" >
+    <div>
+        <h4 class="montsserat-heading">Menu</h4>
+        <ul id="sidebarnav" class="list-unstyled">            
+            {% for nav in site.data.sidebar-nav.sidenav %}    
+                <li><a href="{{nav.link}}">{{nav.name}}</a></li>
+            {% endfor %}
+        </ul>
+    </div><!-- end affix -->
+</div>

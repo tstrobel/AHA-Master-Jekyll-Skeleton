@@ -1,75 +1,39 @@
-- name: Dashboard
+- name: Menu 1
   link: index.html
   class: nav-1
   subpages:
-    - name: My Inbox
+    - name: Item 1
       link: index.html
-    - name: Edit My Profile
+    - name: Item 2
       link: index.html
 #    - name: Child Page 3
 #      link: childpage3.html
 
 
-- name: Courses
+- name: Menu 2
   link: style.html
-  class: nav-3
   subpages:
 
-- name: News & Archives
-  link: style.html
-  class: nav-3
+- name: Menu 3
+  link: index.html
   subpages:
 
-- name: Additional Tools
-  link: style.html
-  class: nav-3
+- name: Menu 4
+  link: index.html
   subpages:
 
-- name: Help
-  link: style.html
-  class: nav-3
+- name: Menu 5
+  link: index.html
   subpages:
-    - name: Contact Us
+    - name: Style
       link: style.html
 
 
-- name: Templates
-  link: templates.html
-  class: nav-6
+- name: Menu 6
+  link: index.html
   subpages:
-    - name: Student Landing
-      link: student-landing.html
-    - name: Your eCards
-      link: ecards-cards.html
-    - name: Assign eCards Student Step 1
-      link: assign-ecards-step-1.html
-    - name: Assign eCards Student Step 2
-      link: assign-ecards.html
-    - name: Assign eCards Student Step 3
-      link: assign-ecards-step-3.html
-    - name: Assign eCards Student Step 4
-      link: assign-ecards-step-4.html
-    - name: Reclaim - Sites
-      link: reclaim-sites.html
-    - name: Reclaim - Sites Verification
-      link: reclaim-sites-verification.html
-    - name: Reclaim - Sites Done
-      link: reclaim-sites-done.html
-    - name: Inventory
-      link: inventory.html
-#    - name: Reclaim Instructor (dates)
-#      link: reclaim-instructor.html
-#    - name: Reports
-#      link: reports.html
-#    - name: eCards Status
-#      link: ecards-status.html
-#    - name: eCards Status Details
-#      link: ecards-status-details.html
-#    - name: eCards Search
-#      link: ecards-search.html
-#    - name: eCards Edit
-#      link: ecards-edit.html
-#    - name: Distributor File Upload
-#      link: dist-file-upload.html
-
-
+    - name: Item 1
+      link: index.html
+    - name: Item 2
+      link: index.html
+ 
